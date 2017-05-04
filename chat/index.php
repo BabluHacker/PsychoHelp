@@ -30,7 +30,7 @@ if(!isset($_SESSION['username'])){
         <!-- Font awesome css file-->
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <!-- Default Theme css file -->
-        <link id="switcher" href="../css/themes/green-theme.css" rel="stylesheet">
+        <link id="switcher" href="../css/themes/black-theme.css" rel="stylesheet">
         <!-- Slick slider css file -->
         <link href="../css/slick.css" rel="stylesheet">
         <!-- Photo Swipe Image Gallery -->
@@ -86,29 +86,29 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                            <li class="active"><a href="../index.html">Home</a></li>
+                            <li ><a href="..">Home</a></li>
                             <li><a href="../features.html">Features</a></li>
                             <li><a href="../about-us.html">About Us</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Service <span class="fa fa-angle-down"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="index.php">Online Counseling</a></li>
-                                    <li><a href="../medical-research.html">Medical Research</a></li>
-                                    <li><a href="../blood-bank.html">Blood Bank</a></li>
+                                    <li class="active"><a href="index.php">Online Counseling</a></li>
+                                    <li><a href="#">Take Assessment</a></li>
+                                    <li><a href="#">Self Help</a></li>
                                 </ul>
                             </li>
-                            <li><a href="../gallery.html">Gallery</a></li>
+                            <!--<li><a href="gallery.html">Gallery</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">News <span class="fa fa-angle-down"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="../blog-archive.html">Blog Archive</a></li>
-                                    <li><a href="../blog-archive-with-left-sidebar.html">Blog Archive with Left Sidebar</a></li>
-                                    <li><a href="../blog-archive-with-right-sidebar.html">Blog Archive with Right Sidebar</a></li>
-                                    <li><a href="../blog-single.html">Blog Single</a></li>
-                                    <li><a href="../blog-single-with-left-sidebar.html">Blog Single with Left Sidebar</a></li>
-                                    <li><a href="../blog-single-with-right-sidebar.html">Blog Single with Right Sidebar</a></li>
-                                </ul>
-                            </li>
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">News <span class="fa fa-angle-down"></span></a>
+                              <ul class="dropdown-menu" role="menu">
+                                <li><a href="blog-archive.html">Blog Archive</a></li>
+                                <li><a href="blog-archive-with-left-sidebar.html">Blog Archive with Left Sidebar</a></li>
+                                <li><a href="blog-archive-with-right-sidebar.html">Blog Archive with Right Sidebar</a></li>
+                                <li><a href="blog-single.html">Blog Single</a></li>
+                                <li><a href="blog-single-with-left-sidebar.html">Blog Single with Left Sidebar</a></li>
+                                <li><a href="blog-single-with-right-sidebar.html">Blog Single with Right Sidebar</a></li>
+                              </ul>
+                            </li>-->
 
                             <!--<li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Page <span class="fa fa-angle-down"></span></a>
@@ -118,8 +118,8 @@ if(!isset($_SESSION['username'])){
                                 <li><a href="#">Link Three</a></li>
                               </ul>
                             </li>-->
-                            <li><a href="../contact.html">Contact</a></li>
-                            <li><a href="#">Login</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="profile">Login</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
@@ -247,7 +247,7 @@ if(!isset($_SESSION['username'])){
     <!-- Font awesome css file-->
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <!-- Default Theme css file -->
-    <link id="switcher" href="../css/themes/green-theme.css" rel="stylesheet">
+    <link id="switcher" href="../css/themes/black-theme.css" rel="stylesheet">
     <!-- Slick slider css file -->
     <link href="../css/slick.css" rel="stylesheet">
     <!-- Photo Swipe Image Gallery -->
@@ -333,29 +333,29 @@ if(!isset($_SESSION['username'])){
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                        <li class="active"><a href="../index.html">Home</a></li>
+                        <li ><a href="..">Home</a></li>
                         <li><a href="../features.html">Features</a></li>
                         <li><a href="../about-us.html">About Us</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Service <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="index.php">Online Counseling</a></li>
-                                <li><a href="../medical-research.html">Medical Research</a></li>
-                                <li><a href="../blood-bank.html">Blood Bank</a></li>
+                                <li class="active"><a href="index.php">Online Counseling</a></li>
+                                <li><a href="#">Take Assessment</a></li>
+                                <li><a href="#">Self Help</a></li>
                             </ul>
                         </li>
-                        <li><a href="../gallery.html">Gallery</a></li>
+                        <!--<li><a href="gallery.html">Gallery</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">News <span class="fa fa-angle-down"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="../blog-archive.html">Blog Archive</a></li>
-                                <li><a href="../blog-archive-with-left-sidebar.html">Blog Archive with Left Sidebar</a></li>
-                                <li><a href="../blog-archive-with-right-sidebar.html">Blog Archive with Right Sidebar</a></li>
-                                <li><a href="../blog-single.html">Blog Single</a></li>
-                                <li><a href="../blog-single-with-left-sidebar.html">Blog Single with Left Sidebar</a></li>
-                                <li><a href="../blog-single-with-right-sidebar.html">Blog Single with Right Sidebar</a></li>
-                            </ul>
-                        </li>
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">News <span class="fa fa-angle-down"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="blog-archive.html">Blog Archive</a></li>
+                            <li><a href="blog-archive-with-left-sidebar.html">Blog Archive with Left Sidebar</a></li>
+                            <li><a href="blog-archive-with-right-sidebar.html">Blog Archive with Right Sidebar</a></li>
+                            <li><a href="blog-single.html">Blog Single</a></li>
+                            <li><a href="blog-single-with-left-sidebar.html">Blog Single with Left Sidebar</a></li>
+                            <li><a href="blog-single-with-right-sidebar.html">Blog Single with Right Sidebar</a></li>
+                          </ul>
+                        </li>-->
 
                         <!--<li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Page <span class="fa fa-angle-down"></span></a>
@@ -365,8 +365,8 @@ if(!isset($_SESSION['username'])){
                             <li><a href="#">Link Three</a></li>
                           </ul>
                         </li>-->
-                        <li><a href="../contact.html">Contact</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="profile">Login</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
