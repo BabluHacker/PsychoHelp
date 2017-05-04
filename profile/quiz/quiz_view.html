@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"?>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+   <script type="text/javascript" >
+       var count;
+       var mentalhealth_level=0;
+       var user_answer = new Array(20); // array of size 10, all elements undefined
+       var  answer = [] ;
+       var wop = [[], [],[],[]];
+       var tot_weight = 0;
+
+       function createfield(name ,number,idx,op_no)
+       {
+
+           var input = document.createElement("input");
+
+           if(number == 0 )
+           {
+               input.style = "width : 800px ; height: 100px; background-color: lightgreen;";
+               input.type = "text";
+               input.id="q"+idx;
+               input.value = name ;
+           }
+           else if(number == 1)
+           {
+               //input.style = "width : 400px ; height: 50px; background-color: lightgreen;";
+
+               input.type = "radio";
+               //input.id= idx+op_no;
+              // input.id= idx+op_no;
+               input.id= op_no;
+               input.name="op"+idx;
+               input.value = idx;
+               //input.name="op"+idx;
+
+
+           }
+
+           return input;
+
+       }
+
+       function check_answer() {
+           correct_Answer = 0;
+           var err = document.getElementById("error_message");
+           var redflg = 0;
+           var container = document.getElementById("container").children;
+           console.log(container.length);
+
+
+           for(var i= 0 ; i< count ; i++)
+           {
+               var qdiv = document.getElementById("qdiv"+i).children;
+               for(var j= 0 ,flg = 0; j< qdiv.length ; j++) {
+                   if (qdiv[j].type == "radio") {
+
+                       if (!qdiv[j].checked) {
+                           flg++;
+                           if (flg == 3) {
+                               redflg = 1;
+                              alert("Please answer question number " + qdiv[j].value);
+
+                               break;
+                           }
+                       }
+                       else
+                       {
+                           user_answer[qdiv[j].value]=qdiv[j].id;
+                       }
+                   }
+               }
+
+
+           }
+
+           if(redflg == 0)
+           {
+               for(var i= 0 ; i< count ; i++)
+               {
+                   var ans = user_answer[i];
+                   mentalhealth_level+= wop[ans][i]*answer[i];
+
+               }
+
+               $.ajax({
+                   url: "http://localhost/psycho_help/access/usersinput.php",
+                   type: "GET",
+                   data: {"data": user_answer,"dbname": "user_answer","var":"quizsubmit"},
+                   success: function(feedback) {
+                       alert(feedback);
+                   }
+
+               });
+
+           }
+           console.log(mentalhealth_level);
+           var parcentage = mentalhealth_level*100/tot_weight;
+
+          alert("Your are phycological strength is " +mentalhealth_level+"%\n");
+
+
+       }
+       function load_quiz() {
+           var  idx=0;
+           var response = [
+               [], [] ,[],[]
+           ];
+
+           xhttp = new XMLHttpRequest();
+           xhttp.onreadystatechange = function () {
+
+               if (this.readyState == 4 && this.status == 200) {
+                   response = xhttp.responseText;
+                   var res = JSON.parse(response);
+                   count = res['count'];var idx;
+                   var container = document.getElementById("container");
+                   // Clear previous contents of the container
+                   while (container.hasChildNodes())
+                   {
+                       container.removeChild(container.lastChild);
+                   }
+                   for(idx = 0 ; idx < count ; idx++)
+                   {
+
+
+
+                       // Create an <input> element, set its type and name attributes
+
+                       var div = document.createElement('div');
+                       div.id = 'qdiv'+idx;
+                       div.className = 'block';
+
+
+                       document.getElementsByTagName('body')[0].appendChild(div);
+
+                       var input = createfield(res['q'][idx],0,idx,0);
+                       var op1 = createfield(res['op1'][idx],1,idx,1);
+                       var op2 = createfield(res['op2'][idx],1,idx,2);
+                       var op3 = createfield(res['op3'][idx],1,idx,3);
+
+
+
+                       div.appendChild(input);
+                       div.appendChild(document.createElement("br"));
+                       div.appendChild(op1);
+                       div.appendChild(document.createTextNode(res['op1'][idx]));
+                       div.appendChild(document.createElement("br"));
+                       div.appendChild(op2);
+                       div.appendChild(document.createTextNode(res['op2'][idx]));
+                       div.appendChild(document.createElement("br"));
+                       div.appendChild(op3);
+                       div.appendChild(document.createTextNode(res['op3'][idx]));
+                       div.appendChild(document.createElement("br"));
+                       answer[idx] = res['ans'][idx];
+                       wop[1][idx] = res['w1'][idx];
+                       wop[2][idx] = res['w2'][idx];
+                       wop[3][idx] = res['w3'][idx];
+                       console.log(answer[idx]+" "+res['w1'][idx]+"  "+res['w2'][idx]+" "+res['w3'][idx]+"\n");
+                       tot_weight+= answer[idx]*6;
+
+                       container.appendChild(div);
+
+                   }container.appendChild(document.createElement("br"));
+                   container.appendChild(document.createElement("br"));
+                   var butn= document.createElement("input");
+                   // butn.value="submit";
+
+
+                   butn.type = "button" ;
+                   butn.name = "ans_submit" ;
+                   butn.value = "submit";
+                   butn.onclick = check_answer;
+                   //  var span = document.createElement('span');
+                   // span.innerHTML = '<button id="but' + inc +'" onclick="callJavascriptFunction()" />';
+                   container.appendChild(butn);
+
+               }
+
+
+           };
+
+
+           xhttp.open("GET", "get_question.php", true);
+           xhttp.send();
+           return " ";
+
+       }
+   </script>
+
+</head>
+<body>
+</br>
+<center>
+   <!-- <input type="button" id="button" name="submit" value="Start quiz" onclick="load_quiz()"/></br>
+    <script src="quiz_view.html">
+    </script>
+-->
+
+    <script> document.write(load_quiz())
+    </script>
+    <form>
+        <div id="error_message"/>
+        <div id="container"/>
+
+
+    </form>
+
+    <p id="showmsg"></p>
+
+</center>
+</body>
+
+
+</html> 
