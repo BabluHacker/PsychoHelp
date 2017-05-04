@@ -14,7 +14,7 @@ if(!isset($_SESSION['username'])){
         ================================================== -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>WpF Medinova : Home</title>
+        <title>PsychoHelp : Online Couseling</title>
 
         <!-- Mobile Specific Metas
         ================================================== -->
