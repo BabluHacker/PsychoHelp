@@ -5,6 +5,7 @@ session_start();
     $_SESSION["fname"] = $_GET['fname'];
     $_SESSION["lname"] = $_GET['lname'];
     $_SESSION["email"] = $_GET['email'];
+    $_SESSION["admin"] = $_GET['admin'];
 
 
 

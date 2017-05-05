@@ -4,8 +4,10 @@ session_start();
 
 
     unset($_SESSION['state']);
+session_destroy();
 
-echo "<script> window.location.replace('http://localhost/psychohelp/profile/index.html')</script>";
+header("Location: /psychohelp/profile");
+
 
 
 

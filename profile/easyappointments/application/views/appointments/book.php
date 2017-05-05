@@ -73,6 +73,7 @@
                             <strong>4</strong>
                         </div>
                     </div>
+
                 </div>
 
                 <?php
@@ -204,7 +205,16 @@
                             <?php echo $this->lang->line('next'); ?>
                             <span class="glyphicon glyphicon-forward"></span>
                         </button>
+                        <form id="_gohome" style="display:inline-block" method="post" action="http://localhost/psychohelp/profile/access/adminUser.php">
+                            <button id="gohome" type="submit" class="btn btn-success">
+
+                                <?php
+                                echo "Go back to your profile";
+                                ?>
+                            </button>
+                        </form>
                     </div>
+
                 </div>
 
                 <?php
@@ -240,7 +250,16 @@
                             <?php echo $this->lang->line('next'); ?>
                             <span class="glyphicon glyphicon-forward"></span>
                         </button>
+                        <form id="_gohome" style="display:inline-block" method="post" action="http://localhost/psychohelp/profile/access/adminUser.php">
+                            <button id="gohome" type="submit" class="btn btn-success">
+
+                                <?php
+                                echo "Go back to your profile";
+                                ?>
+                            </button>
+                        </form>
                     </div>
+
                 </div>
 
                 <?php
@@ -306,7 +325,16 @@
                             <?php echo $this->lang->line('next'); ?>
                             <span class="glyphicon glyphicon-forward"></span>
                         </button>
+                        <form id="_gohome" style="display:inline-block" method="post" action="http://localhost/psychohelp/profile/access/adminUser.php">
+                            <button id="gohome" type="submit" class="btn btn-success">
+
+                                <?php
+                                echo "Go back to your profile";
+                                ?>
+                            </button>
+                        </form>
                     </div>
+
                 </div>
 
                 <?php
@@ -350,9 +378,24 @@
                                             : $this->lang->line('update');
                                 ?>
                             </button>
+
+
                             <input type="hidden" name="csrfToken" />
                             <input type="hidden" name="post_data" />
+
                         </form>
+                        <form id="_gohome" style="display:inline-block" method="post" action="http://localhost/psychohelp/profile/access/adminUser.php">
+                            <button id="gohome" type="submit" class="btn btn-success">
+
+                                <?php
+                                echo "Go back to your profile";
+                                ?>
+                            </button>
+                        </form>
+
+
+
+
                     </div>
                 </div>
 

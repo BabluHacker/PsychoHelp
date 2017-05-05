@@ -69,6 +69,14 @@
                             echo '</div>';
                         }
                     ?>
+                    <form id="_gohome" style="display:inline-block" method="post" action="/psychohelp/profile/access/adminUser.php">
+                        <button id="gohome" type="submit" class="btn btn-success">
+
+                            <?php
+                            echo "Go back to your profile";
+                            ?>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>

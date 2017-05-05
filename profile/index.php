@@ -1,3 +1,23 @@
+<?php
+session_start();
+//$state =  trim($_SESSION["state"]);
+if(isset( $_SESSION["state"])){
+    echo "<script>alert('aaaa')</script>";
+    if($_SESSION["admin"] == 1){
+        header("Location: /psychohelp/profile/access/user_profile_admin.php");
+    }
+    else{
+        header("Location: /psychohelp/profile/access/user_profile.php");
+    }
+
+
+    exit();
+    // echo "<script> window.location.replace('http://localhost:63342/psycho_help/index.html')</script>";
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html >
 <head>
@@ -22,19 +42,55 @@
 </head>
 
 <body>
+<form action="/psychohelp">
+  <center>
+  <button  class="button button-pblock"/>Home</button>
+  </center>
+</form>
   <div class="form" >
       	  <h1>Register or login to know your mental strength level :) </h1>
+
+
       <ul class="tab-group">
-        <li class="tab active"><a href="#signup">Sign Up</a></li>
-        <li class="tab"><a href="#login">Log In</a></li>
+
+        <li class="tab "><a href="#signup">Sign Up</a></li>
+        <li class="tab active"><a href="#login">Sign In</a></li>
+
+
       </ul>
       
       <div class="tab-content">
+          <div id="login">
+              <h1>Welcome Back!</h1>
+
+              <form onsubmit="return false" id="loginform" method="post">
+
+                  <div class="field-wrap">
+                      <label>
+                          Email Address<span class="req">*</span>
+                      </label>
+                      <input type="email" id="lemail" required autocomplete="off"/>
+                  </div>
+
+                  <div class="field-wrap">
+                      <label>
+                          Password<span class="req">*</span>
+                      </label>
+                      <input type="password" id="lpassword" required autocomplete="off"/>
+                  </div>
+
+                  <p class="forgot"><a href="#">Forgot Password?</a></p>
+
+                  <button onclick="validate()" class="button button-block"/>Log In</button>
+
+              </form>
+
+          </div>
         <div id="signup">   
 	
-          <h1>Sign Up for Free</h1>
+          <h1>Please Register if you don't have an account</h1>
           
-          <form onsubmit="return false" id="myform">
+          <form id="myform" >
           
           <div class="top-row">
             <div class="field-wrap">
@@ -75,7 +131,7 @@
               <p class="bText">  Male<input type="radio" style = "width : 20px ; height: 20px; background-color: lightgreen;"
                      value="male" id="male" name="gen">
               </p>
-              <p class="bText">  Female<br> <input type="radio" style = "width : 20px ; height: 20px; background-color: lightgreen;" value="female"  id="female" name="gen">
+              <p class="bText">  Female<br> <input type="radio" style = "width : 20px ; height: 20px; background-color: lightgreen" value="female"  id="female" name="gen">
               </p>
           </div>
           <div>
@@ -88,32 +144,9 @@
 
         </div>
         
-        <div id="login">
-          <h1>Welcome Back!</h1>
-          
-          <form onsubmit="return false" id="loginform" method="post">
-          
-            <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email" id="lemail" required autocomplete="off"/>
-            </div>
-          
-            <div class="field-wrap">
-              <label>
-                Password<span class="req">*</span>
-              </label>
-              <input type="password" id="lpassword" required autocomplete="off"/>
-            </div>
-          
-          <p class="forgot"><a href="#">Forgot Password?</a></p>
-          
-          <button onclick="validate()" class="button button-block"/>Log In</button>
-          
-          </form>
 
-        </div>
+
+
         
       </div><!-- tab-content -->
       
@@ -124,4 +157,3 @@
 
 </body>
 </html>
-

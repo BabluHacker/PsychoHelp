@@ -1,6 +1,6 @@
 <html>
 <head>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script type='text/javascript'>
 
         function createfield(name ,number,style,op)
@@ -62,51 +62,13 @@
                 var input = createfield("Question",i,0,0);
 
 
-                var op1 = createfield("Option",1,1,i);
-                var wop1 = createfield("wop",1,2,i);
-
-                var op2 = createfield("Option",2,1,i);
-                var wop2 = createfield("wop",2,2,i);
-
-                var op3 = createfield("Option",3,1,i);
-                var wop3 = createfield("wop",3,2,i);
-
-                var ans = createfield("Answer",0,2,i);
-
 
                 /*input.type = "textarea";
                  input.style = "width : 800px ; height: 100px; background-color: lightgreen;";
                  input.name = "question" + (i+1);*/
                 container.appendChild(input);
 
-                container=_break(container,"Weight_question ",i);
 
-                container.appendChild(ans);
-
-                container=_break(container,"Option",1);
-
-                container.appendChild(op1);
-
-                container=_break(container,"Weight",1);
-
-                container.appendChild(wop1);
-
-
-                container= _break(container,"Option",2);
-
-                container.appendChild(op2);
-
-                container=_break(container,"Weight",2);
-
-                container.appendChild(wop2);
-
-                container=_break(container,"Option",3);
-
-                container.appendChild(op3);
-
-                container=_break(container,"Weight",3);
-
-                container.appendChild(wop3);
                 container.appendChild(document.createElement("br"));
                 container.appendChild(document.createElement("br"));
 
@@ -151,7 +113,7 @@
     resize: none;"  id="count" name="count" value="">
     <button onclick="addFields()">Fill Details</button>
     <br><br>
-    <form action = "http://localhost/psycho_help/load.php" method="GET">
+    <form action = "load.php" method="GET">
 
         <div id="container"/>
 
