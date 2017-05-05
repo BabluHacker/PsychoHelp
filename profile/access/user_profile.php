@@ -2,8 +2,8 @@
 session_start();
 //$state =  trim($_SESSION["state"]);
 if(!isset( $_SESSION["state"])){
-    echo "<script>alert('aaaa')</script>";
-   header("Location: /psychohelp/profile");
+   // echo "<script>alert('aaaa')</script>";
+    header("Location: ../../index.html");
     exit();
    // echo "<script> window.location.replace('http://localhost:63342/psycho_help/index.html')</script>";
 
@@ -29,7 +29,7 @@ if(!isset( $_SESSION["state"])){
 
 </head>
 
-<title>W3.CSS Template</title>
+<title>logged in page</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -47,7 +47,15 @@ if(!isset( $_SESSION["state"])){
       <a href="../easyappointments/index.php" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Take an appointment</a>
       <a href="#" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Start Chat</a>
       <a href="../quiz/quiz_view.html" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Self help</a>
-      <a href="../quiz/quiz_view.html" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Judge your mental strength</a>
+
+        <a href="#" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Judge your mental strength.</a>
+
+        <select name="forma" onchange="location = this.value;">
+            <option value="#" selected="selected">Select</option>
+            <option value="../quiz/quiz_view.html">Quiz on Anxiety</option>
+            <option value="../quiz/quix_view_depression.html">Quiz on Depression</option>
+        </select>
+
       <a href="../access/logout.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Logout</a>
 
 

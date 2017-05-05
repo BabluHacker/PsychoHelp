@@ -1,5 +1,6 @@
 *, *:before, *:after {
   box-sizing: border-box;
+  border-radius: 15px 50px 30px;
 }
 
 html {
@@ -7,45 +8,50 @@ html {
 }
 
 body {
-  background: #c1bdba;
-  font-family: 'Titillium Web', sans-serif;
+  background: rgba(0, 0, 0, 0.87);
+
+  font-family: 'Times New Roman Bold Italic', Times New Roman Bold Italic;
+
 }
 
 a {
   text-decoration: none;
-  color: #1ab188;
+  color: #66acb1;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
 a:hover {
-  color: #179b77;
+  color: rgba(23, 155, 119, 0.19);
 }
 
 .form {
-  background: rgba(19, 35, 47, 0.9);
+  background: rgba(113, 134, 203, 0.32);
   padding: 40px;
   max-width: 600px;
   margin: 40px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  border-radius: 15px 50px 30px;
 }
 
 .tab-group {
   list-style: none;
   padding: 0;
   margin: 0 0 40px 0;
+  border-radius: 15px 50px 30px;
 }
 .tab-group:after {
   content: "";
   display: table;
   clear: both;
+  border-radius: 15px 50px 30px;
 }
 .tab-group li a {
   display: block;
   text-decoration: none;
   padding: 15px;
-  background: rgba(160, 179, 176, 0.25);
-  color: #a0b3b0;
+  background: rgba(160, 179, 176, 0.76);
+  color: rgba(160, 179, 176, 0.9);
   font-size: 20px;
   float: left;
   width: 50%;
@@ -53,14 +59,17 @@ a:hover {
   cursor: pointer;
   -webkit-transition: .5s ease;
   transition: .5s ease;
+  border-radius: 15px 50px 30px;
 }
 .tab-group li a:hover {
-  background: #179b77;
+  background: rgba(23, 155, 119, 0.31);
   color: #ffffff;
+  border-radius: 15px 50px 30px;
 }
 .tab-group .active a {
-  background: #1ab188;
+  background: rgba(26, 177, 136, 0.13);
   color: #ffffff;
+  border-radius: 15px 50px 30px;
 }
 
 .tab-content > div:last-child {
@@ -85,10 +94,12 @@ label {
   -webkit-backface-visibility: hidden;
   pointer-events: none;
   font-size: 22px;
+  border-radius: 15px 50px 30px;
 }
 label .req {
   margin: 2px;
   color: #1ab188;
+  border-radius: 15px 50px 30px;
 }
 
 label.active {
@@ -96,13 +107,16 @@ label.active {
           transform: translateY(50px);
   left: 2px;
   font-size: 14px;
+  border-radius: 15px 50px 30px;
 }
 label.active .req {
   opacity: 0;
+  border-radius: 15px 50px 30px;
 }
 
 label.highlight {
   color: #ffffff;
+  border-radius: 15px 50px 30px;
 }
 
 input, textarea {
@@ -118,31 +132,37 @@ input, textarea {
   border-radius: 0;
   -webkit-transition: border-color .25s ease, box-shadow .25s ease;
   transition: border-color .25s ease, box-shadow .25s ease;
+  border-radius: 15px 50px 30px;
 }
 input:focus, textarea:focus {
   outline: 0;
-  border-color: #1ab188;
+  border-color: #39b1b0;
 }
 
 textarea {
   border: 2px solid #a0b3b0;
   resize: vertical;
+  border-radius: 15px 50px 30px;
 }
 
 .field-wrap {
   position: relative;
   margin-bottom: 40px;
+  border-radius: 15px 50px 30px;
+
 }
 
 .top-row:after {
   content: "";
   display: table;
   clear: both;
+  border-radius: 15px 50px 30px;
 }
 .top-row > div {
   float: left;
   width: 48%;
   margin-right: 4%;
+  border-radius: 15px 50px 30px;
 }
 .top-row > div:last-child {
   margin: 0;
@@ -157,19 +177,24 @@ textarea {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
-  background: #1ab188;
+  background: #152c4a;
   color: #ffffff;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-appearance: none;
+  border-radius: 15px 50px 30px;
 }
 .button:hover, .button:focus {
-  background: #179b77;
+  background: #1c404a;
 }
 
 .button-block {
   display: block;
   width: 100%;
+}
+.button-pblock {
+  display: block;
+  width: 50%;
 }
 
 .forgot {

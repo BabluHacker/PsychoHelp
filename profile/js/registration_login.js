@@ -32,26 +32,26 @@ function loadvalue() {
             info[4] = 1;
             v = 1;
         }
-	
+
         if (v == 0) return "";
         var data = JSON.stringify(info);
-	//alert(data);
+       // alert(data);
         xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
 
             //console.log(this.readyState + " " + this.status + " " + xhttp.responseText);
             if (this.readyState == 4 && this.status == 200) {
-		
-		alert(xhttp.responseText);
-		 window.location = "http://localhost/psychohelp/profile/index.html";
-		
-		
+
+                alert(xhttp.responseText);
+               // window.location = "index.html";
+
+
             }
         };
-        xhttp.open("GET", "http://localhost/psychohelp/profile/access/usersinput.php?data=" + data + "&dbname=user_info"+"&var="+req, true);
+        xhttp.open("GET", "http://localhost/psycho_help/profile/access/usersinput.php?data=" + data + "&dbname=user_info"+"&var="+req, true);
         xhttp.send();
 
-	
+
 
 
 
@@ -72,7 +72,7 @@ function validate() {
             console.log(this.readyState + " " + this.status + " " + xhttp.responseText);
             if (this.readyState == 4 && this.status == 200) {
                // alert(xhttp.responseText);
-                response = xhttp.responseText;
+                response = xhttp.responseText
                 var res = JSON.parse(response);
                 var flag = res['flag'];
                 if(flag==0)
@@ -83,26 +83,30 @@ function validate() {
                 else {
                    var fname = res['fname'];
                    var lname = res['lname'];
+                    var admin = res['admin'];
+
 
 
                     localStorage.setItem("email",email);
                     localStorage.setItem("lname",lname);
                     localStorage.setItem("fname",fname);
                     $.ajax({
-                        url: "http://localhost/psychohelp/profile/access/setsession.php",
+                        url: "http://localhost/psycho_help/profile/access/setsession.php",
                         type: "GET",
-                        data: {"fname": fname,"lname": "lname","email":email}
-			
-                    });
+                        data: {"fname": fname,"lname": "lname","email":email,"admin":admin}
 
-                   window.location = "http://localhost/psychohelp/profile/access/user_profile.php";
+                    });
+                    if(admin == 1)
+                        window.location = "../access/user_profile_admin.php";
+                    else
+                        window.location = "../access/user_profile.php";
                     //alert(xhttp.responseText);
 
 
                 }
             }
         };
-        xhttp.open("GET", "http://localhost/psychohelp/profile/access/usersinput.php?email=" + email + "&pass="+password+"&var="+req, true);
+        xhttp.open("GET", "../access/usersinput.php?email=" + email + "&pass="+password+"&var="+req, true);
         xhttp.send();
 
     }

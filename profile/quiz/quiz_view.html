@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"?>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script
     src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
    <script type="text/javascript" >
@@ -9,7 +9,7 @@
        var mentalhealth_level=0;
        var user_answer = new Array(20); // array of size 10, all elements undefined
        var  answer = [] ;
-       var wop = [[], [],[],[]];
+       var wop = [[], [],[],[],[],[]];
        var tot_weight = 0;
 
        function createfield(name ,number,idx,op_no)
@@ -19,14 +19,14 @@
 
            if(number == 0 )
            {
-               input.style = "width : 800px ; height: 100px; background-color: lightgreen;";
+               input.style = "background-color:	#87CEFA;width : 300px ; height: 50px;font size:10 ;";
                input.type = "text";
                input.id="q"+idx;
                input.value = name ;
            }
            else if(number == 1)
            {
-               //input.style = "width : 400px ; height: 50px; background-color: lightgreen;";
+
 
                input.type = "radio";
                //input.id= idx+op_no;
@@ -59,9 +59,9 @@
 
                        if (!qdiv[j].checked) {
                            flg++;
-                           if (flg == 3) {
+                           if (flg == 5) {
                                redflg = 1;
-                              alert("Please answer question number " + qdiv[j].value);
+                              alert("Please answer question number " + qdiv[j].value+count);
 
                                break;
                            }
@@ -76,30 +76,42 @@
 
            }
 
-           if(redflg == 0)
-           {
-               for(var i= 0 ; i< count ; i++)
-               {
+           if(redflg == 0) {
+               for (var i = 0; i < count; i++) {
                    var ans = user_answer[i];
-                   mentalhealth_level+= wop[ans][i]*answer[i];
+                   mentalhealth_level += wop[ans][i] ;
 
                }
 
                $.ajax({
-                   url: "http://localhost/psycho_help/access/usersinput.php",
+                   url: "../access/usersinput.php",
                    type: "GET",
-                   data: {"data": user_answer,"dbname": "user_answer","var":"quizsubmit"},
-                   success: function(feedback) {
+                   data: {
+                       "data": user_answer,
+                       "dbname": "user_answer",
+                       "var": "quizsubmit",
+                       "result": mentalhealth_level
+                   },
+                   success: function (feedback) {
                        alert(feedback);
                    }
 
                });
 
-           }
-           console.log(mentalhealth_level);
-           var parcentage = mentalhealth_level*100/tot_weight;
 
-          alert("Your are phycological strength is " +mentalhealth_level+"%\n");
+               console.log(mentalhealth_level);
+             //  var parcentage = mentalhealth_level * 100 / tot_weight;
+              // 54 & less = Mild;	55 to 66= Moderate; 67 to 77= Severe; 78 to 135 & above= Profound.
+                if(mentalhealth_level <= 54)
+               alert("You have mild anxiety.Your anxiety level  is " + mentalhealth_level + "\n");
+
+               else if(mentalhealth_level >= 55 && mentalhealth_level <= 66 )
+                   alert("You have Moderate anxiety.Your anxiety level  is " + mentalhealth_level + "\n");
+               else if(mentalhealth_level >= 67 && mentalhealth_level <= 77 )
+                   alert("You have severe anxiety.Your anxiety level  is " + mentalhealth_level + "\n");
+                else if(mentalhealth_level >= 78  )
+                    alert("You have profound anxiety.Your anxiety level  is " + mentalhealth_level + "\n");
+           }
 
 
        }
@@ -109,6 +121,7 @@
                [], [] ,[],[]
            ];
 
+
            xhttp = new XMLHttpRequest();
            xhttp.onreadystatechange = function () {
 
@@ -116,18 +129,34 @@
                    response = xhttp.responseText;
                    var res = JSON.parse(response);
                    count = res['count'];var idx;
+
                    var container = document.getElementById("container");
                    // Clear previous contents of the container
                    while (container.hasChildNodes())
                    {
                        container.removeChild(container.lastChild);
                    }
+
+
+                   var div = document.createElement('div');
+                   div.appendChild(document.createTextNode("এই বিবৃতিগুলো আপনার উদ্বেগ বা Anxiety পরিমাপনের মানক।"));
+                   div.appendChild(document.createElement("br"));
+                   div.appendChild(document.createTextNode("Developed by: Dr. Farah Deeba and Dr. Roquia Begum, Department of Clinical Psychology, DU."));
+                   div.appendChild(document.createElement("br"));
+                   div.appendChild(document.createElement("br"));
+
+                   div.appendChild(document.createTextNode("এই বিবৃতিগুলো আপনার ক্ষেত্রে প্রযোজ্য কি না যাচাই করাই আমাদের উদ্দেশ্য। লক্ষ্য করুন প্রতিটি বিবৃতির পাশেই সম্ভাব্য পাঁচ ধরণের উত্তর দেয়া আছে। এগুলো হলো-’ একেবারেই হয় না’,’খুব সামান্য হয়’, ’মোটামুটি হয়’, অনেক বেশী হয়’। প্রশ্নমালায় প্রদত্ত বামপার্শ্বের বিবৃতিগুলো পড়ে গত এক মাসের মধ্য  এই বিবৃতি গুলো আপনার ক্ষেত্রে কতটা প্রযোজ্য তা বিবৃতির ডানপার্শ্বের সম্ভাব্য পাঁচটি উত্তরের যেটি প্রযোজ্য সেটির ঘরে টিক (√) চিহ্ন দিয়ে নির্দেশ করুন। এই পাঁচটি উত্তরের থেকে যে কোন একটিকে বেছে নিন এবং সবগুলো প্রশ্নের উত্তর দিন। অনুগ্রহ করে লক্ষ্য করুন সবগুলো বিবৃতির উত্তর দিয়েছেন কি না। আপনার সহযোগীতার জন্য ধন্যবাদ। "));
+                   div.appendChild(document.createElement("br"));
+                   div.appendChild(document.createElement("br"));
+                   container.appendChild(div);
+
+
+
                    for(idx = 0 ; idx < count ; idx++)
                    {
 
 
-
-                       // Create an <input> element, set its type and name attributes
+                     //   alert(count);// Create an <input> element, set its type and name attributes
 
                        var div = document.createElement('div');
                        div.id = 'qdiv'+idx;
@@ -137,33 +166,45 @@
                        document.getElementsByTagName('body')[0].appendChild(div);
 
                        var input = createfield(res['q'][idx],0,idx,0);
-                       var op1 = createfield(res['op1'][idx],1,idx,1);
-                       var op2 = createfield(res['op2'][idx],1,idx,2);
-                       var op3 = createfield(res['op3'][idx],1,idx,3);
+                       var op1 = createfield(' ',1,idx,1);
+                       var op2 = createfield(' ',1,idx,2);
+                       var op3 = createfield(' ',1,idx,3);
+                       var op4 = createfield(' ',1,idx,4);
+                       var op5 = createfield(' ',1,idx,5);
 
 
 
                        div.appendChild(input);
                        div.appendChild(document.createElement("br"));
                        div.appendChild(op1);
-                       div.appendChild(document.createTextNode(res['op1'][idx]));
+                       div.appendChild(document.createTextNode("একেবারেই হয় না"));
                        div.appendChild(document.createElement("br"));
                        div.appendChild(op2);
-                       div.appendChild(document.createTextNode(res['op2'][idx]));
+                       div.appendChild(document.createTextNode("খুব সামান্য হয়"));
                        div.appendChild(document.createElement("br"));
                        div.appendChild(op3);
-                       div.appendChild(document.createTextNode(res['op3'][idx]));
+                       div.appendChild(document.createTextNode("মোটামুটি হয় "));
                        div.appendChild(document.createElement("br"));
-                       answer[idx] = res['ans'][idx];
-                       wop[1][idx] = res['w1'][idx];
-                       wop[2][idx] = res['w2'][idx];
-                       wop[3][idx] = res['w3'][idx];
-                       console.log(answer[idx]+" "+res['w1'][idx]+"  "+res['w2'][idx]+" "+res['w3'][idx]+"\n");
-                       tot_weight+= answer[idx]*6;
+                       div.appendChild(op4);
+                       div.appendChild(document.createTextNode("বেশী হয়"));
+                       div.appendChild(document.createElement("br"));
+                       div.appendChild(op5);
+                       div.appendChild(document.createTextNode("অনেক বেশী হয়"));
+                       div.appendChild(document.createElement("br"));
+                    //   answer[idx] = res['ans'][idx];
+                       wop[1][idx] = 0;
+                       wop[2][idx] = 1;
+                       wop[3][idx] = 2;
+                       wop[4][idx] = 3;
+                       wop[5][idx] = 4;
+                      // console.log(answer[idx]+" "+res['w1'][idx]+"  "+res['w2'][idx]+" "+res['w3'][idx]+"\n");
+                      // tot_weight+= answer[idx]*6;
 
                        container.appendChild(div);
 
-                   }container.appendChild(document.createElement("br"));
+                   }
+
+                   container.appendChild(document.createElement("br"));
                    container.appendChild(document.createElement("br"));
                    var butn= document.createElement("input");
                    // butn.value="submit";
@@ -183,7 +224,7 @@
            };
 
 
-           xhttp.open("GET", "get_question.php", true);
+           xhttp.open("GET", "get_question.php?flag="+1, true);
            xhttp.send();
            return " ";
 
@@ -191,24 +232,27 @@
    </script>
 
 </head>
-<body>
+<body bgcolor="#20B2AA">
 </br>
 <center>
-   <!-- <input type="button" id="button" name="submit" value="Start quiz" onclick="load_quiz()"/></br>
-    <script src="quiz_view.html">
-    </script>
--->
+    <form  action = "../access/user_profile.php"  method="post">
+        <button  id="button" type="submit" value="Go back to your profile">
+            Go back to your profile
+        </button></br>
+    </form>
+    </br>
 
     <script> document.write(load_quiz())
     </script>
-    <form>
+   <!-- <form > -->
         <div id="error_message"/>
         <div id="container"/>
 
 
-    </form>
+    <!--</form> -->
 
     <p id="showmsg"></p>
+
 
 </center>
 </body>

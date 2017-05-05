@@ -23,13 +23,14 @@ if(isset($_GET['submit']))
         }
         $id++;*/
 
-    $dbname = "quiz";
+    $dbname = "dummy";
 
-    for($idx = 1 ; $idx <= 20 ; $idx++)
+    for($idx = 1 ; $idx <= 36 ; $idx++)
     {
-
+        $ques;
         $q = "Question".$idx;
-        $option1 = "Option1".$idx;
+        $ques= $_GET[$q];
+       /* $option1 = "Option1".$idx;
         $option2 = "Option2".$idx;
         $option3 = "Option3".$idx;
 
@@ -41,8 +42,7 @@ if(isset($_GET['submit']))
         $answer = "Answer0".$idx;
         //echo $answer;
         $n="";
-        if(!($ques= @$_GET[$q]))
-            break;
+
         $op1= @$_GET[$option1];
         $op2= @$_GET[$option2];
         $op3= @$_GET[$option3];
@@ -53,17 +53,21 @@ if(isset($_GET['submit']))
 
         $answer= intval($_GET[$answer]);
        // $topic= @$_GET['topic'];
-        $date = date("y-m-d");
+
      // echo $ques ." ".$op1." ".$op2." ".$op3;
     //echo $id."<br> ".$topic." <br>".$ques."<br> ".$op1."<br>".$op2."<br>".$op3."<br> ".$mid." ".$date." ".$answer." ".$dl;
+*/
+        if(!$ques)
+            break;
 
+        $date = date("y-m-d");
 
-        $query = "INSERT INTO $dbname (quiz,option1,option2,option3,weight,wop1,wop2,wop3,date) VALUES (?,?,?,?,?,?,?,?,?)";
+        $query = "INSERT INTO $dbname (quiz,date) VALUES (?,?)";
 
 
         $stmt = mysqli_prepare($dbc, $query);
 
-        mysqli_stmt_bind_param($stmt, "sssssssss", $ques,$op1,$op2,$op3,$answer,$w1,$w2,$w3,$date);
+        mysqli_stmt_bind_param($stmt, "ss", $ques,$date);
 
         mysqli_stmt_execute($stmt);
 
@@ -71,10 +75,13 @@ if(isset($_GET['submit']))
 
 
 
-        if( $affected_rows)
+        if( $affected_rows) {
             echo "Succesfully inserted\n";
-        else
-            mysqli_error($dbc);
+        }
+        else {
+            //mysqli_error($dbc);
+            echo mysqli_error($dbc);
+        }
 
 
 
