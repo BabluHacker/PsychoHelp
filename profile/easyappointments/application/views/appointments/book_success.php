@@ -60,6 +60,7 @@
                         }
 
                         // Display exceptions (if any).
+                    //ssssss
                         if (isset($exceptions)) {
                             echo '<div class="col-xs-12" style="margin:10px">';
                             echo '<h4>Unexpected Errors</h4>';
