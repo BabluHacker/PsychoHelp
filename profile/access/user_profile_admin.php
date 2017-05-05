@@ -3,7 +3,7 @@ session_start();
 //$state =  trim($_SESSION["state"]);
 if(!isset( $_SESSION["state"])){
     //echo "<script>alert('aaaa')</script>";
-    header("Location: ../../index.html");
+    header("Location: /psycho_help/profile/index.html");
     exit();
     // echo "<script> window.location.replace('http://localhost:63342/psycho_help/index.html')</script>";
 
@@ -44,13 +44,13 @@ if(!isset( $_SESSION["state"])){
         </div>
         <div class="w3-padding-10">
             <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
-            <a href="../easyappointments/index.php" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">View yours appointment</a>
+            <a href="/psycho_help/profile/easyappointments/index.php" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">View yours appointment</a>
             <a href="#" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Start Chat</a>
-            <a href="../quiz/quiz.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Set quiz</a>
-            <a href="statistics_registered.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">View the data of registered user</a>
+            <a href="/psycho_help/profile/quiz/quiz.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Set quiz</a>
+            <a href="/psycho_help/profile/access/statistics_registered.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">View the data of registered user</a>
 
-            <a href="statistics_all.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">View the data of all user</a>
-            <a href="logout.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Logout</a>
+            <a href="/psycho_help/profile/access/statistics_all.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">View the data of all user</a>
+            <a href="/psycho_help/profile/access/logout.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Logout</a>
 
 
 
@@ -62,9 +62,9 @@ if(!isset( $_SESSION["state"])){
             <h1>How to start</h1>
 
             <div class="w3-left-align w3-padding-large">
-                <p>You can set quiz from  <a href="../quiz/quiz.php">here</a> where you will find some potential
+                <p>You can set quiz from  <a href="/psycho_help/profile/quiz/quiz.php">here</a> where you will find some potential
                     instructions to help you. There are three stage .....</p>
-                <p>If you want to counselling session, login <a href="../easyappointments/index.php">here</a> and start <a href="#">chat</a> in scheduled time.
+                <p>If you want to counselling session, login <a href="/psycho_help/profile/easyappointments/index.php">here</a> and start <a href="#">chat</a> in scheduled time.
                 </p>
 
             </div>

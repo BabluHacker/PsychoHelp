@@ -42,3 +42,9 @@ ERROR - 2017-05-06 02:50:52 --> #0 /var/www/html/psycho_help/profile/easyappoint
 #2 /var/www/html/psycho_help/profile/easyappointments/system/core/CodeIgniter.php(514): call_user_func_array(Array, Array)
 #3 /var/www/html/psycho_help/profile/easyappointments/index.php(353): require_once('/var/www/html/p...')
 #4 {main}
+ERROR - 2017-05-06 03:11:50 --> EA\Engine\Types\Type: Invalid argument value provided (/psycho_help/profile/easyappointments/index.php/appointments/index/26b056a10406c2984366dc48ba0d19e4)
+ERROR - 2017-05-06 03:11:50 --> #0 /var/www/html/psycho_help/profile/easyappointments/application/controllers/Appointments.php(446): EA\Engine\Types\Type->__construct('/psycho_help/pr...')
+#1 [internal function]: Appointments->ajax_register_appointment()
+#2 /var/www/html/psycho_help/profile/easyappointments/system/core/CodeIgniter.php(514): call_user_func_array(Array, Array)
+#3 /var/www/html/psycho_help/profile/easyappointments/index.php(353): require_once('/var/www/html/p...')
+#4 {main}

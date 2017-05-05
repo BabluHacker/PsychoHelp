@@ -145,7 +145,7 @@
 
 
         </form>
-        <form id="_gohome" style="display:inline-block" method="post" action="../../../access/user_profile.php">
+        <form id="_gohome" style="display:inline-block" method="post" action="/psycho_help/profile/access/user_profile.php">
             <button id="gohome" type="submit" class="btn btn-success">
 
                 <?php

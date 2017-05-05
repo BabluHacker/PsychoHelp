@@ -48,7 +48,7 @@ function loadvalue() {
 
             }
         };
-        xhttp.open("GET", "../profile/access/usersinput.php?data=" + data + "&dbname=user_info"+"&var="+req, true);
+        xhttp.open("GET", "/psycho_help/profile/access/usersinput.php?data=" + data + "&dbname=user_info"+"&var="+req, true);
         xhttp.send();
 
 
@@ -91,22 +91,22 @@ function validate() {
                     localStorage.setItem("lname",lname);
                     localStorage.setItem("fname",fname);
                     $.ajax({
-                        url: "../profile/access/setsession.php",
+                        url: "/psycho_help/profile/access/setsession.php",
                         type: "GET",
                         data: {"fname": fname,"lname": "lname","email":email,"admin":admin}
 
                     });
                     if(admin == 1)
-                        window.location = "../profile/access/user_profile_admin.php";
+                        window.location = "/psycho_help/profile/access/user_profile_admin.php";
                     else
-                        window.location = "../profile/access/user_profile.php";
+                        window.location = "/psycho_help/profile/access/user_profile.php";
                     //alert(xhttp.responseText);
 
 
                 }
             }
         };
-        xhttp.open("GET", "../profile/access/usersinput.php?email=" + email + "&pass="+password+"&var="+req, true);
+        xhttp.open("GET", "/psycho_help/profile/access/usersinput.php?email=" + email + "&pass="+password+"&var="+req, true);
         xhttp.send();
 
     }

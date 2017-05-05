@@ -30,7 +30,7 @@ class Config {
     // GENERAL SETTINGS
     // ------------------------------------------------------------------------
 
-    const BASE_URL      = 'http://localhost/psycho_help/profile/easyappointments';
+    const BASE_URL      = '/psycho_help/profile/easyappointments';
     const LANGUAGE      = 'english';
     const DEBUG_MODE    = FALSE;
 

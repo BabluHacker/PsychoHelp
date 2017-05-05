@@ -3,7 +3,7 @@ session_start();
 //$state =  trim($_SESSION["state"]);
 if(!isset( $_SESSION["state"])){
    // echo "<script>alert('aaaa')</script>";
-    header("Location: ../../index.html");
+    header("Location: /psycho_help/profile/index.html");
     exit();
    // echo "<script> window.location.replace('http://localhost:63342/psycho_help/index.html')</script>";
 
@@ -44,19 +44,19 @@ if(!isset( $_SESSION["state"])){
     </div>
     <div class="w3-padding-10">
       <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
-      <a href="../easyappointments/index.php" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Take an appointment</a>
+      <a href="/psycho_help/profile/easyappointments/index.php" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Take an appointment</a>
       <a href="#" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Start Chat</a>
-      <a href="../quiz/quiz_view.html" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Self help</a>
+      <a href="/psycho_help/profile/quiz/quiz_view.html" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Self help</a>
 
         <a href="#" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Judge your mental strength.</a>
 
         <select name="forma" onchange="location = this.value;">
             <option value="#" selected="selected">Select</option>
-            <option value="../quiz/quiz_view.html">Quiz on Anxiety</option>
-            <option value="../quiz/quix_view_depression.html">Quiz on Depression</option>
+            <option value="/psycho_help/profile/quiz/quiz_view.html">Quiz on Anxiety</option>
+            <option value="/psycho_help/profile/quiz/quix_view_depression.html">Quiz on Depression</option>
         </select>
 
-      <a href="../access/logout.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Logout</a>
+      <a href="/psycho_help/profile/access/logout.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Logout</a>
 
 
     </div>
