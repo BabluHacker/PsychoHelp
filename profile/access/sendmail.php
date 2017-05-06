@@ -3,7 +3,9 @@
 
     $name =$_GET["name"];
     $email=  $_GET["email"];
-    require_once '/psychohelp/profile/access/swiftmailer/lib/swift_required.php';
+    echo $email." ".$name;
+//echo $email;
+require_once '/psychohelp/profile/access/swiftmailer/lib/swift_required.php';
 
     $subject = 'Psychohelp Signup | Verification'; // Give the email a subject
     $address = "http://csedu.cf/psychohelp/profile/access/verify.php?email=".$email;
