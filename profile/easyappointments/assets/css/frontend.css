@@ -19,7 +19,7 @@ body {
 }
 
 body {
-    background-color: #CAEDF3;
+    background-color: rgba(0, 0, 0, 0.98);
 }
 
 #main {
@@ -46,8 +46,8 @@ body {
 #book-appointment-wizard #header {
     padding: 5px;
     height: 90px;
-    background: #3DD481;
-    border-bottom: 4px solid #c0f1d6;
+    background: #11234c;
+    border-bottom: 4px solid #0b0863;
 }
 
 #book-appointment-wizard #company-name {
@@ -78,7 +78,7 @@ body {
 #book-appointment-wizard .frame-container .frame-title {
     text-align: center;
     margin-bottom: 28px;
-    color: #666;
+    color:#11234c;
 }
 
 #book-appointment-wizard .frame-container .frame-content {
@@ -104,7 +104,7 @@ body {
     padding: 1px;
     margin-right: 10px;
     margin-top: 9px;
-    border: 3px solid #79e2a8;
+    border: 3px solid #11234c;
 }
 
 #book-appointment-wizard .book-step strong {
@@ -127,7 +127,7 @@ body {
 }
 
 #book-appointment-wizard .active-step strong {
-    color: #4cc281;
+    color:#11234c;
     font-size: 18px;
 }
 
@@ -150,12 +150,12 @@ body {
 
 #book-appointment-wizard #available-hours .available-hour:hover {
     font-weight: bold;
-    background-color: #CAEDF3;
+    background-color: #11234c;
     cursor: pointer;
 }
 
 #book-appointment-wizard #available-hours .selected-hour {
-    color: #0088cc;
+    color:#11234c;
     font-weight: bold;
 }
 
@@ -190,7 +190,7 @@ body {
 }
 
 #book-appointment-wizard .captcha-title .glyphicon-refresh:hover {
-    color: #1A865F;
+    color: #11234c;
 }
 
 #book-appointment-wizard .captcha-image {

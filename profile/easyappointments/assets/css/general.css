@@ -17,7 +17,7 @@ body .custom-qtip {
     background: #EFFDF6;
     font-size: 12px;
     line-height: 20px;
-    color: #258D53;
+    color: #03100c;
 }
 
 body .ui-widget {
@@ -36,7 +36,7 @@ body .ui-dialog .ui-dialog-titlebar-close {
 }
 
 body .ui-draggable .ui-dialog-titlebar {
-    background: #39c678;
+    background: #0c0c2d;
     color: #FFF;
     font-size: 1.5em;
     font-weight: lighter;
@@ -60,7 +60,7 @@ body .ui-dialog .ui-dialog-buttonpane {
 
 body .ui-button .ui-icon,
 body .ui-button:hover .ui-icon {
-    background-image: url('../ext/jquery-ui/images/ui-icons_222222_256x240.png');
+    background-image: url('../ext/jquery-ui/images/ui-bg_flat_75_3DD481_40x100.png');
 }
 
 body .ui-dialog #error-technical {
@@ -68,18 +68,18 @@ body .ui-dialog #error-technical {
 }
 
 body .ui-widget.ui-widget-content {
-    border: 1px solid #3DD481;
+    border: 1px solid #0c0c2d;
     padding: 0;
 }
 
 body .ui-datepicker .ui-widget-header {
     border: none;
-    background: #3DD481;
+    background: #0c0c2d;
     border-radius: 0;
 }
 
 body .ui-datepicker .ui-widget-header .ui-icon {
-    background-image: url("../ext/jquery-ui/images/ui-icons_ffffff_256x240.png")
+    background-image: url("../ext/jquery-ui/images/ui-bg_flat_75_80e1ac_40x100.png")
 }
 
 body .ui-datepicker .ui-datepicker-title {
@@ -87,7 +87,7 @@ body .ui-datepicker .ui-datepicker-title {
 }
 
 body .ui-datepicker th {
-    background: #3DD481;
+    background: #0c0c2d;
     color: #FFF;
 }
 
@@ -99,7 +99,7 @@ body .ui-datepicker td a,
 body .ui-datepicker td span {
     border: none !important;
     background: none !important;
-    color: #1A865F !important;
+    color: #0c0c2d !important;
     text-align: center !important;
     width: 32px;
     height: 32px;
@@ -109,7 +109,7 @@ body .ui-datepicker td span {
 html body .ui-datepicker td a.ui-state-active {
     color: #FFF !important;
     font-weight: bold !important;
-    background: #3DD481 !important;
+    background: #0c0c2d !important;
     border-radius: 50px;
     width: 22px;
     height: 22px;
@@ -118,7 +118,7 @@ html body .ui-datepicker td a.ui-state-active {
 }
 
 body .ui-datepicker td a.ui-state-highlight {
-    background: #80E3AD !important;
+    background: #0c0c2d !important;
     border-radius: 67px;
     color: #FFF !important;
     width: 22px;
@@ -131,8 +131,8 @@ body .ui-datepicker td a.ui-state-highlight {
 body .ui-datepicker .ui-datepicker-prev-hover {
     top: 2px !important;
     left: 2px !important;
-    background: #80e1ac;
-    border-color: #80e1ac;
+    background: #22a0d4;
+    border-color: #22a0d4;
     border-radius: 0;
     cursor: pointer;
 }
@@ -140,16 +140,16 @@ body .ui-datepicker .ui-datepicker-prev-hover {
 body .ui-datepicker .ui-datepicker-next-hover {
     top: 2px !important;
     right: 2px !important;
-    background: #80e1ac;
-    border-color: #80e1ac;
+    background: #22a0d4;
+    border-color: #22a0d4;
     border-radius: 0;
     cursor: pointer;
 }
 
 body .ui-datepicker .ui-slider-handle {
     border-radius: none;
-    border-color: #3DD481;
-    background-color: #3DD481;
+    border-color: #22a0d4;
+    background-color: #22a0d4;
 }
 
 .breaks tr:hover td {
@@ -176,7 +176,7 @@ li.language:hover {
 }
 
 #select-language.active {
-    box-shadow: 0 0 20px #1A865F;
+    box-shadow: 0 0 20px #0c0c2d;
 }
 
 #language-list {
