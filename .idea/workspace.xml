@@ -49,8 +49,8 @@
       <file leaf-file-name="registration_login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profile/js/registration_login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="92" column="13" lean-forward="false" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+            <state relative-caret-position="264">
+              <caret line="92" column="28" lean-forward="false" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -82,13 +82,13 @@
       <file leaf-file-name="usersinput.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile/access/usersinput.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+            <state relative-caret-position="253">
+              <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
               <folding>
-                <marker date="1494088620805" expanded="true" signature="313:376" ph="SELECT fname... user_info" />
-                <marker date="1494088620805" expanded="true" signature="1676:1719" ph="INSERT INTO ${$db}... " />
-                <marker date="1494088620805" expanded="true" signature="2066:2125" ph="INSERT INTO ${$dbname}... " />
-                <marker date="1494088620805" expanded="true" signature="2701:2794" ph="INSERT INTO ${$dbname}... " />
+                <marker date="1494090678717" expanded="true" signature="313:376" ph="SELECT fname... user_info" />
+                <marker date="1494090678717" expanded="true" signature="1804:1847" ph="INSERT INTO ${$db}... " />
+                <marker date="1494090678717" expanded="true" signature="2194:2253" ph="INSERT INTO ${$dbname}... " />
+                <marker date="1494090678717" expanded="true" signature="2829:2922" ph="INSERT INTO ${$dbname}... " />
               </folding>
             </state>
           </provider>
@@ -389,12 +389,12 @@
       <option name="presentableId" value="Default" />
       <updated>1494013711087</updated>
       <workItem from="1494065594450" duration="59000" />
-      <workItem from="1494065653884" duration="13142000" />
+      <workItem from="1494065653884" duration="14813000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13201000" />
+    <option name="totallyTimeSpent" value="14872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="-4" width="1303" height="772" extended-state="6" />
@@ -613,6 +613,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chat/db_chatConnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/profile/access/verify.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -632,33 +642,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/db_chatConnect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/profile/js/registration_login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="92" column="13" lean-forward="false" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+        <state relative-caret-position="264">
+          <caret line="92" column="28" lean-forward="false" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/profile/access/usersinput.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        <state relative-caret-position="253">
+          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
           <folding>
-            <marker date="1494088620805" expanded="true" signature="313:376" ph="SELECT fname... user_info" />
-            <marker date="1494088620805" expanded="true" signature="1676:1719" ph="INSERT INTO ${$db}... " />
-            <marker date="1494088620805" expanded="true" signature="2066:2125" ph="INSERT INTO ${$dbname}... " />
-            <marker date="1494088620805" expanded="true" signature="2701:2794" ph="INSERT INTO ${$dbname}... " />
+            <marker date="1494090678717" expanded="true" signature="313:376" ph="SELECT fname... user_info" />
+            <marker date="1494090678717" expanded="true" signature="1804:1847" ph="INSERT INTO ${$db}... " />
+            <marker date="1494090678717" expanded="true" signature="2194:2253" ph="INSERT INTO ${$dbname}... " />
+            <marker date="1494090678717" expanded="true" signature="2829:2922" ph="INSERT INTO ${$dbname}... " />
           </folding>
         </state>
       </provider>
