@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8795e1a4-ebfa-4371-a9bf-0a2c3860c78f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/anxiety.jpg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/404.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/about-us.html" afterPath="$PROJECT_DIR$/ps-aboutus/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/anxiety.html" afterPath="$PROJECT_DIR$/ps-anxiety/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assessment.html" afterPath="$PROJECT_DIR$/ps-assessment/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/ps-contact/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/depression.html" afterPath="$PROJECT_DIR$/ps-depression/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/features.html" afterPath="$PROJECT_DIR$/ps-features/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/index.php" afterPath="$PROJECT_DIR$/chat/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile/easyappointments/application/libraries/external/google-api-php-client/contrib/Google_YouTubeService.php" afterPath="$PROJECT_DIR$/profile/easyappointments/application/libraries/external/google-api-php-client/contrib/Google_YouTubeService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile/easyappointments/config.php" afterPath="$PROJECT_DIR$/profile/easyappointments/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile/easyappointments/system/core/CodeIgniter.php" afterPath="$PROJECT_DIR$/profile/easyappointments/system/core/CodeIgniter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile/easyappointments/system/database/DB_driver.php" afterPath="$PROJECT_DIR$/profile/easyappointments/system/database/DB_driver.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile/easyappointments/system/helpers/date_helper.php" afterPath="$PROJECT_DIR$/profile/easyappointments/system/helpers/date_helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile/easyappointments/vendor/phpmailer/phpmailer/class.smtp.php" afterPath="$PROJECT_DIR$/profile/easyappointments/vendor/phpmailer/phpmailer/class.smtp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile/mysqli_connect.php" afterPath="$PROJECT_DIR$/profile/mysqli_connect.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chat/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="268">
+              <caret line="391" column="29" lean-forward="true" selection-start-line="391" selection-start-column="29" selection-end-line="391" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -82,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activeuser.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activeuser.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chat/activeuser.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -96,6 +78,12 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>wpf</find>
+      <find>you are</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -103,6 +91,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/profile/mysqli_connect.php" />
+        <option value="$PROJECT_DIR$/chat/index.php" />
       </list>
     </option>
   </component>
@@ -226,12 +215,12 @@
       <option name="presentableId" value="Default" />
       <updated>1494013711087</updated>
       <workItem from="1494065594450" duration="59000" />
-      <workItem from="1494065653884" duration="70000" />
+      <workItem from="1494065653884" duration="696000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129000" />
+    <option name="totallyTimeSpent" value="755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="-4" width="1303" height="772" extended-state="6" />
@@ -291,11 +280,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/index.php">
+    <entry file="file://$PROJECT_DIR$/chat/activeuser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1494058362000" expanded="true" signature="303:341" ph="SELECT * FRO... users" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -307,13 +298,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/activeuser.php">
+    <entry file="file://$PROJECT_DIR$/chat/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1494058362000" expanded="true" signature="303:341" ph="SELECT * FRO... users" />
-          </folding>
+        <state relative-caret-position="268">
+          <caret line="391" column="29" lean-forward="true" selection-start-line="391" selection-start-column="29" selection-end-line="391" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
