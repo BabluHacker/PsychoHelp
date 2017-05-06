@@ -22,8 +22,8 @@
     ' . $address;
 
     $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
-            ->setUsername('duaudibook@gmail.com')
-            ->setPassword('123isDangerous#')
+            ->setUsername('psychohelp.cnps@gmail.com')
+            ->setPassword('psychohelp')
             ->setEncryption('ssl');
 
     $mailer = Swift_Mailer::newInstance($transport);
