@@ -22,6 +22,10 @@
             if(number == 0 )
             {
                 input.type = "text";
+                input.disabled="disabled";
+
+                input.readonly="readonly";
+
                 input.style = "text-align:middle; background-color: #ccffe6 ;width : 700px ; height: 50px;  font-size : 100%; ;";
                 input.id="q"+idx;
                 input.value = name ;
@@ -31,7 +35,7 @@
 
 
                 input.type = "radio";
-                input.style = "border: 0px; width: 100%;height: 2em;";
+                input.style = "border: 0px; width: 100%;height: 1em;";
                 input.id= op_no;
                 input.name="op"+idx;
                 input.value = idx;
