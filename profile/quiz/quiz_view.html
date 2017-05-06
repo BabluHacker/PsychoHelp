@@ -61,7 +61,8 @@
                            flg++;
                            if (flg == 5) {
                                redflg = 1;
-                              alert("Please answer question number " + qdiv[j].value+count);
+                               var serial = parseInt(qdiv[j].value, 10) +1 ;
+                              alert("Please answer question number " +serial);
 
                                break;
                            }
@@ -101,7 +102,7 @@
 
                console.log(mentalhealth_level);
              //  var parcentage = mentalhealth_level * 100 / tot_weight;
-              // 54 & less = Mild;	55 to 66= Moderate; 67 to 77= Severe; 78 to 135 & above= Profound.
+              alert("Anxiety level 54 & less = Mild\n55 to 66= Moderate\n67 to 77= Severe\n78 to 135 & above= Profound.");
                 if(mentalhealth_level <= 54)
                alert("You have mild anxiety.Your anxiety level  is " + mentalhealth_level + "\n");
 
@@ -111,6 +112,8 @@
                    alert("You have severe anxiety.Your anxiety level  is " + mentalhealth_level + "\n");
                 else if(mentalhealth_level >= 78  )
                     alert("You have profound anxiety.Your anxiety level  is " + mentalhealth_level + "\n");
+                if(mentalhealth_level >= 47.5)
+                    alert("We suggest you to take additional help from our website by registration")
            }
 
 
@@ -139,6 +142,7 @@
 
 
                    var div = document.createElement('div');
+
                    div.appendChild(document.createTextNode("এই বিবৃতিগুলো আপনার উদ্বেগ বা Anxiety পরিমাপনের মানক।"));
                    div.appendChild(document.createElement("br"));
                    div.appendChild(document.createTextNode("Developed by: Dr. Farah Deeba and Dr. Roquia Begum, Department of Clinical Psychology, DU."));
@@ -148,6 +152,16 @@
                    div.appendChild(document.createTextNode("এই বিবৃতিগুলো আপনার ক্ষেত্রে প্রযোজ্য কি না যাচাই করাই আমাদের উদ্দেশ্য। লক্ষ্য করুন প্রতিটি বিবৃতির পাশেই সম্ভাব্য পাঁচ ধরণের উত্তর দেয়া আছে। এগুলো হলো-’ একেবারেই হয় না’,’খুব সামান্য হয়’, ’মোটামুটি হয়’, অনেক বেশী হয়’। প্রশ্নমালায় প্রদত্ত বামপার্শ্বের বিবৃতিগুলো পড়ে গত এক মাসের মধ্য  এই বিবৃতি গুলো আপনার ক্ষেত্রে কতটা প্রযোজ্য তা বিবৃতির ডানপার্শ্বের সম্ভাব্য পাঁচটি উত্তরের যেটি প্রযোজ্য সেটির ঘরে টিক (√) চিহ্ন দিয়ে নির্দেশ করুন। এই পাঁচটি উত্তরের থেকে যে কোন একটিকে বেছে নিন এবং সবগুলো প্রশ্নের উত্তর দিন। অনুগ্রহ করে লক্ষ্য করুন সবগুলো বিবৃতির উত্তর দিয়েছেন কি না। আপনার সহযোগীতার জন্য ধন্যবাদ। "));
                    div.appendChild(document.createElement("br"));
                    div.appendChild(document.createElement("br"));
+                   div.appendChild(document.createTextNode("Anxiety level 54 & less = Mild\n55 to 66= Moderate\n67 to 77= Severe\n78 to 135 & above= Profound."));
+                   div.appendChild(document.createElement("br"));
+                   div.appendChild(document.createTextNode("Please answer the following to know your anxiety level\n"));
+                   div.appendChild(document.createTextNode("If your anxiety level is greater then 47.5, we would suggest you to take help of any professional psychiatrist"));
+
+                   div.appendChild(document.createTextNode("or register here to take our help"));
+                   div.appendChild(document.createElement("br"));
+
+                   div.appendChild(document.createElement("br"));
+
                    container.appendChild(div);
 
 
@@ -173,7 +187,8 @@
                        var op5 = createfield(' ',1,idx,5);
 
 
-
+                       var serial = idx+1;
+                       div.appendChild(document.createTextNode(serial+"    "));
                        div.appendChild(input);
                        div.appendChild(document.createElement("br"));
                        div.appendChild(op1);
