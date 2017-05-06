@@ -86,14 +86,14 @@ if(!isset($_SESSION['username'])){
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                            <li ><a href="..">Home</a></li>
-                            <li><a href="../features.html">Features</a></li>
-                            <li><a href="../about-us.html">About Us</a></li>
+                            <li ><a href="/psychohelp">Home</a></li>
+                            <li><a href="/psychohelp/ps-features">Features</a></li>
+                            <li><a href="/psychohelp/ps-aboutus">About Us</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Service <span class="fa fa-angle-down"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li class="active"><a href="index.php">Online Counseling</a></li>
-                                    <li><a href="#">Take Assessment</a></li>
+                                    <li><a href="/psychohelp/ps-assessment">Take Assessment</a></li>
                                     <li><a href="#">Self Help</a></li>
                                 </ul>
                             </li>
@@ -118,8 +118,8 @@ if(!isset($_SESSION['username'])){
                                 <li><a href="#">Link Three</a></li>
                               </ul>
                             </li>-->
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="profile">Login</a></li>
+                            <li><a href="/psychohelp/ps-contact">Contact</a></li>
+                            <li><a href="/psychohelp/profile">Login</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
@@ -333,14 +333,14 @@ if(!isset($_SESSION['username'])){
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                        <li ><a href="..">Home</a></li>
-                        <li><a href="../features.html">Features</a></li>
-                        <li><a href="../about-us.html">About Us</a></li>
+                        <li ><a href="/psychohelp">Home</a></li>
+                        <li><a href="/psychohelp/ps-features">Features</a></li>
+                        <li><a href="/psychohelp/ps-aboutus">About Us</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Service <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li class="active"><a href="index.php">Online Counseling</a></li>
-                                <li><a href="#">Take Assessment</a></li>
+                                <li class="active"><a href="/psychohelp/chat">Online Counseling</a></li>
+                                <li><a href="/psychohelp/ps-assessment">Take Assessment</a></li>
                                 <li><a href="#">Self Help</a></li>
                             </ul>
                         </li>
@@ -365,8 +365,8 @@ if(!isset($_SESSION['username'])){
                             <li><a href="#">Link Three</a></li>
                           </ul>
                         </li>-->
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="profile">Login</a></li>
+                        <li><a href="/psychohelp/contact.html">Contact</a></li>
+                        <li><a href="/psychohelp/profile">Login</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>

@@ -707,7 +707,7 @@ if ( ! function_exists('date_range'))
 
 		$range = array();
 
-		/* NOTE: Even though the DateTime object has many useful features, it appears that
+		/* NOTE: Even though the DateTime object has many useful ps-features, it appears that
 		 *	 it doesn't always handle properly timezones, when timestamps are passed
 		 *	 directly to its constructor. Neither of the following gave proper results:
 		 *

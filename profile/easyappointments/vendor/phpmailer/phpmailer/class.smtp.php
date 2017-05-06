@@ -282,7 +282,7 @@ class SMTP
                 $socket_context
             );
         } else {
-            //Fall back to fsockopen which should work in more places, but is missing some features
+            //Fall back to fsockopen which should work in more places, but is missing some ps-features
             $this->edebug(
                 "Connection: stream_socket_client not available, falling back to fsockopen",
                 self::DEBUG_CONNECTION

@@ -854,7 +854,7 @@
  * Service definition for Google_YouTube (v3).
  *
  * <p>
- * Programmatic access to YouTube features.
+ * Programmatic access to YouTube ps-features.
  * </p>
  *
  * <p>
