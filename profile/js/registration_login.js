@@ -48,7 +48,8 @@ function loadvalue() {
                 var flag = res['flag'];
                 if(flag==0)
                 {
-                    alert(res['msg']);
+                   // alert(res['msg']);
+                    alert("registration failed. register with new email id");
 
                 }
                 else

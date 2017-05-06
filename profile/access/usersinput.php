@@ -120,19 +120,11 @@ if($var=="register")
 {
     $data = json_decode($_GET["data"]);
     $dbname = $_GET["dbname"];
-    $query = "INSERT INTO $dbname (fname,lname,email,password,gender,admin,verified) VALUES (?,?,?,?,?,?,?)";
 
     $ad = 0;
     $vf = 0;
-    $stmt = mysqli_prepare($dbc, $query);
 
-    mysqli_stmt_bind_param($stmt, "sssssss", $data[1],$data[2],$data[3],$data[0],$data[4],$ad,$vf);
-
-
-
-    mysqli_stmt_execute($stmt);
-
-    $affected_rows = mysqli_stmt_affected_rows($stmt);
+     $affected_rows= mysqli_query($dbc,"INSERT INTO $dbname(fname,lname,email,password,gender,admin,verified) VALUES ('$data[1]','$data[2]','$data[3]','$data[0]','$data[4]','$ad','$vf')");
 
     $flag=0;
     if($affected_rows) {
@@ -143,10 +135,13 @@ if($var=="register")
 
     }
 
-    else {$success = "registration failed. register with new email id";}
+    else {
+        $flag=0;
+        $success = "registration failed. register with new email id";
+    }
 
 
-       // echo $success;
+
     $arr=array('flag'=>$flag,'msg'=> $success );
     $json = json_encode($arr);
     echo $json;
