@@ -63,7 +63,7 @@ if(isset($_POST['submit'])){
     <!-- Font awesome css file-->
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <!-- Default Theme css file -->
-    <link id="switcher" href="../css/themes/green-theme.css" rel="stylesheet">
+    <link id="switcher" href="../css/themes/black-theme.css" rel="stylesheet">
     <!-- Slick slider css file -->
     <link href="../css/slick.css" rel="stylesheet">
     <!-- Photo Swipe Image Gallery -->

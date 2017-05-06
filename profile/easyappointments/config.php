@@ -41,8 +41,8 @@ class Config {
 
     const DB_HOST       = 'localhost';
     const DB_NAME       = 'psycho_help';
-    const DB_USERNAME   = 'studentweb';
-    const DB_PASSWORD   = 'bismillah';
+    const DB_USERNAME   = 'root';
+    const DB_PASSWORD   = '';
 
     // ------------------------------------------------------------------------
     // GOOGLE CALENDAR SYNC

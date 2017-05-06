@@ -1,6 +1,6 @@
 <?php
-DEFINE ('DB_USER', 'studentweb');
-DEFINE ('DB_PASSWORD', 'bismillah');
+DEFINE ('DB_USER', 'root');
+DEFINE ('DB_PASSWORD', '');
 DEFINE ('DB_HOST', 'localhost');
 DEFINE ('DB_NAME', 'psycho_help');
 
