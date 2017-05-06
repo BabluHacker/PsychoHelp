@@ -21,7 +21,7 @@ if($var=="login")
     $query = "SELECT fname,lname,email,password,admin,verified FROM user_info";
     $response = @mysqli_query($dbc, $query);
     $flag = 0;
-    $verify;
+    $verify = 2;
     while($row=mysqli_fetch_array($response))
     {
         $verify = $row["verified"];
@@ -40,11 +40,12 @@ if($var=="login")
     }
     if($flag==0)
     {
-        if($verify == 0){
-            $arr=array('flag'=>0,'msg'=> "Please verify your e-mail" );
-        }
-        else {
+        if($verify == 2 ){ //doesn't exist
             $arr = array('flag' => 0, 'msg' => "invalid email or password");
+
+        }
+        else if($verify == 0 ) {
+            $arr=array('flag'=>0,'msg'=> "Please verify your e-mail");
         }
         $json = json_encode($arr);
         echo $json;
