@@ -12,7 +12,7 @@ $uname = $_SESSION['username'];
 $reci = $_SESSION['recipient'];
 
 
-$con=mysqli_connect("localhost","root","","chatBox");
+$con=mysqli_connect("localhost","psychohelp","psychohelp","psychohelp");
 
 
 

@@ -9,7 +9,7 @@ session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$con=mysqli_connect("localhost","root","","chatBox");
+$con=mysqli_connect("localhost","psychohelp","psychohelp","psychohelp");
 
 $result = mysqli_query($con, "SELECT * FROM users WHERE username='$username' AND password='$password'");
 //find active user numbers

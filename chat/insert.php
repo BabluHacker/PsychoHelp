@@ -10,7 +10,7 @@ $uname = $_SESSION['username'];
 $msg = $_REQUEST['msg'];
 $reci = $_SESSION['recipient'];
 
-$con=mysqli_connect("localhost","root","","chatBox");
+$con=mysqli_connect("localhost","psychohelp","psychohelp","psychohelp");
 
 
 mysqli_query($con,"INSERT INTO logs(username, msg, recipient) VALUES ('$uname', '$msg', '$reci') ");

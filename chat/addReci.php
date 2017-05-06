@@ -7,7 +7,7 @@
  */
 session_start();
 
-$con=mysqli_connect("localhost","root","","chatBox");
+$con=mysqli_connect("localhost","psychohelp","psychohelp","psychohelp");
 
 
 $user = $_SESSION['username'];

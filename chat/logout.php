@@ -8,7 +8,7 @@
 
 session_start();
 
-$con=mysqli_connect("localhost","root","","chatBox");
+$con=mysqli_connect("localhost","psychohelp","psychohelp","psychohelp");
 //update user's isActive to 0
 $username = $_SESSION['username'];
 mysqli_query($con, "UPDATE users SET isActive=0 WHERE username='$username'");

@@ -10,7 +10,7 @@ session_start();
 if(isset($_POST['submit'])){
 
 
-    $con=mysqli_connect("localhost","root","","psycho_help");
+    $con=mysqli_connect("localhost","psychohelp","psychohelp","psychohelp");
     $uname = $_POST['username'];
     $pword = $_POST['password'];
     $pword2 = $_POST['password2'];
