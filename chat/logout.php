@@ -16,7 +16,7 @@ mysqli_query($con, "UPDATE users SET isActive=0 WHERE username='$username'");
 session_destroy();
 
 echo "<center>";
-echo "You have logged out. click <a href='index.php'>here</a> to login again";
+echo "You have logged out. click <a href='../chat'>here</a> to login again";
 
 echo "</center>";
 

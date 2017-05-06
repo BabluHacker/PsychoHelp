@@ -31,7 +31,7 @@ if(isset($_POST['submit'])){
         else{
             mysqli_query($con, "INSERT INTO users(username, password) VALUES ('$uname', '$pword')");
             echo "<center>";
-            echo "Successfully registered. click <a href='index.php'>here</a> to go to start chat<br>";
+            echo "Successfully registered. click <a href='../chat'>here</a> to go to start chat<br>";
             echo "</center>";
         }
 

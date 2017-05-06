@@ -36,12 +36,12 @@ if(mysqli_num_rows($result)){
     //updated
 
     echo "<center>";
-    echo "You are logged in, click <a href='index.php'>here</a> to go back to main chat window";
+    echo "You are logged in, click <a href='../chat'>here</a> to go back to main chat window";
     echo "</center>";
 }
 else{
     echo "<center>";
-    echo "No user found. Plese go <a href = 'index.php'>back</a> and enter correct login.<br>";
+    echo "No user found. Plese go <a href = '../chat'>back</a> and enter correct login.<br>";
     echo "You can register a new account <a href = 'register.php'>here</a>";
     echo "</center>";
 }

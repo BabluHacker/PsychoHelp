@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,7 +13,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PsychoHelp : About Us</title>
+    <title>PsychoHelp : Contact</title>
 
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -29,6 +32,9 @@
     <link id="switcher" href="../css/themes/black-theme.css" rel="stylesheet">
     <!-- Slick slider css file -->
     <link href="../css/slick.css" rel="stylesheet">
+    <!-- Photo Swipe Image Gallery -->     
+    <link rel='stylesheet prefetch' href='../css/photoswipe.css'>
+    <link rel='stylesheet prefetch' href='../css/default-skin.css'>
 
     <!-- Main structure css file -->
     <link href="../style.css" rel="stylesheet">
@@ -70,22 +76,24 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
+
               <!-- LOGO -->
               <!-- TEXT BASED LOGO -->
-              <a class="navbar-brand" href="../index.html"><i class="fa fa-heartbeat"></i>Psycho <span>Help</span></a>
+              <a class="navbar-brand" href="../index.php"><i class="fa fa-heartbeat"></i>psycho <span>help</span></a>
               <!-- IMG BASED LOGO  -->
               <!--  <a class="navbar-brand" hrindex.phphtml"><img src="images/logo.png" alt="logo"></a>   -->
+
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                <li ><a href="../index.html">Home</a></li>
+                <li ><a href="../index.php">Home</a></li>
                 <li><a href="../ps-features">Features</a></li>
-                <li class="active"><a href="">About Us</a></li>
+                <li><a href="../ps-aboutus">About Us</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Service <span class="fa fa-angle-down"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="../chat">Online Counseling</a></li>
-                    <li><a href="../ps-assessment">Take Assessment</a></li>
+                    <li><a href="#">Take Assessment</a></li>
                     <li><a href="#">Self Help</a></li>
                   </ul>
                 </li>
@@ -110,8 +118,20 @@
                     <li><a href="#">Link Three</a></li>
                   </ul>
                 </li>-->
-                <li><a href="../ps-contact">Contact</a></li>
-                <li><a href="../profile">Login</a></li>
+                <li ><a href="">Contact</a></li>
+                  <?php
+                  $user;
+
+                  if(!isset( $_SESSION["state"])){
+                      $user = "<a href='../profile'><strong>Login</strong></a>";
+                  }
+                  else{
+
+                      $user = "<a href='../profile' style='color: #00CC00;'><strong>".$_SESSION["fname"]."</strong></a>";
+                  }
+                  ?>
+                  <li><?php echo $user ?></li>
+
               </ul>
             </div><!--/.nav-collapse -->
           </div>
@@ -126,103 +146,75 @@
           <div class="blog-breadcrumbs-area">
             <div class="container">
               <div class="blog-breadcrumbs-left">
-                <h2>About Us</h2>
+                <h2>Contact</h2>
               </div>
               <div class="blog-breadcrumbs-right">
                 <ol class="breadcrumb">
                   <li>You are here</li>
-                  <li><a href="#">Home</a></li>                  
-                  <li class="active">About Us</li>
+                  <li><a href="../index.php">Home</a></li>
+                  <li class="active">Contact</li>
                 </ol>
               </div>
-
             </div>
-
           </div>
         </div>        
-      </div>
+      </div>      
+    </section>    
+    <!--=========== BEGIN Google Map SECTION ================-->
+    <section id="googleMap">
 
+
+        <iframe width="100%" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJqeEH58G4VTcRwJjeOWCC7tQ&key=AIzaSyDLWBZh4BqZxsH19NqRnhwqQnczBjJfais" allowfullscreen></iframe>
     </section>
-
-    <div class="col-lg-12 col-md-12">
-      <div class="meetDoctors-area">
-        <div class="section-heading">
-          <h2>কেন এই সার্ভিস</h2>
-          <div class="line"></div>
-        </div>
-        <p> সাম্প্রতিক একটি তথ্য থেকে পাওয়া গেছে বাংলাদেশের ১৬% মানুষ মানুষিক সমস্যায় ভুগছেন (NIMH)। বাংলাদেশ এ বিগত ২০ বছর যাবত মানুষিক সমস্যার জন্যে সাইকোথেরাপি দেয়া যাচ্ছে।
-
-          প্রতিদিন হাজার সমস্যা নিয়ে সারাদেশ থেকে অসংখ্য মানুষ চিকিৎসা নেবার জন্যে তাদের শরণাপন্ন হন। যেহেতু এখন পর্যন্ত অথিকাংশ মনোবৈজ্ঞানিক স্বাস্থ্য সেবা শুধুমাত্র ঢাকা কেন্দ্রিক তাই সারা দেশে বর্তমানে যখন ৭০ লক্ষ মানুষ মানুষিক স্বাস্থ্য সমস্যায়(প্রথম আলো ) ভুগছেন কিন্তু তাদের জন্যে এই পেশাদার  মনোবৈজ্ঞানিক সেবা দেয়া সম্ভবপর হচ্ছে না। যেহেতু বাংলাদেশ বিজ্ঞানের অগ্রযাত্রায় শামিল হয়ে তথ্যপ্রযুক্তির ব্যাবহারে অনেকটাই অগ্রগামী হয়েছে, যার ফলে বর্তমানে প্রায়  ১৪.৪ %  মানুষ প্রতিদিন ইন্টারনেট ব্যাবহার করেন, সরাসরি চিকিৎসা সেবা সমান না হলেও অনেকটাই সমস্যার সমাধানে কাজ করছে বলে উন্নত বিশ্বে পাওয়া গিয়েছে। এই বিষয়টিকে মাথায় রেখে আমরা মাতৃ ভাষায় সার্ভিসটি চালু করার প্রয়াস নিয়েছি।</p>
-      </div>
-    </div>
-
-    <!--=========== BEGAIN Doctors SECTION ================-->
-    <section id="meetDoctors">
+    <!--=========== END Google Map SECTION ================-->
+    <section id="contact">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="meetDoctors-area">
-              <!-- Start Service Title -->
+          <div class="col-lg-7 col-md-7 col-sm-6">
+            <div class="contact-form">
               <div class="section-heading">
-                <h2>Our Psychotherapists</h2>
+                <h2>Contact Us</h2>
                 <div class="line"></div>
               </div>
-              <div align="center" class="doctors-area">
-                <ul class="doctors-nav">
-                  <li>
-                    <div class="single-doctor">
-                      <a class="tdoctor" href="http://www.du.ac.bd/faculty/faculty_details/CPS/1595" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="../images/doctor-1.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>Dr. Farah Deeba</h2>
-                            <p>Associate Professor, Department of Clinical Psychology, University of Dhaka is a lead of this online service for Bangladeshies.</p>
-                            <button>View</button>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="http://www.du.ac.bd/faculty/faculty_details/CPS/1595"><span class="fa fa-link"></span></a>
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="single-doctor">
-                      <div class="single-doctor">
-                        <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                          <figure>
-                            <img src="../images/doctor-2.jpg" />
-                            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                            <figcaption>
-                              <h2>Jesan Ara</h2>
-                              <p>Assistant Professor and Clinical psychologist at University of Rajshahi.</p>
-                              <button>View</button>
-                            </figcaption>
-                          </figure>
-                        </a>
-                        <div class="single-doctor-social">
-                          <a href="#"><span class="fa fa-link"></span></a>
-                          <a href="#"><span class="fa fa-facebook"></span></a>
-                          <a href="#"><span class="fa fa-linkedin"></span></a>
-                          <a href="#"><span class="fa fa-google-plus"></span></a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                </ul>
+              <p>Fill out all required Field to send a Message. Please don't spam,Thank you!</p>
+              <form class="submitphoto_form">
+                <input type="text" class="wp-form-control wpcf7-text" placeholder="Your name">
+                <input type="mail" class="wp-form-control wpcf7-email" placeholder="Email address">          
+                <input type="text" class="wp-form-control wpcf7-text" placeholder="Subject">
+                <textarea class="wp-form-control wpcf7-textarea" cols="30" rows="10" placeholder="What would you like to tell us"></textarea>
+               <button class="wpcf7-submit button--itzel" type="submit"><i class="button__icon fa fa-envelope"></i><span>Send Message</span></button>                
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-6">
+            <div class="contact-address">
+              <div class="section-heading">
+                <h2>Contact Information</h2>
+                <div class="line"></div>
               </div>
+
+              <address class="contact-info">               
+                <p><span class="fa fa-home"></span>	Department of Clinical Psychology, University of Dhaka, Dhaka 1000</p>
+                <p><span class="fa fa-phone"></span> +880-2-9661900-ext (7800/7805)</p>
+                  <p><span class="fa fa-fax"></span> +880-2-8615583</p>
+                <p><span class="fa fa-envelope"></span> psychohelp.cnps@gmail.com</p>
+                  <p><span class="fa fa-internet-explorer"></span> http://www.du.ac.bd/academic/department_item/CPS</p>
+              </address>
+              <h3>Social Media</h3>
+              <div class="social-share">               
+               <ul>
+                 <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                 <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                 <li><a href="#"><span class="fa fa-pinterest"></span></a></li>
+                 <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                 <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+               </ul>
+             </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!--=========== End Doctors SECTION ================-->
-
 
     <!--=========== Start Footer SECTION ================-->
     <footer id="footer">
@@ -233,7 +225,7 @@
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="single-footer-widget">
                 <div class="section-heading">
-                  <h2>disclaimer</h2>
+                  <h2>Disclaimer</h2>
                   <div class="line"></div>
                 </div>
                 <p> This web-based service is part of a research of the team. When you proceed for assessment and intervention with registration then they will be corresponding with you. Please note that once you registrar to a section of the web-site you are consenting to be part of the research. All personal information will be strictly confidential and will not be used other than this service related research. </p>
@@ -290,7 +282,7 @@
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <div class="footer-copyright">
-                <p>&copy; Copyright 2017 <a href="../index.html">Psycho Help</a></p>
+                <p>&copy; Copyright 2017 <a href="../index.php">Psycho Help</a></p>
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
