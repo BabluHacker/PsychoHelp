@@ -9,6 +9,8 @@
         var mentalhealth_level=0;
         var user_answer = new Array(20); // array of size 10, all elements undefined
         var  answer = [] ;
+        var  unanswered = [] ;
+        var unans=0;
         var wop = [[], [],[],[],[],[]];
         var tot_weight = 0;
 
@@ -19,8 +21,8 @@
 
             if(number == 0 )
             {
-                input.style = "background-color:	#87CEFA;width : 300px ; height: 50px;font size:10 ;";
                 input.type = "text";
+                input.style = "text-align:middle; background-color: #ccffe6 ;width : 700px ; height: 50px;  font-size : 100%; ;";
                 input.id="q"+idx;
                 input.value = name ;
             }
@@ -29,8 +31,7 @@
 
 
                 input.type = "radio";
-                //input.id= idx+op_no;
-                // input.id= idx+op_no;
+                input.style = "border: 0px; width: 100%;height: 2em;";
                 input.id= op_no;
                 input.name="op"+idx;
                 input.value = idx;
@@ -62,7 +63,8 @@
                             if (flg == 5) {
                                 redflg = 1;
                                 var serial = parseInt(qdiv[j].value, 10) +1 ;
-                                alert("Please answer question number " +serial);
+                                unanswered[unans++]= serial;
+                                // alert("Please answer question number " +serial);
 
                                 break;
                             }
@@ -76,8 +78,15 @@
 
 
             }
-
-            if(redflg == 0) {
+            if(redflg == 1) {
+                var str= "Please answer question number : \n";
+                for(var k =0; k< unans ; k++)
+                {
+                    str += unanswered[k]+"\n";
+                }
+                alert(str);
+            }
+            else if(redflg == 0) {
                 for (var i = 0; i < count; i++) {
                     var ans = user_answer[i];
                     mentalhealth_level += wop[ans][i] ;
@@ -102,7 +111,17 @@
                 console.log(mentalhealth_level);
                 //  var parcentage = mentalhealth_level * 100 / tot_weight;
 
-                alert("Your phycological strength is " + mentalhealth_level + "%\n");
+                if(mentalhealth_level >= 94)
+                    alert("You are suffering from depression.Your depression level  is " + mentalhealth_level + "\n");
+
+                else if(mentalhealth_level >= 100 && mentalhealth_level <= 114 )
+                    alert("You have mild depression.Your depression level is " + mentalhealth_level + "\n");
+                else if(mentalhealth_level >= 115 && mentalhealth_level <= 123 )
+                    alert("You have moderate depression.Your depression level is " + mentalhealth_level + "\n");
+                else if(mentalhealth_level >= 124 && mentalhealth_level <= 150  )
+                    alert("You have severe depression.Your depression level is " + mentalhealth_level + "\n");
+                if(mentalhealth_level > 94)
+                    alert("We suggest you to take additional help from any professional psychiatrist or from our website by registration.")
             }
 
 
@@ -136,6 +155,27 @@
                     div.appendChild(document.createElement("br"));
                     div.appendChild(document.createTextNode(" নিচের বিবৃতি গুলো পড়ে গত এক সপ্তাহের মধ্যে এই বিবৃতি গুলো আপনার ক্ষেত্রে কতটা প্রযোজ্য তা বিবৃতির পার্শ্বের সম্ভাব্য পাঁচটি উত্তরের যেটি প্রযোজ্য সেটির ঘরে টিক(√) চিহ্ন দিয়ে নির্দেশ করুন। আপনাকে সম্ভাব্য এই পাঁচটি উত্তর থেকে যে কোন একটিকে বেছে নিতে হবে এবং সবগুলো প্রশ্নের উত্তর দিতে হবে। অনুগ্রহ করে লক্ষ্য করুন সবগুলো বিবৃতির উত্তর দিয়েছেন কি না।"));
                     div.appendChild(document.createElement("br"));
+
+
+                    div.appendChild(document.createTextNode("Depression level > 94 = Depresses."));
+                    div.appendChild(document.createElement("br"));
+                    div.appendChild(document.createTextNode("Depression level 30 to 100= Minimal."));
+                    div.appendChild(document.createElement("br"));
+                    div.appendChild(document.createTextNode("Depression level 101 to 114= Mild."));
+                    div.appendChild(document.createElement("br"));
+                    div.appendChild(document.createTextNode("Depression level 115 to 123 & above= Moderate."));
+                    div.appendChild(document.createElement("br"));
+                    div.appendChild(document.createTextNode("Depression level 124 to 150 = Severe."));
+                    div.appendChild(document.createElement("br"));
+                    div.appendChild(document.createTextNode("Please answer the following to know your depression level."));
+                    div.appendChild(document.createElement("br"));
+                    div.appendChild(document.createTextNode("If your depression level is greater then 94, we would suggest you to take help of any professional psychiatrist or register here to take our help."));
+
+                    div.appendChild(document.createElement("br"));
+
+                    div.appendChild(document.createElement("br"));
+
+
                     container.appendChild(div);
                     for(idx = 0 ; idx < count ; idx++)
                     {
@@ -162,21 +202,27 @@
                         div.appendChild(document.createTextNode(serial+"    "));
                         div.appendChild(input);
                         div.appendChild(document.createElement("br"));
-                        div.appendChild(op1);
                         div.appendChild(document.createTextNode("একেবারেই প্রযোজ্য নয়"));
+                        div.appendChild(op1);
+
                         div.appendChild(document.createElement("br"));
-                        div.appendChild(op2);
                         div.appendChild(document.createTextNode("প্রযোজ্য নয়"));
+                        div.appendChild(op2);
+
                         div.appendChild(document.createElement("br"));
-                        div.appendChild(op3);
                         div.appendChild(document.createTextNode("মাঝামাঝি"));
+                        div.appendChild(op3);
+
                         div.appendChild(document.createElement("br"));
-                        div.appendChild(op4);
                         div.appendChild(document.createTextNode("কিছুটা প্রযোজ্য"));
+                        div.appendChild(op4);
+
                         div.appendChild(document.createElement("br"));
-                        div.appendChild(op5);
                         div.appendChild(document.createTextNode("পুরোপুরি প্রযোজ্য"));
+                        div.appendChild(op5);
+
                         div.appendChild(document.createElement("br"));
+
                         //   answer[idx] = res['ans'][idx];
                         wop[1][idx] = 0;
                         wop[2][idx] = 1;
@@ -221,9 +267,16 @@
 
 
 
+    <style>
+        div.normal {
+            font-style: normal;
+            font-size : 100%;
+           font-family: Times New Roman Bold Italic, Times New Roman Bold Italic;>
 
+        }
+    </style>
 </head>
-<body bgcolor="#20B2AA">
+<body bgcolor="#99ffcc" ;>
 </br>
 <center>
     <form  action = "/psychohelp/profile/access/user_profile.php"  method="post">
@@ -237,8 +290,8 @@
     <script> document.write(load_quiz())
     </script>
     <!-- <form > -->
-    <div id="error_message"/>
-    <div id="container"/>
+    <div class = "normal" id="error_message"/>
+    <div class = "normal" id="container"/>
 
 
     <!--</form> -->
