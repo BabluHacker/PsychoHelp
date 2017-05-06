@@ -26,7 +26,35 @@ if(!isset( $_SESSION["state"])){
             document.getElementById("user").innerHTML = msg;
         });
     </script>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.91);
+        }
 
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: rgba(218, 245, 255, 0.14);
+        }
+
+        .active {
+            background-color: rgba(84, 159, 160, 0.82);
+        }
+    </style>
 </head>
 
 <title>W3.CSS Template</title>
@@ -34,7 +62,11 @@ if(!isset( $_SESSION["state"])){
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body class="w3-content" style="max-width:1300px">
-
+<ul>
+    <li><a href="/psychohelp/index.html">Home</a></li>
+    <li><a class="active" href="/psychohelp/profile/access/user_profile_admin.php">Profile</a></li>
+    <li><a  href="../access/logout.php">Logout</a></li>
+</ul>
 <!-- First Grid: Logo & About -->
 <div class="w3-row">
     <div class="w3-half w3-black w3-container w3-center" style="height:700px">
@@ -43,14 +75,12 @@ if(!isset( $_SESSION["state"])){
             <h1>You are the admin</h1>
         </div>
         <div class="w3-padding-10">
-            <a href="/psychohelp" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
             <a href="../easyappointments/index.php" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">View yours appointment</a>
             <a href="/psychohelp/chat" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Start Chat</a>
             <a href="../quiz/quiz.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Set quiz</a>
             <a href="statistics_registered.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">View the data of registered user</a>
 
             <a href="statistics_all.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">View the data of all user</a>
-            <a href="logout.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Logout</a>
 
 
 

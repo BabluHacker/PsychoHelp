@@ -248,6 +248,7 @@
 
                     butn.type = "button" ;
                     butn.name = "ans_submit" ;
+                    butn.style =" padding: 5px 10px;font-size: 24px;text-align: center;text-decoration: none;outline: none;color: #fff;background-color: #338caf;border: none;border-radius: 15px;box-shadow: 0 9px #999;";
                     butn.value = "submit";
                     butn.onclick = check_answer;
                     //  var span = document.createElement('span');
@@ -278,18 +279,67 @@
            font-family: Times New Roman Bold Italic, Times New Roman Bold Italic;>
 
         }
+        .button {
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #338caf;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {background-color: #174b8e
+        }
+
+        .button:active {
+            background-color: #185f8e;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
     </style>
 </head>
 <body bgcolor="#99ffcc" ;>
+<ul>
+    <li><a href="/psychohelp/index.html">Home</a></li>
+    <li><a href="/psychohelp/profile/access/user_profile.php">Profile</a></li>
+    <li><a class="active" href="/psychohelp/profile/quiz/quix_view_depression.html">Quiz on depression</a></li>
+</ul>
+
 </br>
 <center>
-    <form  action = "/psychohelp/profile/access/user_profile.php"  method="post">
-        <button  id="button" type="submit" value="Go back to your profile">
-            Go back to your profile
-        </button></br>
-    </form>
-    </br>
-
 
     <script> document.write(load_quiz())
     </script>
