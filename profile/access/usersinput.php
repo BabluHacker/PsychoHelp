@@ -24,17 +24,23 @@ if($var=="login")
     $verify = 2;
     while($row=mysqli_fetch_array($response))
     {
-        $verify = $row["verified"];
-        if($row["email"]==$email && $row["password"]==$password && $row["verified"]==1)
+
+        if($row["email"]==$email && $row["password"]==$password)
         {
-            $flag=1;
+            if($row["verified"]==1) {
+                $flag = 1;
 
 
-            $arr=array('flag'=>1,'fname' =>$row["fname"],'lname'=>$row["lname"],'admin'=>$row["admin"] );
-            $json = json_encode($arr);
-            echo $json;
-            //echo $sucess;
-            break;
+                $arr = array('flag' => 1, 'fname' => $row["fname"], 'lname' => $row["lname"], 'admin' => $row["admin"]);
+                $json = json_encode($arr);
+                echo $json;
+                //echo $sucess;
+                break;
+            }
+            else{ //not verified
+                $verify = $row["verified"]; // 0
+
+            }
         }
 
     }
