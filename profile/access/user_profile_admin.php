@@ -45,7 +45,7 @@ if(!isset( $_SESSION["state"])){
         <div class="w3-padding-10">
             <a href="/psychohelp" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
             <a href="../easyappointments/index.php" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">View yours appointment</a>
-            <a href="/chat" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Start Chat</a>
+            <a href="/psychohelp/chat" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Start Chat</a>
             <a href="../quiz/quiz.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Set quiz</a>
             <a href="statistics_registered.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">View the data of registered user</a>
 

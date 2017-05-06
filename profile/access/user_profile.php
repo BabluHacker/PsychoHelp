@@ -17,8 +17,6 @@ if(!isset( $_SESSION["state"])){
   <script type ="text/javascript">
       $(document).ready(function() {
 
-
-
           var email = localStorage.getItem("email");
           var fname = localStorage.getItem("fname");
           var lname = localStorage.getItem("lname");
@@ -45,7 +43,7 @@ if(!isset( $_SESSION["state"])){
     <div class="w3-padding-10">
       <a href="/psychohelp" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
       <a href="../easyappointments/index.php" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Take an appointment</a>
-      <a href="/chat" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Start Chat</a>
+      <a href="/psychohelp/chat" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Start Chat</a>
       <a href="../quiz/quiz_view.html" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Self help</a>
 
         <a href="#" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Judge your mental strength.</a>
