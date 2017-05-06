@@ -53,8 +53,7 @@ function loadvalue() {
                 }
                 else
                 {
-                    alert(info[3]);
-                    alert(res['msg']);
+
                     $.ajax({
                         url: "/psychohelp/profile/access/sendmail.php",
                         type: "GET",

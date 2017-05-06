@@ -10,3 +10,9 @@ ERROR - 2017-05-06 11:42:30 --> #0 /var/www/html/psychohelp/profile/easyappointm
 #2 /var/www/html/psychohelp/profile/easyappointments/system/core/CodeIgniter.php(514): call_user_func_array(Array, Array)
 #3 /var/www/html/psychohelp/profile/easyappointments/index.php(353): require_once('/var/www/html/p...')
 #4 {main}
+ERROR - 2017-05-06 22:18:49 --> Severity: Warning --> mysqli::real_connect(): (28000/1045): Access denied for user 'psychohelp'@'localhost' (using password: YES) /var/www/html/psychohelp/profile/easyappointments/system/database/drivers/mysqli/mysqli_driver.php 202
+ERROR - 2017-05-06 22:18:49 --> Unable to connect to the database
+ERROR - 2017-05-06 22:20:20 --> Severity: Warning --> mysqli::real_connect(): (28000/1045): Access denied for user 'studentweb'@'localhost' (using password: YES) /var/www/html/psychohelp/profile/easyappointments/system/database/drivers/mysqli/mysqli_driver.php 202
+ERROR - 2017-05-06 22:20:20 --> Unable to connect to the database
+ERROR - 2017-05-06 22:20:26 --> Severity: Warning --> mysqli::real_connect(): (28000/1045): Access denied for user 'studentweb'@'localhost' (using password: YES) /var/www/html/psychohelp/profile/easyappointments/system/database/drivers/mysqli/mysqli_driver.php 202
+ERROR - 2017-05-06 22:20:26 --> Unable to connect to the database

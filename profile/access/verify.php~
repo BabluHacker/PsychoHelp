@@ -22,7 +22,7 @@ if(isset($_GET["email"])) {
             $query1 = "UPDATE user_info SET verified = 1 WHERE email = '$email'";
             $response1 = @mysqli_query($dbc, $query1);
             echo "successfully registered.Please login";
-            echo '<a href="/psychohelp/profile/index.php">Click here</a>';
+            echo '<a href="/psychohelp/profile/index.html">Click here</a>';
 
 
             break;

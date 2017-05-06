@@ -32,9 +32,6 @@
         ->setBody($body);
 
     $result = $mailer->send($message);
-        if ($result)
-            echo "SUCCESS";
-        else
-            echo "ERROR";
+
 
 ?>
