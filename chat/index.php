@@ -80,7 +80,7 @@ if(!isset($_SESSION['username'])){
                         </button>
                         <!-- LOGO -->
                         <!-- TEXT BASED LOGO -->
-                        <a class="navbar-brand" href="../index.html"><i class="fa fa-heartbeat"></i>Psycho <span>Help</span></a>
+                        <a class="navbar-brand" href="/psychohelp"><i class="fa fa-heartbeat"></i>Psycho <span>Help</span></a>
                         <!-- IMG BASED LOGO  -->
                         <!--  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>   -->
                     </div>
@@ -92,7 +92,7 @@ if(!isset($_SESSION['username'])){
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Service <span class="fa fa-angle-down"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li class="active"><a href="index.php">Online Counseling</a></li>
+                                    <li class="active"><a href="../chat">Online Counseling</a></li>
                                     <li><a href="/psychohelp/ps-assessment">Take Assessment</a></li>
                                     <li><a href="#">Self Help</a></li>
                                 </ul>
@@ -119,7 +119,19 @@ if(!isset($_SESSION['username'])){
                               </ul>
                             </li>-->
                             <li><a href="/psychohelp/ps-contact">Contact</a></li>
-                            <li><a href="/psychohelp/profile">Login</a></li>
+                            <?php
+                            $user;
+
+                            if(!isset( $_SESSION["state"])){
+                                $user = "<a href='/psychohelp/profile'><strong>Login</strong></a>";
+                            }
+                            else{
+
+                                $user = "<a href='/psychohelp/profile' style='color: #00CC00;'><strong>".$_SESSION["fname"]."</strong></a>";
+                            }
+                            ?>
+                            <li><?php echo $user ?></li>
+
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
@@ -327,7 +339,7 @@ if(!isset($_SESSION['username'])){
                     </button>
                     <!-- LOGO -->
                     <!-- TEXT BASED LOGO -->
-                    <a class="navbar-brand" href="../index.html"><i class="fa fa-heartbeat"></i>Psycho <span>Help</span></a>
+                    <a class="navbar-brand" href="/psychohelp"><i class="fa fa-heartbeat"></i>Psycho <span>Help</span></a>
                     <!-- IMG BASED LOGO  -->
                     <!--  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>   -->
                 </div>
@@ -366,7 +378,19 @@ if(!isset($_SESSION['username'])){
                           </ul>
                         </li>-->
                         <li><a href="/psychohelp/contact.html">Contact</a></li>
-                        <li><a href="/psychohelp/profile">Login</a></li>
+                        <?php
+                        $user;
+
+                        if(!isset( $_SESSION["state"])){
+                            $user = "<a href='/psychohelp/profile'><strong>Login</strong></a>";
+                        }
+                        else{
+
+                            $user = "<a href='/psychohelp/profile' style='color: #00CC00;'><strong>".$_SESSION["fname"]."</strong></a>";
+                        }
+                        ?>
+                        <li><?php echo $user ?></li>
+
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>

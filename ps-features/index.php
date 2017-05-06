@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -73,14 +77,14 @@
 
               <!-- LOGO -->
               <!-- TEXT BASED LOGO -->
-              <a class="navbar-brand" href="../index.html"><i class="fa fa-heartbeat"></i>psycho <span>Help</span></a>
+              <a class="navbar-brand" href="../index.php"><i class="fa fa-heartbeat"></i>psycho <span>Help</span></a>
               <!-- IMG BASED LOGO  -->
               <!--  <a class="navbar-brand" hrindex.phphtml"><img src="images/logo.png" alt="logo"></a>   -->
 
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.php">Home</a></li>
                 <li class="active"><a href="">Features</a></li>
                 <li><a href="../ps-aboutus">About Us</a></li>
                 <li class="dropdown">
@@ -95,7 +99,19 @@
 
 
                 <li><a href="../ps-contact">Contact</a></li>
-                <li><a href="../profile">Login</a></li>
+                  <?php
+                  $user;
+
+                  if(!isset( $_SESSION["state"])){
+                      $user = "<a href='../profile'><strong>Login</strong></a>";
+                  }
+                  else{
+
+                      $user = "<a href='../profile' style='color: #00CC00;'><strong>".$_SESSION["fname"]."</strong></a>";
+                  }
+                  ?>
+                  <li><?php echo $user ?></li>
+
               </ul>
             </div><!--/.nav-collapse -->
           </div>
@@ -486,7 +502,7 @@
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <div class="footer-copyright">
-                <p>&copy; Copyright 2017 <a href="../index.html">Psycho Help</a></p>
+                <p>&copy; Copyright 2017 <a href="../index.php">Psycho Help</a></p>
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
