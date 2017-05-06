@@ -231,7 +231,7 @@ if(!isset($_SESSION['username'])){
     ================================================== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PsychoHelp - chat</title>
+    <title>psychoHelp : Chat</title>
 
     <!-- Mobile Specific Metas
     ================================================== -->

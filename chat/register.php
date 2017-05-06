@@ -10,7 +10,8 @@ session_start();
 if(isset($_POST['submit'])){
 
 
-    $con=mysqli_connect("localhost","psychohelp","psychohelp","psychohelp");
+    require_once('db_chatConnect.php');
+
     $uname = $_POST['username'];
     $pword = $_POST['password'];
     $pword2 = $_POST['password2'];

@@ -6,8 +6,7 @@
  * Time: 2:26 PM
  */
 session_start();
-
-$con=mysqli_connect("localhost","psychohelp","psychohelp","psychohelp");
+require_once('db_chatConnect.php');
 
 
 $user = $_SESSION['username'];

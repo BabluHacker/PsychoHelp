@@ -9,8 +9,7 @@ session_start();
 $uname = $_SESSION['username'];
 $msg = $_REQUEST['msg'];
 $reci = $_SESSION['recipient'];
-
-$con=mysqli_connect("localhost","psychohelp","psychohelp","psychohelp");
+require_once('db_chatConnect.php');
 
 
 mysqli_query($con,"INSERT INTO logs(username, msg, recipient) VALUES ('$uname', '$msg', '$reci') ");
@@ -25,11 +24,11 @@ else{
 
 while($result1 && $extract = mysqli_fetch_array($result1)){
     if($extract['username'] == "Admin"){
-        echo "<span class ='uname' style='color: #2b542c'>" . $extract['username'] . "</span>: <span class='msg'> " . $extract['msg'] . "</span><br>";
+        echo "<div class='speech-bubble'><span class ='uname' style='color: #2b542c'>" . $extract['username'] . "</span>: <span class='msg'> " . $extract['msg'] . "</span></div><br>";
 
     }
     else {
-        echo "<span class ='uname' style='color: #0d0d54'>" . $extract['username'] . "</span>: <span class='msg'> " . $extract['msg'] . "</span><br>";
+        echo "<div class='speech-bubble'><span class ='uname' style='color: #0d0d54'>" . $extract['username'] . "</span>: <span class='msg'> " . $extract['msg'] . "</span></div><br>";
     }
 }
 

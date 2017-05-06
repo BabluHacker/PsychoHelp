@@ -13,9 +13,7 @@ $uname = $_SESSION['username'];
 
 $reci = $_SESSION['recipient'];
 
-
-$con=mysqli_connect("localhost","psychohelp","psychohelp","psychohelp");
-
+require_once('db_chatConnect.php');
 
 
 ////user list printing

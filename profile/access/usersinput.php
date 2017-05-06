@@ -16,13 +16,15 @@ if($var=="login")
     $sucess="Succesfully logged in";
     $fail = "invalid email id or password";
 
+
   //  require_once('../mysqli_connect.php');
     $query = "SELECT fname,lname,email,password,admin,verified FROM user_info";
     $response = @mysqli_query($dbc, $query);
     $flag = 0;
+    $verify;
     while($row=mysqli_fetch_array($response))
     {
-
+        $verify = $row["verified"];
         if($row["email"]==$email && $row["password"]==$password && $row["verified"]==1)
         {
             $flag=1;
@@ -38,7 +40,12 @@ if($var=="login")
     }
     if($flag==0)
     {
-        $arr=array('flag'=>0,'msg'=> "invalid email or password" );
+        if($verify == 0){
+            $arr=array('flag'=>0,'msg'=> "Please verify your e-mail" );
+        }
+        else {
+            $arr = array('flag' => 0, 'msg' => "invalid email or password");
+        }
         $json = json_encode($arr);
         echo $json;
     }

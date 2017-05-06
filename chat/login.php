@@ -8,8 +8,7 @@
 session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
-
-$con=mysqli_connect("localhost","psychohelp","psychohelp","psychohelp");
+require_once('db_chatConnect.php');
 
 $result = mysqli_query($con, "SELECT * FROM users WHERE username='$username' AND password='$password'");
 //find active user numbers
