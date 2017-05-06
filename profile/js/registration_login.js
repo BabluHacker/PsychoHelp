@@ -20,6 +20,7 @@ function loadvalue() {
         info[3] = document.getElementById("email").value;
 
 
+
         //if( ($("#male").is("checked")) || ($("#female").is("checked")))
         //  return "";
         var v = 0;
@@ -35,20 +36,40 @@ function loadvalue() {
 
         if (v == 0) return "";
         var data = JSON.stringify(info);
-        alert(data);
+        //alert(data);
         xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
 
             //console.log(this.readyState + " " + this.status + " " + xhttp.responseText);
             if (this.readyState == 4 && this.status == 200) {
 
-                alert(xhttp.responseText);
-               // window.location = "index.php";
+                response = xhttp.responseText
+                var res = JSON.parse(response);
+                var flag = res['flag'];
+                if(flag==0)
+                {
+                    alert(res['msg']);
+
+                }
+                else
+                {
+                    alert(info[3]);
+                    alert(res['msg']);
+                    $.ajax({
+                        url: "/psychohelp/profile/access/sendmail.php",
+                        type: "GET",
+                        data: {"name": info[1],"email":info[3]},
+                        success: function (feedback) {
+                            consol.log(feedback);
+                        }
+
+                    });
+                }
 
 
             }
         };
-        xhttp.open("GET", "/psychohelp/profile/access/usersinput.php?data=" + data + "&dbname=user_info"+"&var="+req, true);
+        xhttp.open("GET", "/psychohelp/profile/access/usersinput.php?data=" + data + "&dbname=user_info"+"&var="+req, false);
         xhttp.send();
 
 
@@ -106,7 +127,7 @@ function validate() {
                 }
             }
         };
-        xhttp.open("GET", "/psychohelp/profile/access/usersinput.php?email=" + email + "&pass="+password+"&var="+req, true);
+        xhttp.open("GET", "/psychohelp/profile/access/usersinput.php?email=" + email + "&pass="+password+"&var="+req, false);
         xhttp.send();
 
     }

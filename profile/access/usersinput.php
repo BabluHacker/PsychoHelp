@@ -17,13 +17,13 @@ if($var=="login")
     $fail = "invalid email id or password";
 
   //  require_once('../mysqli_connect.php');
-    $query = "SELECT fname,lname,email,password,admin FROM user_info";
+    $query = "SELECT fname,lname,email,password,admin,verified FROM user_info";
     $response = @mysqli_query($dbc, $query);
     $flag = 0;
     while($row=mysqli_fetch_array($response))
     {
 
-        if($row["email"]==$email && $row["password"]==$password)
+        if($row["email"]==$email && $row["password"]==$password && $row["verified"]==1)
         {
             $flag=1;
 
@@ -106,12 +106,13 @@ if($var=="register")
 {
     $data = json_decode($_GET["data"]);
     $dbname = $_GET["dbname"];
-    $query = "INSERT INTO $dbname (fname,lname,email,password,gender,admin) VALUES (?,?,?,?,?,?)";
+    $query = "INSERT INTO $dbname (fname,lname,email,password,gender,admin,verified) VALUES (?,?,?,?,?,?,?)";
 
-    $a = 0;
+    $ad = 0;
+    $vf = 0;
     $stmt = mysqli_prepare($dbc, $query);
 
-    mysqli_stmt_bind_param($stmt, "ssssss", $data[1],$data[2],$data[3],$data[0],$data[4],$a);
+    mysqli_stmt_bind_param($stmt, "sssssss", $data[1],$data[2],$data[3],$data[0],$data[4],$ad,$vf);
 
 
 
@@ -119,13 +120,25 @@ if($var=="register")
 
     $affected_rows = mysqli_stmt_affected_rows($stmt);
 
+    $flag=0;
+    if($affected_rows) {
 
-    if($affected_rows)
-        $success =  "successful registration";
+        $success = "Thank you for your interest.A verification mail is sent to your mail account. Please verify it to login to your account";
+        $flag=1;
+       // header("Location: /psychohelp/profile/access/verify.php?email=".$data[3]);
+
+    }
 
     else {$success = "registration failed. register with new email id";}
-    $json = json_encode($success);
+
+
+       // echo $success;
+    $arr=array('flag'=>$flag,'msg'=> $success );
+    $json = json_encode($arr);
     echo $json;
+
+
+
 }
 
 
