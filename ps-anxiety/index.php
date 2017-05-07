@@ -398,9 +398,25 @@ session_start();
 
                             </span>
                                 Abida Sultana
-                            </a>
+                            </a><br>
+                        </p>
+                        <div class="section-heading">
+                            <h2>Supervised By</h2>
+                            <div class="line"></div>
+                        </div>
+
+                        <p>
+                            <a href="mailto:mamun@cse.univdhaka.edu">
+                          <span style="padding-right:3px; padding-top: 3px;">
+                            <img class="manImg" src="../images/sir.jpg" alt="img">
+
+                          </span>
+                                Dr. Md. Mamun-or-Rashid
+                            </a><br>
+
                         </p>
                         <address class="contact-info">
+                            <p><span class="fa fa-user"></span>Professor</p>
                             <p><span class="fa fa-home"></span>Department of Computer Science & Engineering, University of Dhaka</p>
 
                             <p><span class="fa fa-envelope"></span>sanguine.csedu@gmail.com</p>
