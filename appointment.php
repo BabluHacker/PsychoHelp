@@ -21,9 +21,13 @@
 
     $mail = "psychohelp.cnps@gmail.com";
 
-    $headers = "From: ".$email . "\r\n" . "CC: mehedi1055@gmail.com";
 
+
+
+    $headers = 'From: '.$email . "\r\n";
+    $headers .= 'Cc: mehedi1055@gmail.com' . "\r\n";
     $return = mail($mail, $sub, $msg, $headers);
+
 
     if(!$return){
         echo "<script>alert('Something Occurred Wrong. Please Retry')</script>";
