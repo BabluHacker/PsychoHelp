@@ -1,5 +1,11 @@
 <?php
     session_start();
+
+
+    if (isset($_GET['Message'])) {
+        $msg = $_GET['Message'];
+        echo "<script>alert($msg)</script>";
+    }
 ?>
 
 <!DOCTYPE html>
@@ -343,6 +349,8 @@
                               <input type="text" name="subject" class="wp-form-control wpcf7-text" placeholder="Subject">
                               <textarea name="description" class="wp-form-control wpcf7-textarea" cols="30" rows="10" placeholder="আপনার সমস্যার কিছু বিবরণ যা আমাদের আপনি বলতে চান"></textarea>
                               <button class="wpcf7-submit button--itzel" type="submit"><i class="button__icon fa fa-share"></i><span>Book Appointment</span></button>
+
+                              <?php  ?>
                           </form>
 
 

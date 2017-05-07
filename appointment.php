@@ -45,12 +45,17 @@ $message = Swift_Message::newInstance($subject)
     ->setBody($body);
 
 $result = $mailer->send($message);
-if ($result)
-    echo "SUCCESS";
-else
-    echo "ERROR";
+if ($result){
+    $Message = 'Your Appointment Request has been sent. We will send you an appointment time on mail or phone';
+    header("Location: index.php?Message=" . urlencode($Message));
 
-header("Location: /psychohelp");
+}
+
+else{
+    $Message = 'Something Occurred Wrong, Please Try again later';
+    header("Location: index.php?Message=" . urlencode($Message));
+}
+
 
 ?>
 
