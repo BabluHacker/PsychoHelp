@@ -465,7 +465,15 @@ if(!isset($_SESSION['username'])){
 
                                 <tr>
                                     <td>
-                                        Your chat name: <b><?php echo $_SESSION['username']; ?> </b> Recipient:<b><?php echo $_SESSION['recipient']; ?> </b> <br>
+                                        <?php
+                                            if($_SESSION['username'] == "Admin"){
+                                                echo "Your Name: <b style='color: #af0f06'> ".$_SESSION['username']. "</b><b style='color: #31a22b'>  Recipient: " .$_SESSION['recipient']."</b><br>";
+                                            }
+                                            else{
+                                                echo "Your Name: <b style='color: #31a22b'> ".$_SESSION['username']. "</b><b style='color: #af0f06'>  Recipient: " .$_SESSION['recipient']."</b><br>";
+                                            }
+                                        ?>
+                                        
                                     </td>
                                 </tr>
                                 <tr>
