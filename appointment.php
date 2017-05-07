@@ -19,14 +19,14 @@
 
     $msg = wordwrap($msg,70);
 
-    $mail = "psychohelp.cnps@gmail.com, mehedi1055@gmail.com";
+    $mail = "psychohelp.cnps@gmail.com";
 
 
 
 
 
     $headers = 'From: '.$email;
-    $return = mail($mail, $sub, $msg, $headers);
+    $return = mail($mail, $sub, $msg);
 
 
     if(!$return){
@@ -35,6 +35,8 @@
     else{
         echo "<script>alert('Appointment Request has been sent')</script>";
     }
+
+    
 
 
 ?>
