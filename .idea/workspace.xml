@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8795e1a4-ebfa-4371-a9bf-0a2c3860c78f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile/access/user_profile.php" afterPath="$PROJECT_DIR$/profile/access/user_profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile/access/user_profile_admin.php" afterPath="$PROJECT_DIR$/profile/access/user_profile_admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile/mysqli_connect.php" afterPath="$PROJECT_DIR$/profile/mysqli_connect.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,6 +14,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="db_chatConnect.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chat/db_chatConnect.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chat/index.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -25,36 +32,6 @@
               <folding>
                 <marker date="1494103121430" expanded="true" signature="6933:6948" ph="..." />
                 <marker date="1494103121430" expanded="true" signature="18188:18203" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="insert.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/insert.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <marker date="1494085239317" expanded="true" signature="252:329" ph="INSERT INTO logs... " />
-                <marker date="1494085239317" expanded="true" signature="395:479" ph="SELECT * FRO... logs" />
-                <marker date="1494085239317" expanded="true" signature="526:561" ph="SELECT * FRO... logs" />
-                <marker date="1494085239317" expanded="true" signature="738:752" ph="..." />
-                <marker date="1494085239317" expanded="true" signature="940:954" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <marker date="1494102974630" expanded="true" signature="237:308" ph="SELECT * FRO... users" />
-                <marker date="1494102974630" expanded="true" signature="373:411" ph="SELECT * FRO... users" />
-                <marker date="1494102974630" expanded="true" signature="804:858" ph="UPDATE users... " />
               </folding>
             </state>
           </provider>
@@ -102,6 +79,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="mysqli_connect.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profile/mysqli_connect.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="selfhelp.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profile/selfhelp/selfhelp.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,7 +111,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="343">
@@ -207,11 +194,11 @@
         <option value="$PROJECT_DIR$/ps-aboutus/index.php" />
         <option value="$PROJECT_DIR$/chat/index.php" />
         <option value="$PROJECT_DIR$/ps-contact/index.php" />
-        <option value="$PROJECT_DIR$/profile/mysqli_connect.php" />
         <option value="$PROJECT_DIR$/chat/db_chatConnect.php" />
         <option value="$PROJECT_DIR$/profile/access/user_profile.php" />
         <option value="$PROJECT_DIR$/profile/access/user_profile_admin.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/profile/mysqli_connect.php" />
       </list>
     </option>
   </component>
@@ -513,12 +500,12 @@
       <workItem from="1494065594450" duration="59000" />
       <workItem from="1494065653884" duration="14813000" />
       <workItem from="1494100825476" duration="4556000" />
-      <workItem from="1494132202680" duration="389000" />
+      <workItem from="1494132202680" duration="1020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22558000" />
+    <option name="totallyTimeSpent" value="23189000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="62" y="-11" width="1305" height="780" extended-state="6" />
@@ -891,22 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profile/mysqli_connect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/db_chatConnect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chat/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1043,6 +1014,22 @@
             <marker date="1494132579918" expanded="true" signature="39381:40843" ph="..." />
             <marker date="1494132579918" expanded="true" signature="40936:41075" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile/mysqli_connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/db_chatConnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
