@@ -4,7 +4,7 @@
 
     if (isset($_GET['Message'])) {
         $msg = $_GET['Message'];
-        echo "<script>alert($msg)</script>";
+        echo $msg;
     }
 ?>
 
