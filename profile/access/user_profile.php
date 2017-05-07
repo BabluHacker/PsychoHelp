@@ -12,7 +12,9 @@ if(!isset( $_SESSION["state"])){
 <!DOCTYPE html>
 <html>
 <head>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script type ="text/javascript">
       $(document).ready(function() {
 
