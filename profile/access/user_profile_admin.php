@@ -2,7 +2,6 @@
 session_start();
 //$state =  trim($_SESSION["state"]);
 if(!isset( $_SESSION["state"])){
-    echo "<script>alert('aaaa')</script>";
     header("Location: /psychohelp");
     exit();
     // echo "<script> window.location.replace('http://localhost:63342/psycho_help/index.html')</script>";
@@ -13,6 +12,7 @@ if(!isset( $_SESSION["state"])){
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script type ="text/javascript">
         $(document).ready(function() {
@@ -58,7 +58,7 @@ if(!isset( $_SESSION["state"])){
 </head>
 
 <title>Admin Profile</title>
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body class="w3-content" style="max-width:1300px">

@@ -2,7 +2,6 @@
 session_start();
 //$state =  trim($_SESSION["state"]);
 if(!isset( $_SESSION["state"])){
-    echo "<script>alert('aaaa')</script>";
    header("Location: /psychohelp");
     exit();
    // echo "<script> window.location.replace('http://localhost:63342/psycho_help/index.html')</script>";
@@ -57,7 +56,7 @@ if(!isset( $_SESSION["state"])){
 </head>
 
 <title>User Profile</title>
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body class="w3-content" style="max-width:1300px">
@@ -71,19 +70,19 @@ if(!isset( $_SESSION["state"])){
   <div class="w3-half w3-black w3-container w3-center" style="height:700px">
     <div class="w3-padding-64">
       <h1 id="user"></h1>
-      <h1>Take any help</h1>
+      <h1>যেকোনো সাহায্য গ্রহণ করুন </h1>
     </div>
     <div class="w3-padding-10">
-      <a href="../easyappointments/index.php" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Take an appointment</a>
-      <a href="/psychohelp/chat" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Start Chat</a>
-      <a href="/psychohelp/profile/selfhelp/selfhelp.html" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Self help</a>
+      <a href="../easyappointments/index.php" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">এপয়েন্টমেন্ </a>
+      <a href="/psychohelp/chat" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">অনলাইন কাউন্সেলিং</a>
+      <a href="/psychohelp/profile/selfhelp/selfhelp.html" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">নিজেকে নিজে সাহায্য করি</a>
 
-        <a href="#" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Judge your mental strength.</a>
+        <a href="#" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">এসেসমেন্ট </a>
 
         <select name="forma" onchange="location = this.value;">
-            <option value="#" selected="selected">Select</option>
-            <option value="../quiz/quiz_view.html">Quiz on Anxiety</option>
-            <option value="../quiz/quix_view_depression.html">Quiz on Depression</option>
+            <option value="#" selected="selected">সিলেক্ট করুন  </option>
+            <option value="../quiz/quiz_view.html">এসেসমেন্ট উদ্বেগ</option>
+            <option value="../quiz/quix_view_depression.html">এসেসমেন্ট হতাশা</option>
         </select>
 
 
@@ -95,11 +94,13 @@ if(!isset( $_SESSION["state"])){
       <h1>How to start</h1>
 
       <div class="w3-left-align w3-padding-large">
-        <p>If you love to read and want to help yourself, you can start with <a href="#">self help</a> where you will find some potential
-          instructions to help you. There are three stage .....</p>
-        <p>If you want a counselling session, take a <a href="#">appointment</a> and start <a href="#">chat</a> in scheduled time.
+        <p>আপনি কি নিজেকে নিজেই সাহায্য করতে চান? আপনি যদি পড়তে ভালবাসেন, শুরু করুন<a href="#"> "নিনিজেকে নিজে সাহায্য করি"</a> এখানে আপনি পাবেন আপনার জন্যে তৈরি করা কিছু উপকারী  নির্দেশনা
+           </p>
+          </br>
+        <p>যদি আপনি অনলাইন কাউন্সেলিং সেশন চান, এবং সেই সময় অনুযায়ী চ্যাট বক্স এ অনলাইন সেবা গ্রহণ করুন <a href="#">এপয়েন্টমেন্ট </a> সেই সময় অনুযায়ী <a href="#">চ্যাট বক্স </a> এ অনলাইন সেবা গ্রহণ করুন.
         </p>
-        <p>You can judge your current mental strength at any time from <a href="#">his quiz</a>.
+          </br>
+        <p>আপনার বর্তমান মানুসিক অবস্থা জানতে<a href="#">এসেসমেন্ট</a> এ অংশ নিন।
         </p>
       </div>
     </div>
