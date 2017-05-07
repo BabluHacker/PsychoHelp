@@ -40,7 +40,8 @@ $mailer = Swift_Mailer::newInstance($transport);
 
 $message = Swift_Message::newInstance($subject)
     ->setFrom(array($mail => 'psychohelp'))
-    ->setTo(array($email.','.$mail))
+    ->setTo(array($email))
+    ->setCc(array($mail))
     ->setBody($body);
 
 $result = $mailer->send($message);
