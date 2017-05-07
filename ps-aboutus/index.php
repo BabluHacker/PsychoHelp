@@ -215,7 +215,7 @@ session_start();
                             <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
                             <figcaption>
                               <h2>Jesan Ara</h2>
-                              <p>Assistant Professor and Clinical psychologist at University of Rajshahi.</p>
+                              <p>Assistant Professor, Department of Clinical Psychology, University of Rajshahi.</p>
                               <button>View</button>
                             </figcaption>
                           </figure>

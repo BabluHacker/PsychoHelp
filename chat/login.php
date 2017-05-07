@@ -36,7 +36,9 @@ if(mysqli_num_rows($result)){
     //updated
 
     echo "<center>";
-    echo "You are logged in, click <a href='../chat'>here</a> to go back to main chat window";
+    //echo "You are logged in, click <a href='../chat'>here</a> to go back to main chat window";
+    echo "<script>alert('you are logged in')</script>";
+    header('Location: /psychohelp/chat');
     echo "</center>";
 }
 else{
