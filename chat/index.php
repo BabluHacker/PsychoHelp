@@ -299,6 +299,9 @@ if(!isset($_SESSION['username'])){
 
 
             var msg = form1.msg.value;
+
+            form1.msg.value = "<?php echo ''; ?>";
+
             var xmlhttp = new XMLHttpRequest();
 
             xmlhttp.onreadystatechange = function () {
