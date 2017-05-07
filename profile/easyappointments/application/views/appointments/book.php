@@ -205,7 +205,7 @@
                             <?php echo $this->lang->line('next'); ?>
                             <span class="glyphicon glyphicon-forward"></span>
                         </button>
-                        <form id="_gohome" style="display:inline-block" method="post" action="http://localhost/psychohelp/profile/access/adminUser.php">
+                        <form id="_gohome" style="display:inline-block" method="post" action="/psychohelp/profile/access/adminUser.php">
                             <button id="gohome" type="submit" class="btn btn-success">
 
                                 <?php
@@ -250,7 +250,7 @@
                             <?php echo $this->lang->line('next'); ?>
                             <span class="glyphicon glyphicon-forward"></span>
                         </button>
-                        <form id="_gohome" style="display:inline-block" method="post" action="http://localhost/psychohelp/profile/access/adminUser.php">
+                        <form id="_gohome" style="display:inline-block" method="post" action="/psychohelp/profile/access/adminUser.php">
                             <button id="gohome" type="submit" class="btn btn-success">
 
                                 <?php
@@ -325,7 +325,7 @@
                             <?php echo $this->lang->line('next'); ?>
                             <span class="glyphicon glyphicon-forward"></span>
                         </button>
-                        <form id="_gohome" style="display:inline-block" method="post" action="http://localhost/psychohelp/profile/access/adminUser.php">
+                        <form id="_gohome" style="display:inline-block" method="post" action="/psychohelp/profile/access/adminUser.php">
                             <button id="gohome" type="submit" class="btn btn-success">
 
                                 <?php
@@ -384,7 +384,7 @@
                             <input type="hidden" name="post_data" />
 
                         </form>
-                        <form id="_gohome" style="display:inline-block" method="post" action="http://localhost/psychohelp/profile/access/adminUser.php">
+                        <form id="_gohome" style="display:inline-block" method="post" action="/psychohelp/profile/access/adminUser.php">
                             <button id="gohome" type="submit" class="btn btn-success">
 
                                 <?php
