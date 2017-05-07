@@ -2,10 +2,7 @@
     session_start();
 
 
-    if (isset($_GET['Message'])) {
-        $msg = $_GET['Message'];
-        echo $msg;
-    }
+
 ?>
 
 <!DOCTYPE html>
@@ -309,6 +306,7 @@
                                       <label class="control-label">ইমেইল <span class="required">*</span>
                                       </label>
                                       <input type="mail" name="mail" class="wp-form-control wpcf7-email" placeholder="ইমেইল">
+
                                   </div>
                               </div>
                               <div class="row">
@@ -348,9 +346,10 @@
                               </div>
                               <input type="text" name="subject" class="wp-form-control wpcf7-text" placeholder="Subject">
                               <textarea name="description" class="wp-form-control wpcf7-textarea" cols="30" rows="10" placeholder="আপনার সমস্যার কিছু বিবরণ যা আমাদের আপনি বলতে চান"></textarea>
+                              <p>আপনার Appointment Request টি পাঠানো হবে যাচাই করার জন্যে। ফোন অথবা মেইলে আপনাকে কনফার্ম করা হবে। </p>
                               <button class="wpcf7-submit button--itzel" type="submit"><i class="button__icon fa fa-share"></i><span>Book Appointment</span></button>
 
-                              <?php  ?>
+
                           </form>
 
 

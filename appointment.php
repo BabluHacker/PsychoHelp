@@ -21,8 +21,10 @@ $msg = $name.$email.$age.$phone.$mental.$option."\nSubject : ".$sub."\n\n".$des;
 $msg = wordwrap($msg,70);
 
 $mail = "psychohelp.cnps@gmail.com";
-
-
+if (filter_var($_POST["mail"], FILTER_VALIDATE_EMAIL) == false) {
+    
+    header("Location: /psychohelp");
+}
 
 //echo $email;
 require_once 'profile/access/swiftmailer/lib/swift_required.php';
@@ -46,14 +48,14 @@ $message = Swift_Message::newInstance($subject)
 
 $result = $mailer->send($message);
 if ($result){
-    $Message = 'Your Appointment Request has been sent. We will send you an appointment time on mail or phone';
-    header("Location: index.php?Message=" . urlencode($Message));
+    $Message = "success";
+    header("Location: /psychohelp");
 
 }
 
 else{
-    $Message = 'Something Occurred Wrong, Please Try again later';
-    header("Location: index.php?Message=" . urlencode($Message));
+    $Message = "failed";
+    header("Location: /psychohelp");
 }
 
 
