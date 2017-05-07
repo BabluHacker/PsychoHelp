@@ -8,8 +8,8 @@
 
 
 $name   = "Patient Name: ". $_POST["name"]."\n";
-$email  = "email       : ". $_POST["mail"]."\n";
-$age    = "age         : ". $_POST["age"]."\n";
+$email  =  $_POST["mail"];
+$age    = "\nage         : ". $_POST["age"]."\n";
 $phone  = "Phone No    : ". $_POST["phone"]."\n";
 $mental = "Mental State: ". $_POST["mental1"]."\n";
 $option = "Division    : ". $_POST["option1"]."\n";
