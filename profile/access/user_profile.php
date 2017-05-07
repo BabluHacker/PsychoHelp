@@ -53,6 +53,7 @@ if(!isset( $_SESSION["state"])){
         .active {
             background-color: rgba(84, 159, 160, 0.82);
         }
+        
     </style>
 
     <link href="/style.css" rel="stylesheet">
@@ -84,15 +85,14 @@ if(!isset( $_SESSION["state"])){
 
         <a href="#" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">এসেসমেন্ট </a>
 
-        <div class="appointment-area">
-            <label class="control-label">আপনার মানসিক অবস্থা
-            </label>
-            <select class="wp-form-control wpcf7-select" name="forma" onchange="location = this.value;">
-                <option value="#" selected="selected">সিলেক্ট করুন</option>
-                <option value="../quiz/quiz_view.html">এসেসমেন্ট উদ্বেগ</option>
-                <option value="../quiz/quix_view_depression.html">এসেসমেন্ট হতাশা</option>
-            </select>
-        </div>
+
+
+        <select class="wp-form-control wpcf7-select" name="forma" onchange="location = this.value;">
+            <option value="#" selected="selected">সিলেক্ট করুন</option>
+            <option value="../quiz/quiz_view.html">এসেসমেন্ট উদ্বেগ</option>
+            <option value="../quiz/quix_view_depression.html">এসেসমেন্ট হতাশা</option>
+        </select>
+
 
 
 

@@ -70,12 +70,12 @@
       <file leaf-file-name="user_profile.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile/access/user_profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="87" column="60" lean-forward="false" selection-start-line="87" selection-start-column="60" selection-end-line="87" selection-end-column="60" />
+            <state relative-caret-position="-434">
+              <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
               <folding>
-                <marker date="1494159215238" expanded="false" signature="1753:1769" ph="..." />
-                <marker date="1494159215238" expanded="false" signature="2094:2106" ph="..." />
-                <marker date="1494159215238" expanded="true" signature="3331:3347" ph="..." />
+                <marker date="1494159335702" expanded="false" signature="1762:1778" ph="..." />
+                <marker date="1494159335702" expanded="false" signature="2103:2115" ph="..." />
+                <marker date="1494159335702" expanded="true" signature="3205:3217" ph="..." />
               </folding>
             </state>
           </provider>
@@ -487,12 +487,12 @@
       <workItem from="1494065653884" duration="14813000" />
       <workItem from="1494100825476" duration="4556000" />
       <workItem from="1494132202680" duration="19462000" />
-      <workItem from="1494157486613" duration="1729000" />
+      <workItem from="1494157486613" duration="1860000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43360000" />
+    <option name="totallyTimeSpent" value="43491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="-4" width="1303" height="772" extended-state="6" />
@@ -877,7 +877,7 @@
         <state relative-caret-position="210">
           <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
+            <element signature="e#6#86#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -990,12 +990,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile/access/user_profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="87" column="60" lean-forward="false" selection-start-line="87" selection-start-column="60" selection-end-line="87" selection-end-column="60" />
+        <state relative-caret-position="-434">
+          <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
           <folding>
-            <marker date="1494159215238" expanded="false" signature="1753:1769" ph="..." />
-            <marker date="1494159215238" expanded="false" signature="2094:2106" ph="..." />
-            <marker date="1494159215238" expanded="true" signature="3331:3347" ph="..." />
+            <marker date="1494159335702" expanded="false" signature="1762:1778" ph="..." />
+            <marker date="1494159335702" expanded="false" signature="2103:2115" ph="..." />
+            <marker date="1494159335702" expanded="true" signature="3205:3217" ph="..." />
           </folding>
         </state>
       </provider>
