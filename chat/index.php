@@ -300,7 +300,7 @@ if(!isset($_SESSION['username'])){
 
             var msg = form1.msg.value;
 
-            form1.msg.value = "<?php echo ''; ?>";
+
 
             var xmlhttp = new XMLHttpRequest();
 
@@ -312,6 +312,10 @@ if(!isset($_SESSION['username'])){
             }
             xmlhttp.open('GET', 'insert.php?&msg='+msg, true);
             xmlhttp.send();
+
+            var frm = document.getElementsByName('form1')[0];
+
+            frm.reset();  // Reset
 
         }
 

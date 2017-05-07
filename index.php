@@ -167,7 +167,7 @@
           </div>
           <div class="slider-text">
 
-            <h2 style="color: rgba(11,149,10,0.57)">আপনি কি <strong style="color: #3c763d">ডিপ্রেশনে</strong> ভুগছেন? </h2>
+            <h2 style="color: #3c763d">আপনি কি <strong style="color: #3c763d">উদ্বিগ্ন</strong> কোন কারণে?  </h2>
             <p>মানসিকভাবে আপনি আপনি কতটুকু স্বাভাবিক! জানতে ক্লিক করুন <strong>Take Assessment</strong></p>
             <div class="readmore_area">
               <a data-hover="Take Assessment" href="ps-assessment"><span>Take Assessment</span></a>
@@ -184,7 +184,7 @@
           </div>
           <div class="slider-text">
             <h2>আপনি কি <strong>বিষন্নতায়</strong>  ভুগছেন? </h2>
-            <p>মানসিকভাবে আপনি আপনি কতটুকু স্বাভাবিক! জানতে ক্লিক করুন <strong>Take Assessment</strong></p>
+            <p>মানসিকভাবে আপনি আপনি কতটুকু স্বাভাবিক! জানতে ক্লিক করুন <strong style="color: #a89b33">Take Assessment</strong></p>
 
             <div class="readmore_area">
               <a data-hover="Take Assessment" href="ps-assessment"><span>Take Assessment</span></a>

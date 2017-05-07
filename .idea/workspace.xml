@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8795e1a4-ebfa-4371-a9bf-0a2c3860c78f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/db_chatConnect.php" afterPath="$PROJECT_DIR$/chat/db_chatConnect.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/index.php" afterPath="$PROJECT_DIR$/chat/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,44 +16,22 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4890">
-              <caret line="326" column="46" lean-forward="false" selection-start-line="325" selection-start-column="38" selection-end-line="326" selection-end-column="46" />
+            <state relative-caret-position="268">
+              <caret line="169" column="37" lean-forward="false" selection-start-line="169" selection-start-column="37" selection-end-line="169" selection-end-column="37" />
               <folding>
-                <marker date="1494166895757" expanded="true" signature="5974:5989" ph="..." />
-                <marker date="1494166895757" expanded="true" signature="6743:6959" ph="..." />
-                <marker date="1494166895757" expanded="true" signature="38268:38407" ph="..." />
-                <marker date="1494166895757" expanded="true" signature="38575:40037" ph="..." />
-                <marker date="1494166895757" expanded="true" signature="40130:40269" ph="..." />
-                <marker date="1494166895757" expanded="true" signature="40437:41899" ph="..." />
-                <marker date="1494166895757" expanded="true" signature="41992:42131" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_profile_admin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/profile/access/user_profile_admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-              <folding>
-                <marker date="1494166927449" expanded="false" signature="1788:1804" ph="..." />
-                <marker date="1494166927449" expanded="true" signature="1805:3811" ph="..." />
-                <marker date="1494166927449" expanded="true" signature="1810:2016" ph="..." />
-                <marker date="1494166927449" expanded="true" signature="2071:3802" ph="..." />
-                <marker date="1494166927449" expanded="false" signature="2137:2149" ph="..." />
-                <marker date="1494166927449" expanded="true" signature="2150:3166" ph="..." />
-                <marker date="1494166927449" expanded="true" signature="2186:2272" ph="..." />
-                <marker date="1494166927449" expanded="true" signature="2308:3155" ph="..." />
-                <marker date="1494166927449" expanded="false" signature="3226:3238" ph="..." />
-                <marker date="1494166927449" expanded="true" signature="3239:3795" ph="..." />
-                <marker date="1494166927449" expanded="true" signature="3285:3784" ph="..." />
-                <marker date="1494166927449" expanded="true" signature="3377:3769" ph="..." />
-                <marker date="1494166927449" expanded="true" signature="3397:3568" ph="..." />
-                <marker date="1494166927449" expanded="true" signature="3588:3749" ph="..." />
+                <element signature="n#style#0;n#h2#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#h2#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#strong#0;n#p#0;n#div#1;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1494178424430" expanded="true" signature="5974:5989" ph="..." />
+                <marker date="1494178424430" expanded="true" signature="6743:6959" ph="..." />
+                <marker date="1494178424430" expanded="true" signature="38281:38420" ph="..." />
+                <marker date="1494178424430" expanded="true" signature="38588:40050" ph="..." />
+                <marker date="1494178424430" expanded="true" signature="40143:40282" ph="..." />
+                <marker date="1494178424430" expanded="true" signature="40450:41912" ph="..." />
+                <marker date="1494178424430" expanded="true" signature="42005:42144" ph="..." />
               </folding>
             </state>
           </provider>
@@ -67,20 +47,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chat/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="302" column="50" lean-forward="true" selection-start-line="302" selection-start-column="50" selection-end-line="302" selection-end-column="50" />
+            <state relative-caret-position="268">
+              <caret line="312" column="36" lean-forward="false" selection-start-line="312" selection-start-column="36" selection-end-line="312" selection-end-column="36" />
               <folding>
-                <marker date="1494175844962" expanded="true" signature="7085:7100" ph="..." />
-                <marker date="1494175844962" expanded="true" signature="18483:18498" ph="..." />
-                <marker date="1494175844962" expanded="true" signature="21462:21476" ph="..." />
-                <marker date="1494175844962" expanded="true" signature="21531:21545" ph="..." />
-                <marker date="1494175844962" expanded="true" signature="21759:21773" ph="..." />
-                <marker date="1494175844962" expanded="true" signature="21828:21842" ph="..." />
-                <marker date="1494175844962" expanded="true" signature="22494:22543" ph="..." />
+                <marker date="1494176508698" expanded="true" signature="7085:7100" ph="..." />
+                <marker date="1494176508698" expanded="true" signature="18532:18547" ph="..." />
+                <marker date="1494176508698" expanded="true" signature="21511:21525" ph="..." />
+                <marker date="1494176508698" expanded="true" signature="21580:21594" ph="..." />
+                <marker date="1494176508698" expanded="true" signature="21808:21822" ph="..." />
+                <marker date="1494176508698" expanded="true" signature="21877:21891" ph="..." />
+                <marker date="1494176508698" expanded="true" signature="22543:22592" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db_chatConnect.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chat/db_chatConnect.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -170,8 +160,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>opening</find>
-      <find>contact-info</find>
       <find>t</find>
       <find>to</find>
       <find>to kno</find>
@@ -200,6 +188,8 @@
       <find>counseling</find>
       <find>style.css</find>
       <find>userList</find>
+      <find>form1</find>
+      <find>আপনি</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/profile</dir>
@@ -226,9 +216,7 @@
         <option value="$PROJECT_DIR$/chat/logout.php" />
         <option value="$PROJECT_DIR$/chat/login.php" />
         <option value="$PROJECT_DIR$/chat/register.php" />
-        <option value="$PROJECT_DIR$/chat/db_chatConnect.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/appointment.php" />
         <option value="$PROJECT_DIR$/ps-features/index.php" />
         <option value="$PROJECT_DIR$/ps-depression/index.php" />
@@ -239,7 +227,9 @@
         <option value="$PROJECT_DIR$/profile/access/user_profile.php" />
         <option value="$PROJECT_DIR$/chat/logs.php" />
         <option value="$PROJECT_DIR$/chat/activeuser.php" />
+        <option value="$PROJECT_DIR$/chat/db_chatConnect.php" />
         <option value="$PROJECT_DIR$/chat/index.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -512,12 +502,12 @@
       <workItem from="1494100825476" duration="4556000" />
       <workItem from="1494132202680" duration="19462000" />
       <workItem from="1494157486613" duration="2432000" />
-      <workItem from="1494166092306" duration="4126000" />
+      <workItem from="1494166092306" duration="6296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48189000" />
+    <option name="totallyTimeSpent" value="50359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="62" y="-11" width="1305" height="780" extended-state="6" />
@@ -610,13 +600,13 @@
         <state relative-caret-position="-525">
           <caret line="233" column="28" lean-forward="false" selection-start-line="233" selection-start-column="28" selection-end-line="233" selection-end-column="28" />
           <folding>
-            <marker date="1494175844962" expanded="true" signature="7085:7100" ph="..." />
-            <marker date="1494175844962" expanded="true" signature="18483:18498" ph="..." />
-            <marker date="1494175844962" expanded="true" signature="21462:21476" ph="..." />
-            <marker date="1494175844962" expanded="true" signature="21531:21545" ph="..." />
-            <marker date="1494175844962" expanded="true" signature="21759:21773" ph="..." />
-            <marker date="1494175844962" expanded="true" signature="21828:21842" ph="..." />
-            <marker date="1494175844962" expanded="true" signature="22494:22543" ph="..." />
+            <marker date="1494176508698" expanded="true" signature="7085:7100" ph="..." />
+            <marker date="1494176508698" expanded="true" signature="18532:18547" ph="..." />
+            <marker date="1494176508698" expanded="true" signature="21511:21525" ph="..." />
+            <marker date="1494176508698" expanded="true" signature="21580:21594" ph="..." />
+            <marker date="1494176508698" expanded="true" signature="21808:21822" ph="..." />
+            <marker date="1494176508698" expanded="true" signature="21877:21891" ph="..." />
+            <marker date="1494176508698" expanded="true" signature="22543:22592" ph="..." />
           </folding>
         </state>
       </provider>
@@ -812,14 +802,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat/db_chatConnect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/profile/mysqli_connect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -948,22 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4890">
-          <caret line="326" column="46" lean-forward="false" selection-start-line="325" selection-start-column="38" selection-end-line="326" selection-end-column="46" />
-          <folding>
-            <marker date="1494166895757" expanded="true" signature="5974:5989" ph="..." />
-            <marker date="1494166895757" expanded="true" signature="6743:6959" ph="..." />
-            <marker date="1494166895757" expanded="true" signature="38268:38407" ph="..." />
-            <marker date="1494166895757" expanded="true" signature="38575:40037" ph="..." />
-            <marker date="1494166895757" expanded="true" signature="40130:40269" ph="..." />
-            <marker date="1494166895757" expanded="true" signature="40437:41899" ph="..." />
-            <marker date="1494166895757" expanded="true" signature="41992:42131" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ps-contact/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1425">
@@ -982,20 +948,6 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1494166927473" expanded="false" signature="1754:1770" ph="..." />
             <marker date="1494166927473" expanded="false" signature="2095:2107" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/insert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <marker date="1494085239317" expanded="true" signature="252:329" ph="INSERT INTO logs... " />
-            <marker date="1494085239317" expanded="true" signature="395:479" ph="SELECT * FRO... logs" />
-            <marker date="1494085239317" expanded="true" signature="526:561" ph="SELECT * FRO... logs" />
-            <marker date="1494085239317" expanded="true" signature="738:752" ph="..." />
-            <marker date="1494085239317" expanded="true" signature="940:954" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1033,18 +985,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chat/db_chatConnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <marker date="1494085239317" expanded="true" signature="252:329" ph="INSERT INTO logs... " />
+            <marker date="1494085239317" expanded="true" signature="395:479" ph="SELECT * FRO... logs" />
+            <marker date="1494085239317" expanded="true" signature="526:561" ph="SELECT * FRO... logs" />
+            <marker date="1494085239317" expanded="true" signature="738:752" ph="..." />
+            <marker date="1494085239317" expanded="true" signature="940:954" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chat/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="302" column="50" lean-forward="true" selection-start-line="302" selection-start-column="50" selection-end-line="302" selection-end-column="50" />
+        <state relative-caret-position="268">
+          <caret line="312" column="36" lean-forward="false" selection-start-line="312" selection-start-column="36" selection-end-line="312" selection-end-column="36" />
           <folding>
-            <marker date="1494175844962" expanded="true" signature="7085:7100" ph="..." />
-            <marker date="1494175844962" expanded="true" signature="18483:18498" ph="..." />
-            <marker date="1494175844962" expanded="true" signature="21462:21476" ph="..." />
-            <marker date="1494175844962" expanded="true" signature="21531:21545" ph="..." />
-            <marker date="1494175844962" expanded="true" signature="21759:21773" ph="..." />
-            <marker date="1494175844962" expanded="true" signature="21828:21842" ph="..." />
-            <marker date="1494175844962" expanded="true" signature="22494:22543" ph="..." />
+            <marker date="1494176508698" expanded="true" signature="7085:7100" ph="..." />
+            <marker date="1494176508698" expanded="true" signature="18532:18547" ph="..." />
+            <marker date="1494176508698" expanded="true" signature="21511:21525" ph="..." />
+            <marker date="1494176508698" expanded="true" signature="21580:21594" ph="..." />
+            <marker date="1494176508698" expanded="true" signature="21808:21822" ph="..." />
+            <marker date="1494176508698" expanded="true" signature="21877:21891" ph="..." />
+            <marker date="1494176508698" expanded="true" signature="22543:22592" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="169" column="37" lean-forward="false" selection-start-line="169" selection-start-column="37" selection-end-line="169" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#h2#0;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#p#0;n#div#1;n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1494178424430" expanded="true" signature="5974:5989" ph="..." />
+            <marker date="1494178424430" expanded="true" signature="6743:6959" ph="..." />
+            <marker date="1494178424430" expanded="true" signature="38281:38420" ph="..." />
+            <marker date="1494178424430" expanded="true" signature="38588:40050" ph="..." />
+            <marker date="1494178424430" expanded="true" signature="40143:40282" ph="..." />
+            <marker date="1494178424430" expanded="true" signature="40450:41912" ph="..." />
+            <marker date="1494178424430" expanded="true" signature="42005:42144" ph="..." />
           </folding>
         </state>
       </provider>
