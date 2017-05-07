@@ -10,8 +10,8 @@
     $email  = "email       : ". $_POST["mail"]."\n";
     $age    = "age         : ". $_POST["age"]."\n";
     $phone  = "Phone No    : ". $_POST["phone"]."\n";
-    $mental = "Mental State: ". $_POST["mental"]."\n";
-    $option = "Division    : ". $_POST["option"]."\n";
+    $mental = "Mental State: ". $_POST["mental1"]."\n";
+    $option = "Division    : ". $_POST["option1"]."\n";
     $sub    = $_POST["subject"];
     $des    = $_POST["description"];
 

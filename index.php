@@ -321,7 +321,7 @@
                                   <div class="col-md-6 col-sm-6">
                                       <label class="control-label">আপনার মানসিক অবস্থা <span class="required">*</span>
                                       </label>
-                                      <select class="wp-form-control wpcf7-select">
+                                      <select class="wp-form-control wpcf7-select" name="mental1">
                                           <option val="1" name="mental" >খুব খারাপ</option>
                                           <option val="2" name="mental">খারাপ</option>
                                           <option val="3" name="mental">ভালো</option>
@@ -332,7 +332,7 @@
                                   <div class="col-md-6 col-sm-6">
                                       <label class="control-label">কি ধরনের সমস্যায় ভুগছেন<span class="required">*</span>
                                       </label>
-                                      <select class="wp-form-control wpcf7-select">
+                                      <select  class="wp-form-control wpcf7-select" name="option1">
                                           <option val="1" name="option">উদ্বেগ (Anxiety)</option>
                                           <option val="2" name="option">বিষণ্ণতা (Depression)</option>
                                           <option val="3" name="option">অন্যান্য (Others)</option>
