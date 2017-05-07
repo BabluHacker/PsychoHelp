@@ -3,7 +3,7 @@ session_start();
 //$state =  trim($_SESSION["state"]);
 if(!isset( $_SESSION["state"])){
     echo "<script>alert('aaaa')</script>";
-    header("Location: http://localhost/psychohelp");
+    header("Location: /psychohelp");
     exit();
     // echo "<script> window.location.replace('http://localhost:63342/psycho_help/index.html')</script>";
 
