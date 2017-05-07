@@ -78,13 +78,13 @@
               </button>
               <!-- LOGO -->              
               <!-- TEXT BASED LOGO -->
-              <a class="navbar-brand" href="index.php"><i class="fa fa-heartbeat"></i>Psycho <span>Help</span></a>
+              <a class="navbar-brand" href="/psychohelp"><i class="fa fa-heartbeat"></i>Psycho <span>Help</span></a>
               <!-- IMG BASED LOGO  -->
               <!--  <a class="navbar-brand" hrindex.phphtml"><img src="images/logo.png" alt="logo"></a>   -->
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                <li class="active"><a href="index.php">Home</a></li>
+                <li class="active"><a href="/psychohelp">Home</a></li>
                 <li><a href="ps-features">Features</a></li>
                 <li><a href="ps-aboutus">About Us</a></li>
                 <li class="dropdown">
@@ -964,7 +964,7 @@
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
               <div class="footer-copyright">
-                <p>&copy; Copyright 2017 <a href="index.php">Psycho Help</a></p>
+                <p>&copy; Copyright 2017 <a href="/psychohelp">Psycho Help</a></p>
               </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
