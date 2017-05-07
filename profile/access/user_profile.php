@@ -55,6 +55,9 @@ if(!isset( $_SESSION["state"])){
         }
     </style>
 
+    <link href="/style.css" rel="stylesheet">
+    <link id="switcher" href="/css/themes/black-theme.css" rel="stylesheet">
+
 </head>
 
 <title>User Profile</title>
