@@ -19,13 +19,13 @@
 
     $msg = wordwrap($msg,70);
 
-    $mail = "psychohelp.cnps@gmail.com";
+    $mail = "psychohelp.cnps@gmail.com, mehedi1055@gmail.com";
 
 
 
 
-    $headers = 'From: '.$email . "\r\n";
-    $headers .= 'Cc: mehedi1055@gmail.com' . "\r\n";
+
+    $headers = 'From: '.$email;
     $return = mail($mail, $sub, $msg, $headers);
 
 
