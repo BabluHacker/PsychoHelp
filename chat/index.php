@@ -92,7 +92,7 @@ if(!isset($_SESSION['username'])){
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Service <span class="fa fa-angle-down"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li class="active"><a href="../chat">Online Counseling</a></li>
+                                    <li class="active"><a href="../chat">Online Counselling</a></li>
                                     <li><a href="/psychohelp/ps-assessment">Take Assessment</a></li>
                                     <li><a href="#">Self Help</a></li>
                                 </ul>
@@ -153,7 +153,7 @@ if(!isset($_SESSION['username'])){
                             <ol class="breadcrumb">
                                 <li>You are here</li>
                                 <li><a href="#">Home</a></li>
-                                <li class="active">Online Counseling</li>
+                                <li class="active">Online Counselling</li>
                             </ol>
                         </div>
                     </div>
@@ -351,7 +351,7 @@ if(!isset($_SESSION['username'])){
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Service <span class="fa fa-angle-down"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li class="active"><a href="/psychohelp/chat">Online Counseling</a></li>
+                                <li class="active"><a href="/psychohelp/chat">Online Counselling</a></li>
                                 <li><a href="/psychohelp/ps-assessment">Take Assessment</a></li>
                                 <li><a href="/psychohelp/profile">Self Help</a></li>
                             </ul>
@@ -412,7 +412,7 @@ if(!isset($_SESSION['username'])){
                         <ol class="breadcrumb">
                             <li>You are here</li>
                             <li><a href="#">Home</a></li>
-                            <li class="active">Online Counseling</li>
+                            <li class="active">Online Counselling</li>
                         </ol>
                     </div>
                 </div>
@@ -428,7 +428,7 @@ if(!isset($_SESSION['username'])){
                 <div class="service-area">
                     <!-- Start Service Title -->
                     <div class="section-heading">
-                        <h2>Online Counseling</h2>
+                        <h2>Online Counselling</h2>
                         <div class="line"></div>
                     </div>
                     <!-- Start Service Content -->

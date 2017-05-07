@@ -90,7 +90,7 @@ session_start();
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Service <span class="fa fa-angle-down"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="../chat">Online Counseling</a></li>
+                    <li><a href="../chat">Online Counselling</a></li>
                     <li><a href="#">Take Assessment</a></li>
                     <li><a href="../profile">Self Help</a></li>
                   </ul>
@@ -170,7 +170,7 @@ session_start();
                       <div class="service-icon">
                         <span class="fa fa-angle-double-down service-icon-effect"></span>
                       </div>
-                      <h3><a href="#">Online Counseling</a></h3>
+                      <h3><a href="#">Online Counselling</a></h3>
                       <p>Talk with a licensed, professional therapist online.</p>
                     </div>
                   </div>
@@ -458,10 +458,10 @@ session_start();
                   <div class="line"></div>
                 </div>
                 <ul class="footer-service">
-                  <li><a href="#"><span class="fa fa-check"></span>Online Counseling</a></li>
+                  <li><a href="#"><span class="fa fa-check"></span>Online Counselling</a></li>
                   <li><a href="#"><span class="fa fa-check"></span>Self Help</a></li>
                   <li><a href="#"><span class="fa fa-check"></span>Assessment on Mental Health</a></li>
-                  <li><a href="#"><span class="fa fa-check"></span>Face to Face Counseling</a></li>
+                  <li><a href="#"><span class="fa fa-check"></span>Face to Face Counselling</a></li>
                 </ul>
               </div>
             </div>
