@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8 ;width=device-width;initial-scale=1" />
+
     <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script type="text/javascript" >
@@ -465,10 +466,144 @@
             div.appendChild(document.createTextNode("এই কৌশলগুলি ব্যবহার করে আপনার কতটুকু উন্নতি হয়েছে তা দেখার জন্য অবশ্যই এখানে যে প্রশ্নমালা গুলি আছে তা পূরণ করুন এবং ফলাফল দেখুন, ধন্যবাদ।"));
             div.appendChild(document.createElement("br"));
             container.appendChild(div);
+
+            var input= document.createElement("input");
+            // butn.value="submit";
+
+
+            input.type = "text" ;
+            input.style = " background-color: #ccffe6 ;width : 700px ; height: 200px;  font-size : 100%; ;";
+            input.id="feedback";
+
+            div.appendChild(input);
+
+
+
+
+            div.appendChild(document.createElement("br"));
+            div.appendChild(document.createElement("br"));
+
+            div.appendChild(document.createTextNode("আমাদের কার্যক্রমে অংশ নেবার আগে আপনার মানসিক কষ্ট যে পরিমান ছিল তা 'শূন্য' (০) থেকে 'একশো' (১০০)-এর স্কেল-এ কোথায় ছিল তা নির্দেশ করুন। যেখানে ০ মানে হলো কোনো সমস্যা নেই এবং ১০০ মানে হলো অনেক সমস্যা। "));
+            div.appendChild(document.createElement("br"));
+            div.appendChild(document.createElement("br"));
+            var input1= document.createElement("input");
+            // butn.value="submit";
+
+
+            input1.type = "number" ;
+            input1.style = " background-color: #ccffe6 ;width : 50px ; height: 50px;  font-size : 100%; ;";
+            input1.id="inp1";
+
+            div.appendChild(input1);
+            div.appendChild(document.createElement("br"));
+
+
+            div.appendChild(document.createTextNode("আমাদের কার্যক্রমে অংশ নেবার পর আপনার মানসিক কষ্ট কি কিছু কমেছে? কার্যক্রমে অংশ নেবার পর আপনার যে পরিমান সমস্যা বোধ হয় তা 'শূন্য' (০) থেকে 'একশো' (১০০)-এর স্কেল-এ কোথায় তা নির্দেশ করুন। যেখানে ০ মানে হলো কোনো সমস্যা নেই এবং ১০০ মানে হলো অনেক সমস্যা।  "));
+            div.appendChild(document.createElement("br"));
+            div.appendChild(document.createElement("br"));
+            var input2= document.createElement("input");
+            // butn.value="submit";
+
+
+            input2.type = "number" ;
+            input2.style = " background-color: #ccffe6 ;width : 50px ; height: 50px;  font-size : 100%; ;";
+            input2.id="inp2";
+
+            div.appendChild(input2);
+            div.appendChild(document.createElement("br"));
+            div.appendChild(document.createElement("br"));
+            var butn= document.createElement("input");
+            // butn.value="submit";
+
+
+            butn.type = "button" ;
+            butn.id= "ass1" ;
+            butn.style =" padding: 5px 10px;font-size: 24px;text-align: center;text-decoration: none;outline: none;color: #fff;background-color: #338caf;border: none;border-radius: 15px;box-shadow: 0 9px #999;";
+            butn.value = "Assesment on Anxiety";
+
+
+
+            div.appendChild(butn);
+
+            container.appendChild(div);
+
+
+            div.appendChild(document.createElement("br"));
+            div.appendChild(document.createElement("br"));
+
+            var butn= document.createElement("input");
+            // butn.value="submit";
+
+
+            butn.type = "button" ;
+            butn.id= "ass2" ;
+            butn.style =" padding: 5px 10px;font-size: 24px;text-align: center;text-decoration: none;outline: none;color: #fff;background-color: #338caf;border: none;border-radius: 15px;box-shadow: 0 9px #999;";
+            butn.value = "Assesment on Depression";
+
+
+
+            div.appendChild(butn);
+
+            container.appendChild(div);
+            div.appendChild(document.createElement("br"));
+            div.appendChild(document.createElement("br"));
+            var butn= document.createElement("input");
+            // butn.value="submit";
+
+
+            butn.type = "button" ;
+            butn.id= "bfeedback" ;
+            butn.style =" padding: 5px 10px;font-size: 24px;text-align: center;text-decoration: none;outline: none;color: #fff;background-color: #338caf;border: none;border-radius: 15px;box-shadow: 0 9px #999;";
+            butn.value = "Send";
+
+
+
+            div.appendChild(butn);
+
+
+
+            $('html,body').animate({
+                    scrollTop: $(".anormal").offset().top},
+                'slow');
+            $('#bfeedback').click(function(){
+                if(input.value!="" && input1.value!="" && input2.value!="") {
+
+                    $.ajax({
+                        url: "/psychohelp/profile/selfhelp/feedback.php",
+                        type: "GET",
+                        data: {
+                            "data": input.value,
+                            "feed1": input1.value,
+                            "feed2": input2.value
+                        },
+                        success: function (feedback) {
+                            alert(feedback);
+                            window.location = "/psychohelp/profile/selfhelp/selfhelp.html";
+
+                        }
+
+                    });
+                }
+                else
+                {
+                    alert("Please fill up all the three fields before send");
+                }
+            });
+
+
+            $('#ass1').click(function(){
+                window.location = "/psychohelp/profile/quiz/quiz_view.html";
+            });
+
+            $('#ass2').click(function(){
+                window.location = "/psychohelp/profile/quiz/quix_view_depression.html";
+            });
             $('html,body').animate({
                     scrollTop: $(".anormal").offset().top},
                 'slow');
         }
+
+
         function load_quiz() {
 
 
@@ -485,7 +620,12 @@
             div.appendChild(document.createTextNode("নিজেকে সহযোগিতার শুরু"));
             div.appendChild(document.createElement("br"));
           div.appendChild(document.createTextNode("অনেক সময় আমরা চাইলে নিজের মনকে নিয়ন্ত্রণ করতে পারি।মানসিক বিষয়ের সমস্যা দূর করতে অনেক ক্ষেত্রেই ব্যক্তি কে যাতে সমস্যা থেকে বের করে আনতে পারা যায় তাই সাইক্রেটিকসরা  এর বিভিন্ন উপকরন তৈরী করেছেন পেশাদার মানসিক স্বাস্থ্য সেবা কর্মীরা। সব ধরনের উপকরণের ভিতর সবচেয়ে বেশি কার্যকরী উপায়  হলো মানসিক স্বাস্থ্য সমস্যা তৈরী হয় কিভাবে আর চেষ্টা না করলে কিভাবে সমস্যা ক্রমশঃ বাড়তে থাকে তা বোঝা এবং ধীরে ধীরে তা নিয়ন্ত্রণ করতে চেষ্টা করা। এই কার্যটি মূলতঃ লিখিত তথ্যের সহায়তা নিয়েই সবচেয়ে বেশী করা হয়।"));
-            div.appendChild(document.createTextNode("এই অংশে আপনি তিনটি অধ্যায় দেখতে পাবেন।যে তিনটি অধ্যায় বা নিজেকে নিজে সহায়তা করার উপায়  হিসাবে কাজ করতে পারে।সবচেয়ে ভালো উপায় হলো আপনি তিনটি অধ্যায় একসাথে পড়ে নিবেন না। প্রথম অধ্যায় পড়ার পর এক সপ্তাহ আপনার জীবণে ঐ বিষয়ের উপস্থিতি  নোট করবেন। তারপর দ্বিতীয় সপ্তাহের শুরুতে দ্বিতীয়  অধ্যায়টি পড়বেন এবং একই ভাবে এরপর একসপ্তাহ যা শিখলেন তা নিজের জীবনে কিভাবে অভিজ্ঞতা করছে তা নিজের কাছে নোট রাখুন ডাইরির মতো। "));
+            div.appendChild(document.createTextNode("এই অংশে আপনি তিনটি অধ্যায় দেখতে পাবেন।যে তিনটি অধ্যায় বা নিজেকে নিজে সহায়তা করার উপায়  হিসাবে কাজ করতে পারে।"));
+
+            div.appendChild(document.createElement("br"));
+            div.appendChild(document.createElement("br"));
+
+            div.appendChild(document.createTextNode("সবচেয়ে ভালো উপায় হলো আপনি তিনটি অধ্যায় একসাথে পড়ে নিবেন না। প্রথম অধ্যায় পড়ার পর এক সপ্তাহ আপনার জীবণে ঐ বিষয়ের উপস্থিতি  নোট করবেন। তারপর দ্বিতীয় সপ্তাহের শুরুতে দ্বিতীয়  অধ্যায়টি পড়বেন এবং একই ভাবে এরপর একসপ্তাহ যা শিখলেন তা নিজের জীবনে কিভাবে অভিজ্ঞতা করছে তা নিজের কাছে নোট রাখুন ডাইরির মতো। "));
         div.appendChild(document.createTextNode("তারপর দ্বিতীয় সপ্তাহ যাবার পর তৃতীয় সপ্তাহের শুরুতে তৃতীয় অধ্যায়টি পড়ুন  এবং তার ব্যবহার একই ভাবে তৃতীয় সপ্তাহে নিজের জীবণে করুন ও নোট রাখুন।এরপর চতুর্থ সপ্তাহের শুরুতে পুনরায় মানসিক  স্বাস্থ্য পরিমাপণের মানক দুটি পরিমাপক ব্যবহার করে নিজের মানসিক অবস্থা  জেনে নিন।"));
     div.appendChild(document.createTextNode("অবশেষে আমাদের ফিডব্যাক সেকশনে আপনার অভিজ্ঞতা এবং মতামত আমাদের জানান।"));
             div.appendChild(document.createElement("br"));
@@ -544,6 +684,14 @@
             butn.value = "Selfhelp Part4";
             butn.onclick = part4();
             container.appendChild(butn);
+
+
+
+
+
+
+           // butn.onclick = part4();
+//            container.appendChild(butn);
 
 
 
@@ -619,7 +767,7 @@
 <ul>
     <li><a href="/psychohelp">Home</a></li>
     <li><a href="/psychohelp/profile/access/user_profile.php">Profile</a></li>
-    <li><a class="active" href="/psychohelp/profile/selfhelp/selphelp.html">Selfhelp</a></li>
+    <li><a class="active" href="/psychohelp/profile/selfhelp/selfhelp.html">Selfhelp</a></li>
 </ul>
 
 </br>
@@ -648,7 +796,11 @@
         Selfhelp Part-4
     </button></br></br></br>
 
-    <div class= "anormal" id="part1"/></button></br></br></br>
+
+
+    <div class= "anormal" id="part1"/></div></br></br></br>
+
+
 
 
 
