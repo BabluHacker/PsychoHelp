@@ -13,7 +13,9 @@ if(!isset($_SESSION['username'])){
         <!-- Basic Page Needs
         ================================================== -->
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>PsychoHelp : Online Couseling</title>
 
         <!-- Mobile Specific Metas
@@ -56,6 +58,8 @@ if(!isset($_SESSION['username'])){
         <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
 
     </head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <body>
 
     <!-- END PRELOADER -->
@@ -315,6 +319,8 @@ if(!isset($_SESSION['username'])){
         });
     </script>
 </head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
 
 <!-- END PRELOADER -->

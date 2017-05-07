@@ -76,21 +76,21 @@ if(!isset( $_SESSION["state"])){
   <div class="w3-half w3-black w3-container w3-center" style="height:700px">
     <div class="w3-padding-64">
       <h1 id="user"></h1>
-      <h1>যেকোনো সাহায্য গ্রহণ করুন </h1>
+      <h1>Take any help </h1>
     </div>
     <div class="w3-padding-10">
-      <a href="../easyappointments/index.php" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">এপয়েন্টমেন্ট (অনলাইন কাউন্সেলিং)</a>
-      <a href="/psychohelp/chat" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">অনলাইন কাউন্সেলিং</a>
-      <a href="/psychohelp/profile/selfhelp/selfhelp.html" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">নিজেকে নিজে সাহায্য করি</a>
+      <a href="../easyappointments/index.php" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Appointment for Online Counselling</a>
+      <a href="/psychohelp/chat" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Online Counselling</a>
+      <a href="/psychohelp/profile/selfhelp/selfhelp.html" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Self help</a>
 
-        <a href="#" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">এসেসমেন্ট </a>
+        <a href="#" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Assessment</a>
 
 
 
         <select class="wp-form-control wpcf7-select" name="forma" onchange="location = this.value;">
-            <option value="#" selected="selected">সিলেক্ট করুন</option>
-            <option value="../quiz/quiz_view.html">এসেসমেন্ট উদ্বেগ</option>
-            <option value="../quiz/quix_view_depression.html">এসেসমেন্ট হতাশা</option>
+            <option value="#" selected="selected">Select</option>
+            <option value="../quiz/quiz_view.html">Assessment on anxiety</option>
+            <option value="../quiz/quix_view_depression.html">Assesment of depression</option>
         </select>
 
 
@@ -103,7 +103,7 @@ if(!isset( $_SESSION["state"])){
       <h1>How to start</h1>
 
       <div class="w3-left-align w3-padding-large">
-        <p>আপনি কি নিজেকে নিজেই সাহায্য করতে চান? আপনি যদি পড়তে ভালবাসেন, শুরু করুন<a href="#"> "নিনিজেকে নিজে সাহায্য করি"</a> এখানে আপনি পাবেন আপনার জন্যে তৈরি করা কিছু উপকারী  নির্দেশনা
+        <p>আপনি কি নিজেকে নিজেই সাহায্য করতে চান? আপনি যদি পড়তে ভালবাসেন, শুরু করুন<a href="#"> "নিজেকে নিজে সাহায্য করি"</a> এখানে আপনি পাবেন আপনার জন্যে তৈরি করা কিছু উপকারী  নির্দেশনা
            </p>
           </br>
         <p>যদি আপনি অনলাইন কাউন্সেলিং সেশন চান, এবং সেই সময় অনুযায়ী চ্যাট বক্স এ অনলাইন সেবা গ্রহণ করুন <a href="#">এপয়েন্টমেন্ট </a> সেই সময় অনুযায়ী <a href="#">চ্যাট বক্স </a> এ অনলাইন সেবা গ্রহণ করুন.
