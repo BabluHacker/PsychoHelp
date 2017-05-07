@@ -49,6 +49,7 @@ if(isset($_POST['submit'])){
     ================================================== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title>WpF Medinova : Home</title>
 
     <!-- Mobile Specific Metas
@@ -87,6 +88,8 @@ if(isset($_POST['submit'])){
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <body>
 
