@@ -308,11 +308,26 @@ session_start();
                             <div class="line"></div>
                         </div>
                         <h4><strong>Team Sanguine</strong></h4>
-                        <p>Mehedi Hasan<br>Abida Sultana</p>
+                        <p>
+                            <a href="mailto:mehedi1055@gmail.com">
+                          <span style="padding-right:3px; padding-top: 3px;">
+                            <img class="manImg" src="../images/mehedi.jpg" alt="img">
+
+                          </span>
+                                Mehedi Hasan
+                            </a><br>
+                            <a href="mailto:abida1616@gmail.com">
+                            <span style="padding-right:3px; padding-top: 3px;">
+                                <img class="manImg" src="../images/abida.jpg" alt="img">
+
+                            </span>
+                                Abida Sultana
+                            </a>
+                        </p>
                         <address class="contact-info">
                             <p><span class="fa fa-home"></span>Department of Computer Science & Engineering, University of Dhaka</p>
-                            <p><span class="fa fa-phone"></span>000001111122222</p>
-                            <p><span class="fa fa-envelope"></span>psychohelp@gmail.com</p>
+
+                            <p><span class="fa fa-envelope"></span>sanguine.csedu@gmail.com</p>
                         </address>
                     </div>
                 </div>
@@ -344,7 +359,7 @@ session_start();
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Design & Developed By <a rel="nofollow" href="http://www.wpfreeware.com/"></a>Team Sanguine, CSEDU</p>
+                    <p>Design & Developed By <a rel="nofollow"></a>Team Sanguine, CSEDU</p>
                 </div>
             </div>
         </div>

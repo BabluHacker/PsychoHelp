@@ -48,7 +48,7 @@ if(isset( $_SESSION["state"])){
   </center>
 </form>
   <div class="form" >
-      	  <h1>Register or login to know your mental strength level :) </h1>
+      	  <h1>Register or login to Experience our Services.</h1>
 
 
       <ul class="tab-group">

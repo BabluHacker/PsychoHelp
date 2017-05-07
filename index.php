@@ -233,9 +233,9 @@
             <div class="single-top-feature">
               <span class="fa fa-flask"></span>
               <h3>Self Help</h3>
-              <p></p>
+                <p> <strong> নিজেকে নিজে সাহায্য করুন </strong></p>
               <div class="readmore_area">
-                <a href="profile" data-hover="Read More"><span>Learn More</span></a>
+                <a href="profile" data-hover="Self Help"><span>Self Help</span></a>
               </div>
             </div>
           </div>
@@ -248,21 +248,23 @@
             <div class="single-top-feature opening-hours">
               <span class="fa fa-clock-o"></span>
               <h3>Opening Hours</h3>
-              <p>This are the Schedule of our Counselor.</p>
+                <p><strong>Schedule of Online Counseling</strong></p>
               <ul class="opening-table">
                 <li>
-                  <span>Monday - Friday</span>
-                  <div class="value">8.00 - 16.00</div>
+                  <span>Wednesday</span>
+                  <div class="value">10.00 - 05.00</div>
                 </li>
+
+              </ul>
+                <p><strong>Schedule of Onspot Counseling</strong></p>
+            <ul class="opening-table">
                 <li>
-                  <span>Saturday</span>
-                  <div class="value">9.30 - 15.30</div>
+                    <span>Sunday - Wednesday</span>
+                    <div class="value"></div>
                 </li>
-                <li>
-                  <span>Sunday</span>
-                  <div class="value">9.30 - 17.00</div>
-                </li>
-              </ul>              
+                <p align="center" style="color: #c32b2f;">Onspot Counseling time will be confirmed by the Counselors</p>
+
+            </ul>
             </div>
           </div>
         </div>
@@ -274,7 +276,7 @@
             <div class="single-top-feature">
               <span class="fa fa-hospital-o"></span>
               <h3>Appointment</h3>
-              <p>You have to fillup the form to take an Appointment to meet your Councelors.</p>
+              <p>সরাসরি কাউন্সেলরদের সাথে সাক্ষাতের জন্যে ফর্মটি ফিলাপ করুন</p>
               <div class="readmore_area">
                 <a data-toggle="modal" data-target="#myModal" href="#" data-hover="Appoinment"><span>Appointment</span></a>
               </div>
@@ -290,53 +292,58 @@
                       <div class="appointment-area">
 
 
-                        <form class="appointment-form">
-                          <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Your name <span class="required">*</span>
-                              </label>
-                              <input type="text" class="wp-form-control wpcf7-text" placeholder="Your name">
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Your Email <span class="required">*</span>
-                              </label>
-                              <input type="mail" class="wp-form-control wpcf7-email" placeholder="Email address">  
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Your Birth <span class="required">*</span>
-                              </label>
-                              <input type="text" class="wp-form-control wpcf7-text" placeholder="dd/mm/yy">
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Your Phone <span class="required">*</span>
-                              </label>
-                              <input type="text" class="wp-form-control wpcf7-text" placeholder="Phone No">  
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Appointment Date <span class="required">*</span>
-                              </label>
-                              <input type="text" class="wp-form-control wpcf7-text" placeholder="dd/mm/yy">
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Select Department <span class="required">*</span>
-                              </label>
-                              <select class="wp-form-control wpcf7-select">
-                                <option val="1">dept 1</option>
-                                <option val="2">dept 2</option>
-                                <option val="3">dept 3</option>
-                                <option val="4">dept 4</option>
-                                <option val="5">dept 5</option>
-                              </select> 
-                            </div>
-                          </div>         
-                          <input type="text" class="wp-form-control wpcf7-text" placeholder="Subject">
-                          <textarea class="wp-form-control wpcf7-textarea" cols="30" rows="10" placeholder="What would you like to tell us"></textarea>
-                         <button class="wpcf7-submit button--itzel" type="submit"><i class="button__icon fa fa-share"></i><span>Book Appointment</span></button>  
-                        </form>
+                          <form class="appointment-form" method="post" action="appointment.php">
+                              <div class="row">
+                                  <div class="col-md-6 col-sm-6">
+                                      <label class="control-label" >নাম  <span class="required">*</span>
+                                      </label>
+                                      <input type="text" name="name" class="wp-form-control wpcf7-text" placeholder="নাম">
+                                  </div>
+                                  <div class="col-md-6 col-sm-6">
+                                      <label class="control-label">ইমেইল <span class="required">*</span>
+                                      </label>
+                                      <input type="mail" name="mail" class="wp-form-control wpcf7-email" placeholder="ইমেইল">
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-md-6 col-sm-6">
+                                      <label class="control-label">বয়স <span class="required">*</span>
+                                      </label>
+                                      <input type="text" name="age" class="wp-form-control wpcf7-text" placeholder="বয়স">
+                                  </div>
+                                  <div class="col-md-6 col-sm-6">
+                                      <label class="control-label">ফোন নম্বর <span class="required">*</span>
+                                      </label>
+                                      <input type="text" name="phone" class="wp-form-control wpcf7-text" placeholder="ফোন নম্বর">
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-md-6 col-sm-6">
+                                      <label class="control-label">আপনার মানসিক অবস্থা <span class="required">*</span>
+                                      </label>
+                                      <select class="wp-form-control wpcf7-select">
+                                          <option val="1" name="mental" >খুব খারাপ</option>
+                                          <option val="2" name="mental">খারাপ</option>
+                                          <option val="3" name="mental">ভালো</option>
+                                          <option val="4" name="mental">খুব ভালো</option>
+
+                                      </select>
+                                  </div>
+                                  <div class="col-md-6 col-sm-6">
+                                      <label class="control-label">কি ধরনের সমস্যায় ভুগছেন<span class="required">*</span>
+                                      </label>
+                                      <select class="wp-form-control wpcf7-select">
+                                          <option val="1" name="option">উদ্বেগ (Anxiety)</option>
+                                          <option val="2" name="option">বিষণ্ণতা (Depression)</option>
+                                          <option val="3" name="option">অন্যান্য (Others)</option>
+
+                                      </select>
+                                  </div>
+                              </div>
+                              <input type="text" name="subject" class="wp-form-control wpcf7-text" placeholder="Subject">
+                              <textarea name="description" class="wp-form-control wpcf7-textarea" cols="30" rows="10" placeholder="আপনার সমস্যার কিছু বিবরণ যা আমাদের আপনি বলতে চান"></textarea>
+                              <button class="wpcf7-submit button--itzel" type="submit"><i class="button__icon fa fa-share"></i><span>Book Appointment</span></button>
+                          </form>
 
 
                       </div>
@@ -392,7 +399,7 @@
                         <span class="fa fa-angle-double-down service-icon-effect"></span>
                       </div>
                       <h3><a href="#">Self Help</a></h3>
-                      <p>To improve your mental health by yourself, SelfHelp section will be your guidlines</p>
+                      <p>To improve your mental health by yourself, SelfHelp section will be your guidlines. নিজেকে নিজে সাহায্য করুন। </p>
                     </div>
                   </div>
 
@@ -947,11 +954,26 @@
                   <div class="line"></div>
                 </div>
                 <h4><strong>Team Sanguine</strong></h4>
-                <p>Mehedi Hasan<br>Abida Sultana</p>
+                  <p>
+                      <a href="mailto:mehedi1055@gmail.com">
+                          <span style="padding-right:3px; padding-top: 3px;">
+                            <img class="manImg" src="images/mehedi.jpg" alt="img">
+
+                          </span>
+                          Mehedi Hasan
+                      </a><br>
+                      <a href="mailto:abida1616@gmail.com">
+                            <span style="padding-right:3px; padding-top: 3px;">
+                                <img class="manImg" src="images/abida.jpg" alt="img">
+
+                            </span>
+                          Abida Sultana
+                      </a>
+                  </p>
                 <address class="contact-info">
                   <p><span class="fa fa-home"></span>Department of Computer Science & Engineering, University of Dhaka</p>
-                  <p><span class="fa fa-phone"></span>000001111122222</p>
-                  <p><span class="fa fa-envelope"></span>psychohelp@gmail.com</p>
+
+                  <p><span class="fa fa-envelope"></span>sanguine.csedu@gmail.com</p>
                 </address>
               </div>
             </div>
@@ -983,7 +1005,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <p>Design & Developed By <a rel="nofollow" href="http://www.wpfreeware.com/"></a>Team Sanguine, CSEDU</p>
+              <p>Design & Developed By <a rel="nofollow"></a>Team Sanguine, CSEDU</p>
             </div>
           </div>
         </div>
