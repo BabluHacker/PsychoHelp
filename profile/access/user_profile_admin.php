@@ -12,7 +12,8 @@ if(!isset( $_SESSION["state"])){
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="text/html, charset=UTF-8, width=device-width, initial-scale=1" http-equiv="Content-Type" " />
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script type ="text/javascript">
         $(document).ready(function() {
