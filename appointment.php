@@ -13,10 +13,10 @@ $age    = "\nage         : ". $_POST["age"]."\n";
 $phone  = "Phone No    : ". $_POST["phone"]."\n";
 $mental = "Mental State: ". $_POST["mental1"]."\n";
 $option = "Division    : ". $_POST["option1"]."\n";
-$sub    = $_POST["subject"];
-$des    = $_POST["description"];
+$sub    = $_POST["subject"]."\n";
+$des    = "Description : ".$_POST["description"]."\n";
 
-$msg = $name.$email.$age.$phone.$mental.$option;
+$msg = $name.$email.$age.$phone.$mental.$option."\nSubject : ".$sub."\n\n".$des;
 
 $msg = wordwrap($msg,70);
 
@@ -40,15 +40,16 @@ $mailer = Swift_Mailer::newInstance($transport);
 
 $message = Swift_Message::newInstance($subject)
     ->setFrom(array($mail => 'psychohelp'))
-    ->setTo(array($email))
-    ->addCc(array($mail => 'psychohelp'))
+    ->setTo(array($email.','.$mail))
     ->setBody($body);
 
 $result = $mailer->send($message);
 if ($result)
-    echo "SUCCESS";
+    echo "<script>alert('SUCCESS')</script>";
 else
-    echo "ERROR";
+    echo "<script>alert('FAILED')</script>";
+
+header("Location: /psychohelp");
 
 ?>
 
