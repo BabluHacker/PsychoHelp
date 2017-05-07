@@ -76,21 +76,21 @@ if(!isset( $_SESSION["state"])){
   <div class="w3-half w3-black w3-container w3-center" style="height:700px">
     <div class="w3-padding-64">
       <h1 id="user"></h1>
-      <h1>যেকোনো সাহায্য গ্রহণ করুন </h1>
+      <h1>Take any help </h1>
     </div>
     <div class="w3-padding-10">
-      <a href="../easyappointments/index.php" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">এপয়েন্টমেন্ট (অনলাইন কাউন্সেলিং)</a>
-      <a href="/psychohelp/chat" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">অনলাইন কাউন্সেলিং</a>
-      <a href="/psychohelp/profile/selfhelp/selfhelp.html" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">নিজেকে নিজে সাহায্য করি</a>
+      <a href="../easyappointments/index.php" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Appointment for Online Counselling</a>
+      <a href="/psychohelp/chat" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Online Counselling</a>
+      <a href="/psychohelp/profile/selfhelp/selfhelp.html" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Self help</a>
 
-        <a href="#" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">এসেসমেন্ট </a>
+        <a href="#" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Assessment</a>
 
 
 
         <select class="wp-form-control wpcf7-select" name="forma" onchange="location = this.value;">
-            <option value="#" selected="selected">সিলেক্ট করুন</option>
-            <option value="../quiz/quiz_view.html">এসেসমেন্ট উদ্বেগ</option>
-            <option value="../quiz/quix_view_depression.html">এসেসমেন্ট হতাশা</option>
+            <option value="#" selected="selected">Select</option>
+            <option value="../quiz/quiz_view.html">Assessment on anxiety</option>
+            <option value="../quiz/quix_view_depression.html">Assesment of depression</option>
         </select>
 
 
