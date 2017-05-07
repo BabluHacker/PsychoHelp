@@ -35,13 +35,15 @@ if(mysqli_num_rows($result)){
     mysqli_query($con, "UPDATE users SET isActive=1 WHERE username='$username'");
     //updated
 
-    echo "<center>";
+    //echo "<center>";
     //echo "You are logged in, click <a href='../chat'>here</a> to go back to main chat window";
-    echo "<script>alert('you are logged in')</script>";
+    //echo "<script>alert('you are logged in')</script>";
     header('Location: /psychohelp/chat');
-    echo "</center>";
+    //echo "</center>";
 }
 else{
+    //header('Location: /psychohelp/chat');
+    //echo "<script>alert('No user found, please enter correct username and password')</script>"
     echo "<center>";
     echo "No user found. Plese go <a href = '../chat'>back</a> and enter correct login.<br>";
     echo "You can register a new account <a href = 'register.php'>here</a>";

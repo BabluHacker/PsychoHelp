@@ -15,9 +15,9 @@ mysqli_query($con, "UPDATE users SET isActive=0 WHERE username='$username'");
 
 session_destroy();
 
-echo "<center>";
-echo "You have logged out. click <a href='../chat'>here</a> to login again";
-
-echo "</center>";
+//echo "<center>";
+//echo "You have logged out. click <a href='../chat'>here</a> to login again";
+header('Location: /psychohelp/chat')
+//echo "</center>";
 
 ?>
