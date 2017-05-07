@@ -92,7 +92,7 @@
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="chat">Online Counseling</a></li>
                     <li><a href="ps-assessment">Take Assessment</a></li>
-                    <li><a href="#">Self Help</a></li>
+                    <li><a href="profile">Self Help</a></li>
                   </ul>
                 </li>
                 <!--<li><a href="gallery.html">Gallery</a></li>
@@ -233,9 +233,9 @@
             <div class="single-top-feature">
               <span class="fa fa-flask"></span>
               <h3>Self Help</h3>
-              <p>Self Help. Self Help.Self Help. Self Help. Self Help. Self Help. Self Help.Self Help.Self Help.Self Help.  Self Help. Self Help. </p>
+              <p></p>
               <div class="readmore_area">
-                <a href="#" data-hover="Read More"><span>Learn More</span></a>
+                <a href="profile" data-hover="Read More"><span>Learn More</span></a>
               </div>
             </div>
           </div>
