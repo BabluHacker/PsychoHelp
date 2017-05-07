@@ -45,9 +45,9 @@ $message = Swift_Message::newInstance($subject)
 
 $result = $mailer->send($message);
 if ($result)
-    echo "<script>alert('SUCCESS')</script>";
+    echo "SUCCESS";
 else
-    echo "<script>alert('FAILED')</script>";
+    echo "ERROR";
 
 header("Location: /psychohelp");
 
