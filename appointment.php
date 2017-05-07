@@ -22,7 +22,7 @@ $msg = wordwrap($msg,70);
 
 $mail = "psychohelp.cnps@gmail.com";
 if (filter_var($_POST["mail"], FILTER_VALIDATE_EMAIL) == false) {
-    
+
     header("Location: /psychohelp");
 }
 

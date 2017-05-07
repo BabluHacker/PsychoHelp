@@ -353,7 +353,7 @@ if(!isset($_SESSION['username'])){
                             <ul class="dropdown-menu" role="menu">
                                 <li class="active"><a href="/psychohelp/chat">Online Counseling</a></li>
                                 <li><a href="/psychohelp/ps-assessment">Take Assessment</a></li>
-                                <li><a href="#">Self Help</a></li>
+                                <li><a href="/psychohelp/profile">Self Help</a></li>
                             </ul>
                         </li>
                         <!--<li><a href="gallery.html">Gallery</a></li>

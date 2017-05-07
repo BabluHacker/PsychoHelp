@@ -92,7 +92,7 @@ session_start();
                   <ul class="dropdown-menu" role="menu">
                     <li><a href="../chat">Online Counseling</a></li>
                     <li><a href="#">Take Assessment</a></li>
-                    <li><a href="#">Self Help</a></li>
+                    <li><a href="../profile">Self Help</a></li>
                   </ul>
                 </li>
 
