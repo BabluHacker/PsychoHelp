@@ -26,5 +26,8 @@ if($uname == "Admin") {
         echo "<a href='addReci.php?&reci=" . $extract['username'] . "'><span class='singleuser' >" . $extract['username'] . "</span></a><br>";
     }
 }
+else{
+    echo "<span class='singleuser' >Active User List will be shown to ADMINS only</span><br>";
+}
 
 ?>
