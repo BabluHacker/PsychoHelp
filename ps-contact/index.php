@@ -92,7 +92,7 @@ session_start();
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Service <span class="fa fa-angle-down"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="../chat">Online Counseling</a></li>
+                    <li><a href="../chat">Online Counselling</a></li>
                     <li><a href="../ps-assessment">Take Assessment</a></li>
                     <li><a href="../profile">Self Help</a></li>
                   </ul>
@@ -238,10 +238,10 @@ session_start();
                   <div class="line"></div>
                 </div>
                 <ul class="footer-service">
-                  <li><a href="#"><span class="fa fa-check"></span>Online Counseling</a></li>
+                  <li><a href="#"><span class="fa fa-check"></span>Online Counselling</a></li>
                   <li><a href="#"><span class="fa fa-check"></span>Self Help</a></li>
                   <li><a href="#"><span class="fa fa-check"></span>Assessment on Mental Health</a></li>
-                  <li><a href="#"><span class="fa fa-check"></span>Face to Face Counseling</a></li>
+                  <li><a href="#"><span class="fa fa-check"></span>Face to Face Counselling</a></li>
                 </ul>
               </div>
             </div>
@@ -279,9 +279,25 @@ session_start();
 
                             </span>
                           Abida Sultana
-                      </a>
+                      </a><br>
+                  </p>
+                  <div class="section-heading">
+                      <h2>Supervised By</h2>
+                      <div class="line"></div>
+                  </div>
+
+                  <p>
+                      <a href="mailto:mamun@cse.univdhaka.edu">
+                          <span style="padding-right:3px; padding-top: 3px;">
+                            <img class="manImg" src="../images/sir.jpg" alt="img">
+
+                          </span>
+                          Dr. Md. Mamun-or-Rashid
+                      </a><br>
+
                   </p>
                 <address class="contact-info">
+                    <p><span class="fa fa-user"></span>Professor</p>
                     <p><span class="fa fa-home"></span>Department of Computer Science & Engineering, University of Dhaka</p>
 
                     <p><span class="fa fa-envelope"></span>sanguine.csedu@gmail.com</p>

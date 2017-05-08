@@ -93,7 +93,7 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Service <span class="fa fa-angle-down"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="chat">Online Counseling</a></li>
+                    <li><a href="chat">Online Counselling</a></li>
                     <li><a href="ps-assessment">Take Assessment</a></li>
                     <li><a href="profile">Self Help</a></li>
                   </ul>
@@ -167,7 +167,7 @@
           </div>
           <div class="slider-text">
 
-            <h2 style="color: rgba(11,149,10,0.57)">আপনি কি <strong style="color: #3c763d">ডিপ্রেশনে</strong> ভুগছেন? </h2>
+            <h2 style="color: #3c763d">আপনি কি <strong style="color: #3c763d">উদ্বিগ্ন</strong> কোন কারণে?  </h2>
             <p>মানসিকভাবে আপনি আপনি কতটুকু স্বাভাবিক! জানতে ক্লিক করুন <strong>Take Assessment</strong></p>
             <div class="readmore_area">
               <a data-hover="Take Assessment" href="ps-assessment"><span>Take Assessment</span></a>
@@ -184,7 +184,7 @@
           </div>
           <div class="slider-text">
             <h2>আপনি কি <strong>বিষন্নতায়</strong>  ভুগছেন? </h2>
-            <p>মানসিকভাবে আপনি আপনি কতটুকু স্বাভাবিক! জানতে ক্লিক করুন <strong>Take Assessment</strong></p>
+            <p>মানসিকভাবে আপনি আপনি কতটুকু স্বাভাবিক! জানতে ক্লিক করুন <strong style="color: #a89b33">Take Assessment</strong></p>
 
             <div class="readmore_area">
               <a data-hover="Take Assessment" href="ps-assessment"><span>Take Assessment</span></a>
@@ -251,7 +251,7 @@
             <div class="single-top-feature opening-hours">
               <span class="fa fa-clock-o"></span>
               <h3>Opening Hours</h3>
-                <p><strong>Schedule of Online Counseling</strong></p>
+                <p><strong>Schedule of Online Counselling</strong></p>
               <ul class="opening-table">
                 <li>
                   <span>Wednesday</span>
@@ -259,13 +259,13 @@
                 </li>
 
               </ul>
-                <p><strong>Schedule of Onspot Counseling</strong></p>
+                <p><strong>Schedule of Onspot Counselling</strong></p>
             <ul class="opening-table">
                 <li>
                     <span>Sunday - Wednesday</span>
                     <div class="value"></div>
                 </li>
-                <p align="center" style="color: #c32b2f;">Onspot Counseling time will be confirmed by the Counselors</p>
+                <p align="center" style="color: #c32b2f;">Onspot Counselling time will be confirmed by the Counselors</p>
 
             </ul>
             </div>
@@ -395,7 +395,7 @@
                       <div class="service-icon">
                         <span class="fa fa-angle-double-down service-icon-effect"></span>
                       </div>
-                      <h3><a href="#">Online Counseling</a></h3>
+                      <h3><a href="#">Online Counselling</a></h3>
                       <p>Talk with a licensed, professional therapist online.</p>
                     </div>
                   </div>
@@ -934,10 +934,10 @@
                   <div class="line"></div>
                 </div>
                 <ul class="footer-service">
-                  <li><a href="#"><span class="fa fa-check"></span>Online Counseling</a></li>
+                  <li><a href="#"><span class="fa fa-check"></span>Online Counselling</a></li>
                   <li><a href="#"><span class="fa fa-check"></span>Self Help</a></li>
                   <li><a href="#"><span class="fa fa-check"></span>Assessment on Mental Health</a></li>
-                  <li><a href="#"><span class="fa fa-check"></span>Face to Face Counseling</a></li>
+                  <li><a href="#"><span class="fa fa-check"></span>Face to Face Counselling</a></li>
                 </ul>
               </div>
             </div>
@@ -975,9 +975,28 @@
 
                             </span>
                           Abida Sultana
-                      </a>
+                      </a><br>
                   </p>
+
+                  <div class="section-heading">
+                      <h2>Supervised By</h2>
+                      <div class="line"></div>
+                  </div>
+
+                  <p>
+                      <a href="mailto:mamun@cse.univdhaka.edu">
+                          <span style="padding-right:3px; padding-top: 3px;">
+                            <img class="manImg" src="images/sir.jpg" alt="img">
+
+                          </span>
+                          Dr. Md. Mamun-or-Rashid
+                      </a><br>
+
+                  </p>
+
+
                 <address class="contact-info">
+                    <p><span class="fa fa-user"></span>Professor</p>
                   <p><span class="fa fa-home"></span>Department of Computer Science & Engineering, University of Dhaka</p>
 
                   <p><span class="fa fa-envelope"></span>sanguine.csedu@gmail.com</p>

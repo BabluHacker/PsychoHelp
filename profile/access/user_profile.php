@@ -53,7 +53,7 @@ if(!isset( $_SESSION["state"])){
         .active {
             background-color: rgba(84, 159, 160, 0.82);
         }
-        
+
     </style>
 
     <link href="/style.css" rel="stylesheet">
