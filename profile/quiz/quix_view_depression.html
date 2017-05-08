@@ -89,7 +89,8 @@
                     str += unanswered[k]+"\n";
                 }
                 alert(str);
-                unanswered = [];
+                unanswered.length = 0;
+                unans = 0;
             }
             else if(redflg == 0) {
                 for (var i = 0; i < count; i++) {
