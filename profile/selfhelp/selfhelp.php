@@ -656,7 +656,7 @@ if(!isset( $_SESSION["state"])){
                         },
                         success: function (feedback) {
                             alert(feedback);
-                           // window.location = "/psychohelp/profile/selfhelp/selfhelp.php";
+                           window.location = "/psychohelp/profile/selfhelp/selfhelp.php";
 
                         }
 
