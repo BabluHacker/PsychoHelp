@@ -121,6 +121,7 @@ function validate() {
                         data: {"fname": fname,"lname": "lname","email":email,"admin":admin}
 
                     });
+                    alert(res['msg']);
                     if(admin == 1)
                         window.location = "/psychohelp/profile/access/user_profile_admin.php";
                     else
@@ -131,7 +132,7 @@ function validate() {
                 }
             }
         };
-        xhttp.open("GET", "/psychohelp/profile/access/usersinput.php?email=" + email + "&pass="+password+"&var="+req, false);
+        xhttp.open("GET", "/psychohelp/profile/access/usersinput.php?email=" + email + "&pass="+password+"&var="+req, true);
         xhttp.send();
 
     }

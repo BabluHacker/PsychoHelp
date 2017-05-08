@@ -132,6 +132,20 @@
                     }
                 ?>
                 <li><?php echo $user ?></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dummy user <span class="fa fa-angle-down"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                          <li><b>Test user ID:</b>     testuser@yahoo.com</li>
+                          </br>
+                          <li>Test user password:   12345</li>
+                          </br>
+                          </br>
+                          <li><b>Test admin ID:</b>    testadmin@yahoo.com</li>
+                          </br>
+                          <li>Test admin password: 12345</li>
+                      </ul>
+                  </li>
+
               </ul>           
             </div><!--/.nav-collapse -->
           </div>     
