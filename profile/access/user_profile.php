@@ -81,7 +81,7 @@ if(!isset( $_SESSION["state"])){
     <div class="w3-padding-10">
       <a href="../easyappointments/index.php" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Appointment for Online Counselling</a>
       <a href="/psychohelp/chat" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Online Counselling</a>
-      <a href="/psychohelp/profile/selfhelp/selfhelp.html" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Self help</a>
+      <a href="/psychohelp/profile/selfhelp/selfhelp.php" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Self help</a>
 
         <a href="#" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Assessment</a>
 
