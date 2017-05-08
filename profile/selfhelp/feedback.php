@@ -17,7 +17,7 @@ require_once('../mysqli_connect.php');
 
 
 
-        $query = "UPDATE user_result SET feedback='$data', ret1='$feed1',ret2='$feed2' WHERE email = '$email'";
+        $query = "UPDATE user_result SET feedback='$data', ret1='$feed1',ret2='$feed2' WHERE email = '$email' ";
         $response = @mysqli_query($dbc, $query);
 
         if ($response) {
