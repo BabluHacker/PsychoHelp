@@ -65,7 +65,8 @@ if($var=="login")
 if($var=="quizsubmit") {
 
     session_start();
-    $data = json_decode($_GET["data"]);
+   // $data = json_decode($_GET["data"]);
+    $data = $_GET["data"];
     $dbname = $_GET["dbname"];
     $res = $_GET["result"];
 
