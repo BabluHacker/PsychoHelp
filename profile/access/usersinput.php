@@ -31,7 +31,7 @@ if($var=="login")
                 $flag = 1;
 
 
-                $arr = array('flag' => 1, 'fname' => $row["fname"], 'lname' => $row["lname"], 'admin' => $row["admin"]);
+                $arr = array('flag' => 1, 'fname' => $row["fname"], 'lname' => $row["lname"], 'admin' => $row["admin"],'msg' =>$sucess);
                 $json = json_encode($arr);
                 echo $json;
                 //echo $sucess;
