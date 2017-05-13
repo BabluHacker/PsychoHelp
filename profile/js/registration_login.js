@@ -48,7 +48,7 @@ function loadvalue() {
                 var flag = res['flag'];
                 if(flag==0)
                 {
-                   // alert(res['msg']);
+                    // alert(res['msg']);
                     alert("registration failed. register with new email id");
                     window.location = "/psychohelp/profile/index.php";
 
@@ -94,7 +94,7 @@ function validate() {
 
             console.log(this.readyState + " " + this.status + " " + xhttp.responseText);
             if (this.readyState == 4 && this.status == 200) {
-               // alert(xhttp.responseText);
+                // alert(xhttp.responseText);
                 response = xhttp.responseText
                 var res = JSON.parse(response);
                 var flag = res['flag'];
@@ -106,8 +106,8 @@ function validate() {
 
                 }
                 else {
-                   var fname = res['fname'];
-                   var lname = res['lname'];
+                    var fname = res['fname'];
+                    var lname = res['lname'];
                     var admin = res['admin'];
 
 
@@ -124,6 +124,7 @@ function validate() {
                     alert(res['msg']);
                     if(admin == 1)
                         window.location = "/psychohelp/profile/access/adminprofile/";
+                    
                     else
                         window.location = "/psychohelp/profile/access/userprofile/";
                     //alert(xhttp.responseText);
