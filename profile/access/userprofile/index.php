@@ -69,7 +69,7 @@ if(!isset( $_SESSION["state"])){
 <ul>
     <li><a href="/psychohelp">Home</a></li>
     <li><a class="active" href="/psychohelp/profile/access/userprofile/">Profile</a></li>
-    <li><a  href="../logout.php">Logout</a></li>
+    <li><a  href="/psychohelp/profile/access/logout.php">Logout</a></li>
 </ul>
 <!-- First Grid: Logo & About -->
 <div class="w3-row">
@@ -79,7 +79,7 @@ if(!isset( $_SESSION["state"])){
       <h1>Take any help </h1>
     </div>
     <div class="w3-padding-10">
-      <a href="../../easyappointments/" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Appointment for Online Counselling</a>
+      <a href="/psychohelp/profile/easyappointments/" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Appointment for Online Counselling</a>
       <a href="/psychohelp/chat" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Online Counselling</a>
       <a href="/psychohelp/profile/selfhelp/" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Self help</a>
 
@@ -89,8 +89,8 @@ if(!isset( $_SESSION["state"])){
 
         <select class="wp-form-control wpcf7-select" name="forma" onchange="location = this.value;">
             <option value="#" selected="selected">Select</option>
-            <option value="../quiz/quiz_view.html">Assessment on anxiety</option>
-            <option value="../quiz/quix_view_depression.html">Assesment of depression</option>
+            <option value="/psychohelp/profile/quiz/quiz_view.html">Assessment on anxiety</option>
+            <option value="/psychohelp/profile/quiz/quix_view_depression.html">Assesment of depression</option>
         </select>
 
 
