@@ -30,7 +30,7 @@ class Config {
     // GENERAL SETTINGS
     // ------------------------------------------------------------------------
 
-    const BASE_URL      = 'http://csedu.cf/psychohelp/profile/easyappointments/';
+    const BASE_URL      = '/psychohelp/profile/easyappointments/';
     const LANGUAGE      = 'english';
     const DEBUG_MODE    = FALSE;
 
@@ -39,10 +39,11 @@ class Config {
     // ------------------------------------------------------------------------
 
 
-    const DB_HOST       = 'localhost';
+   const DB_HOST       = 'localhost';
     const DB_NAME       = 'psychohelp';
     const DB_USERNAME   = 'psychohelp';
     const DB_PASSWORD   = 'psychohelp';
+
 
 
 
