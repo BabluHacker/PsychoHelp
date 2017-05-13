@@ -67,7 +67,7 @@ if(!isset( $_SESSION["state"])){
 <ul>
     <li><a href="/psychohelp">Home</a></li>
     <li><a class="active" href="/psychohelp/profile/access/adminprofile/">Profile</a></li>
-    <li><a  href="../logout.php">Logout</a></li>
+    <li><a  href="/psychohelp/profile/access/logout.php">Logout</a></li>
 </ul>
 <!-- First Grid: Logo & About -->
 <div class="w3-row">
@@ -96,9 +96,9 @@ if(!isset( $_SESSION["state"])){
             <h1>How to start</h1>
 
             <div class="w3-left-align w3-padding-large">
-                <p>You can set quiz from  <a href="../../quiz/quiz.php">here</a> where you will find some potential
+                <p>You can set quiz from  <a href="/psychohelp/profile/quiz/quiz.php">here</a> where you will find some potential
                     instructions to help you. There are three stage .....</p>
-                <p>If you want to counselling session, login <a href="../../easyappointments/index.php">here</a> and start <a href="#">chat</a> in scheduled time.
+                <p>If you want to counselling session, login <a href="/psychohelp/profile/easyappointments/">here</a> and start <a href="#">chat</a> in scheduled time.
                 </p>
 
             </div>

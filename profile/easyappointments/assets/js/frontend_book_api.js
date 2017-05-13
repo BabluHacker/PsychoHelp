@@ -243,11 +243,11 @@ window.FrontendBookApi = window.FrontendBookApi || {};
         if (setDate) {
             for (var i=1; i<=numberOfDays; i++) {
                 var currentDate = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), i);
-               // if (unavailableDates.indexOf(currentDate.toString('yyyy-MM-dd')) === -1) {
+                if (unavailableDates.toString().indexOf(currentDate.toString('yyyy-MM-dd')) === -1) {
                     $('#select-date').datepicker('setDate', currentDate);
                     FrontendBookApi.getAvailableHours(currentDate.toString('yyyy-MM-dd'));
                     break;
-               // }
+                }
             }
         }
 

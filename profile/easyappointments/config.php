@@ -39,11 +39,10 @@ class Config {
     // ------------------------------------------------------------------------
 
 
-   const DB_HOST       = 'localhost';
+    const DB_HOST       = 'localhost';
     const DB_NAME       = 'psychohelp';
     const DB_USERNAME   = 'psychohelp';
     const DB_PASSWORD   = 'psychohelp';
-
 
 
 
