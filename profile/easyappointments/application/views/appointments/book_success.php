@@ -69,7 +69,7 @@
                             echo '</div>';
                         }
                     ?>
-                    <form id="_gohome" style="display:inline-block" method="post" action="/psychohelp/profile/access/adminUser.php">
+                    <form id="_gohome" style="display:inline-block" method="post" action="/psychohelp/profile/access/userprofile/">
                         <button id="gohome" type="submit" class="btn btn-success">
 
                             <?php
