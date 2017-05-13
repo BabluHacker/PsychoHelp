@@ -124,7 +124,7 @@ function validate() {
                     alert(res['msg']);
                     if(admin == 1)
                         window.location = "/psychohelp/profile/access/adminprofile/";
-                    
+
                     else
                         window.location = "/psychohelp/profile/access/userprofile/";
                     //alert(xhttp.responseText);
