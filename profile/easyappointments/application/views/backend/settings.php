@@ -1,5 +1,4 @@
 <script type="text/javascript"
-<script type="text/javascript"
         src="<?php echo $base_url; ?>/assets/js/backend_settings_system.js"></script>
 <script type="text/javascript"
         src="<?php echo $base_url; ?>/assets/js/backend_settings_user.js"></script>
