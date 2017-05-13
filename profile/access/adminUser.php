@@ -12,10 +12,10 @@ session_start();
 if(isset( $_SESSION["state"])){
     echo "<script>alert('aaaa')</script>";
     if($_SESSION["admin"] == 1){
-        header("Location: /psychohelp/profile/access/user_profile_admin.php");
+        header("Location: /psychohelp/profile/access/index.php");
     }
     else{
-        header("Location: /psychohelp/profile/access/user_profile.php");
+        header("Location: /psychohelp/profile/access/index.php");
     }
 
 
