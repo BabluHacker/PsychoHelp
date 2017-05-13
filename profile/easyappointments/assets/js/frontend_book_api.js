@@ -233,8 +233,8 @@ window.FrontendBookApi = window.FrontendBookApi || {};
 
     function _applyUnavailableDates(unavailableDates, selectedDateString, setDate) {
         setDate = setDate || false;
-	var p = JSON.parse(unavailableDates);
-	console.log(p);
+	//var p = JSON.parse(unavailableDates);
+	//console.log(p);
 
         processingUnavailabilities = true;
 
@@ -245,7 +245,8 @@ window.FrontendBookApi = window.FrontendBookApi || {};
         if (setDate) {
             for (var i=1; i<=numberOfDays; i++) {
                 var currentDate = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), i);
-                if (p[currentDate.toString('yyyy-MM-dd')] === -1) {
+		var p = currentDate.toString('yyyy-MM-dd');
+                if (unavailableDates.indexOf(p) === -1) {
                     $('#select-date').datepicker('setDate', currentDate);
                     FrontendBookApi.getAvailableHours(currentDate.toString('yyyy-MM-dd'));
                     break;

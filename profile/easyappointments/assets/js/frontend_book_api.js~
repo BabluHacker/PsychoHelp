@@ -233,7 +233,8 @@ window.FrontendBookApi = window.FrontendBookApi || {};
 
     function _applyUnavailableDates(unavailableDates, selectedDateString, setDate) {
         setDate = setDate || false;
-	p = JSON.parse(unavailableDates);
+	var p = JSON.parse(unavailableDates);
+	console.log(p);
 
         processingUnavailabilities = true;
 
