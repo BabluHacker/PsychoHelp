@@ -30,7 +30,7 @@ class Config {
     // GENERAL SETTINGS
     // ------------------------------------------------------------------------
 
-    const BASE_URL      = '/psychohelp/profile/easyappointments';
+    const BASE_URL      = 'http://csedu.cf/psychohelp/profile/easyappointments/';
     const LANGUAGE      = 'english';
     const DEBUG_MODE    = FALSE;
 
