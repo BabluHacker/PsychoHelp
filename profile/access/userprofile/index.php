@@ -57,7 +57,7 @@ if(!isset( $_SESSION["state"])){
     </style>
 
     <link href="/psychohelp/profile/css/style.css" rel="stylesheet">
-    <link id="switcher" href="/css/themes/black-theme.css" rel="stylesheet">
+
 
 </head>
 
