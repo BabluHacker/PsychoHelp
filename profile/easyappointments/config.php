@@ -50,7 +50,7 @@ class Config {
     // GOOGLE CALENDAR SYNC
     // ------------------------------------------------------------------------
 
-    const GOOGLE_SYNC_FEATURE   = FALSE; // Enter TRUE or FALSE
+    const GOOGLE_SYNC_FEATURE   = TRUE; // Enter TRUE or FALSE
     const GOOGLE_PRODUCT_NAME   = 'pychologicalHelp';
     const GOOGLE_CLIENT_ID      = '983018795869-063snof25gk4aujctkicjckohqlcrca1.apps.googleusercontent.com';
     const GOOGLE_CLIENT_SECRET  = 'WvqWbLht3IVqIFDJk67P6kFW';
