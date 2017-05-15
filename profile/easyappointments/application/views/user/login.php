@@ -132,6 +132,7 @@
                 		placeholder="<?php echo $this->lang->line('enter_password_here'); ?>"
                 		class="form-control" />
             </div>
+
             <br>
 
             <button type="submit" id="login" class="btn btn-primary">
@@ -140,6 +141,7 @@
 
             <br><br>
 
+
             <a href="<?php echo site_url('user/forgot_password'); ?>" class="forgot-password">
             	<?php echo $this->lang->line('forgot_your_password'); ?></a>
             |
@@ -147,6 +149,15 @@
 	        	<?php echo ucfirst($this->config->item('language')); ?>
 	        </span>
         </form>
+        <form id="_gohome" style="display:inline-block" method="post" action="/psychohelp/profile/access/userprofile/">
+            <button id="gohome" type="submit" class="btn btn-success">
+
+                <?php
+                echo "Go back to your profile";
+                ?>
+            </button>
+        </form>
+
     </div>
 
     <script

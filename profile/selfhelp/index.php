@@ -8,6 +8,10 @@ if(!isset( $_SESSION["state"])){
     // echo "<script> window.location.replace('http://localhost:63342/psycho_help/index.html')</script>";
 
 }
+$profile;
+if($_SESSION['admin']==1)
+    $profile = "adminprofile";
+else $profile = "userprofile";
 
 ?>
 <!DOCTYPE html>
@@ -847,7 +851,7 @@ if(!isset( $_SESSION["state"])){
 <body bgcolor="#99ffcc" >
 <ul>
     <li><a href="/psychohelp">Home</a></li>
-    <li><a href="/psychohelp/profile/access/userprofile/">Profile</a></li>
+    <li><a href="/psychohelp/profile/access/<?php echo $profile;?>/">Profile</a></li>
     <li><a class="active" href="/psychohelp/profile/selfhelp/">Selfhelp</a></li>
 </ul>
 

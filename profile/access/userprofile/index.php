@@ -8,6 +8,9 @@ if(!isset( $_SESSION["state"])){
 
 }
 
+if($_SESSION['admin']==1)
+    header("Location: /psychohelp/profile/access/adminprofile");
+
 ?>
 <!DOCTYPE html>
 <html>

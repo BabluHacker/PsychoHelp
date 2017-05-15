@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -71,6 +72,7 @@
 
         <br>
 
+
         <a href="<?php echo site_url(); ?>" class="btn btn-success btn-large">
             <span class="glyphicon glyphicon-calendar"></span>
             <?php echo $this->lang->line('book_appointment_title'); ?>
@@ -80,6 +82,17 @@
             <span class="glyphicon glyphicon-wrench"></span>
             <?php echo $this->lang->line('backend_section'); ?>
         </a>
+        </br></br>
+
+        <form  id="_gohome" style="display:inline-block" method="post" action="/psychohelp/profile/access/userprofile/" >
+            <button id="gohome" type="submit" class="btn btn-success">
+
+                <?php
+                echo "Go back to your profile";
+                ?>
+            </button>
+        </form>
     </div>
+
 </body>
 </html>
