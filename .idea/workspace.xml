@@ -25,21 +25,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysqli_connect.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mysqli_connect.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/psychohelp/profile/mysqli_connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+            <state relative-caret-position="195">
+              <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db_chatConnect.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="db_chatConnect.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/psychohelp/chat/db_chatConnect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -340,12 +340,12 @@
       <workItem from="1494704749137" duration="6309000" />
       <workItem from="1494783193830" duration="3143000" />
       <workItem from="1494865285125" duration="18000" />
-      <workItem from="1494957357688" duration="1430000" />
+      <workItem from="1494957357688" duration="2004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69503000" />
+    <option name="totallyTimeSpent" value="70077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="-4" width="1303" height="772" extended-state="6" />
@@ -717,18 +717,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/psychohelp/profile/mysqli_connect.php">
+    <entry file="file://$PROJECT_DIR$/psychohelp/chat/db_chatConnect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        <state relative-caret-position="210">
+          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/psychohelp/chat/db_chatConnect.php">
+    <entry file="file://$PROJECT_DIR$/psychohelp/profile/mysqli_connect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
           <folding />
         </state>
       </provider>
