@@ -25,21 +25,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysqli_connect.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mysqli_connect.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/psychohelp/profile/mysqli_connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db_chatConnect.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="db_chatConnect.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/psychohelp/chat/db_chatConnect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="195">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -121,8 +121,8 @@
         <option value="$PROJECT_DIR$/js/jquery.js" />
         <option value="$PROJECT_DIR$/profile/index.php" />
         <option value="$PROJECT_DIR$/chat/insert.php" />
-        <option value="$PROJECT_DIR$/psychohelp/chat/db_chatConnect.php" />
         <option value="$PROJECT_DIR$/psychohelp/profile/mysqli_connect.php" />
+        <option value="$PROJECT_DIR$/psychohelp/chat/db_chatConnect.php" />
       </list>
     </option>
   </component>
@@ -340,12 +340,12 @@
       <workItem from="1494704749137" duration="6309000" />
       <workItem from="1494783193830" duration="3143000" />
       <workItem from="1494865285125" duration="18000" />
-      <workItem from="1494957357688" duration="1264000" />
+      <workItem from="1494957357688" duration="1430000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69337000" />
+    <option name="totallyTimeSpent" value="69503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="-4" width="1303" height="772" extended-state="6" />
@@ -717,18 +717,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/psychohelp/chat/db_chatConnect.php">
+    <entry file="file://$PROJECT_DIR$/psychohelp/profile/mysqli_connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="45">
+          <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/psychohelp/profile/mysqli_connect.php">
+    <entry file="file://$PROJECT_DIR$/psychohelp/chat/db_chatConnect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
