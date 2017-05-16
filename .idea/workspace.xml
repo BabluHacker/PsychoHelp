@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8795e1a4-ebfa-4371-a9bf-0a2c3860c78f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/psychohelp/profile/access/sendmail.php" afterPath="$PROJECT_DIR$/psychohelp/profile/access/sendmail.php" />
-    </list>
+    <list default="true" id="8795e1a4-ebfa-4371-a9bf-0a2c3860c78f" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -373,12 +371,12 @@
       <workItem from="1494704749137" duration="6309000" />
       <workItem from="1494783193830" duration="3143000" />
       <workItem from="1494865285125" duration="18000" />
-      <workItem from="1494957357688" duration="2668000" />
+      <workItem from="1494957357688" duration="3262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70741000" />
+    <option name="totallyTimeSpent" value="71335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="-4" width="1303" height="772" extended-state="6" />
