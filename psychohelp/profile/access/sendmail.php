@@ -8,7 +8,7 @@
     require_once 'swiftmailer/lib/swift_required.php';
 
     $subject = 'Psychohelp Signup | Verification'; // Give the email a subject
-    $address = "http://csedu.cf/psychohelp/profile/access/verify.php?email=".$email;
+    $address = "http://fast-ravine-21709.herokuapp.com/psychohelp/profile/access/verify.php?email=".$email;
     $body = '
 
     Thanks for signing up!
