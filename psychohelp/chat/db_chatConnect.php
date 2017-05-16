@@ -8,7 +8,7 @@
 
 DEFINE ('DB_USER', 'psychohelp');
 DEFINE ('DB_PASSWORD', 'psychohelp');
-DEFINE ('DB_HOST', 'http://csedu.cf/');
+DEFINE ('DB_HOST', '103.28.121.126');
 DEFINE ('DB_NAME', 'psychohelp');
 
 $con = @mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
